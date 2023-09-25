@@ -1,0 +1,71 @@
+version: '3.7'
+
+services:
+  raaghudocumentation-web:
+    image: mycompanyname/raaghudocumentation-web:latest
+    container_name: raaghudocumentation-web
+    hostname: raaghudocumentation-web
+    build:
+      context: ../../
+      dockerfile: src/raaghuDocumentation.Web/Dockerfile.local
+    environment:
+      - ASPNETCORE_URLS=https://+:443;http://+:80;
+      - Kestrel__Certificates__Default__Path=/root/certificate/localhost.pfx
+      - Kestrel__Certificates__Default__Password=c4c2a05a-e4d0-484c-8273-cb4808b3877f
+      - App__SelfUrl=https://localhost:44353
+      - AuthServer__RequireHttpsMetadata=false
+      - AuthServer__Authority=http://raaghudocumentation-web
+      - App__HealthCheckUrl=http://raaghudocumentation-web/health-status      
+      - ConnectionStrings__Default=Data Source=sql-server;Initial Catalog=raaghuDocumentation;User Id=sa;Password=myPassw0rd;MultipleActiveResultSets=true;TrustServerCertificate=True;
+    ports:
+      - "44353:443"
+    restart: on-failure
+    volumes:
+      - ./certs:/root/certificate
+    networks:
+      - abp-network
+
+  
+
+  
+  db-migrator:
+    image: mycompanyname/raaghudocumentation-db-migrator:latest
+    container_name: db-migrator
+    build:
+      context: ../../
+      dockerfile: src/raaghuDocumentation.DbMigrator/Dockerfile.local
+    environment:
+      - OpenIddict__Applications__raaghuDocumentation_Web__RootUrl=https://localhost:44353
+      - ConnectionStrings__Default=Data Source=sql-server;Initial Catalog=raaghuDocumentation;User Id=sa;Password=myPassw0rd;MultipleActiveResultSets=true;TrustServerCertificate=True;
+      - Redis__Configuration=redis
+    depends_on:
+      sql-server:
+        condition: service_healthy
+    networks:
+      - abp-network
+  
+  sql-server:
+    container_name: sql-server
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "1434:1433"
+    environment:
+      SA_PASSWORD: "myPassw0rd"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sqldata:/var/opt/mssql
+    networks:
+      - abp-network
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S sql-server -U sa -P "myPassw0rd" -Q "SELECT 1" -b -o /dev/null
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+volumes:
+  sqldata:
+    name: raaghudocumentation_sqldata
+networks:
+  abp-network:
+    name: raaghudocumentation-network
+    driver: bridge
