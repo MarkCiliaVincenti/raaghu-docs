@@ -1,0 +1,15 @@
+﻿@using Volo.CmsKit.Web.Pages.CmsKit.Components.Contents
+@using Volo.Abp.AspNetCore.Mvc.UI.Theming
+
+@model Volo.CmsKit.Contents.DefaultContentDto
+
+@inject IThemeManager ThemeManager
+@{
+    Layout = ThemeManager.CurrentTheme.GetEmptyLayout();
+}
+
+<abp-card>
+    <abp-card-body>
+         @await Component.InvokeAsync(typeof(ContentFragmentViewComponent), Model)
+    </abp-card-body>
+</abp-card>
