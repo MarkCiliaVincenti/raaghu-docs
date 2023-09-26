@@ -19,6 +19,51 @@
           ]
     },
     {
+      "text": "Tutorials",
+      "items": [
+        {
+          "text": "Web Application Development",
+          "path": "",
+           "items": [
+            {
+              "text": "Creating Server Side",
+              "path": ""
+            },
+             {
+              "text": "Book List Page",
+              "path": ""
+            },
+             {
+              "text": "Creating, Updating and Deleting Book",
+              "path": ""
+            },
+           ]
+        }
+      ]
+    },
+    {
+      "text": "GUIDES",
+      "items": [
+        {
+          "text": "Customizing the Modules",
+          "path": ""
+        },
+        {
+          "text": "Identity Server Deployment",
+          "path": ""
+        }
+      ]
+    },
+    {
+      "text": "Samples",
+      "items": [
+        {
+          "text": "All Samples",
+          "path": ""
+        }
+      ]
+    },
+    {
       "text": "Startup Templates",
       "items": [
         {
