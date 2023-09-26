@@ -1,20 +1,6 @@
 {
   "items": [
     {
-      "text": "Quick Start",
-      "path": "Tutorials/Todo/Overall.md",
-      "items": [
-        {
-          "text": "With single-layer solution",
-          "path": "Tutorials/Todo/Single-Layer/Index.md"
-        },
-        {
-          "text": "With layered architecture",
-          "path": "Tutorials/Todo/Index.md"
-        }
-      ]
-    },
-    {
       "text": "Getting Started",
       "path": "Getting-Started-Overall.md",
       "items": [
