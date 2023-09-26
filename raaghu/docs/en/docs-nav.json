@@ -43,29 +43,6 @@
            ]
     },
     {
-      "text": "GUIDES",
-      "path": "Getting-Started-Running-Solution.md"
-           "items": [
-             {
-               "text": "Customizing the Modules",
-               "path": "Getting-Started-Running-Solution.md"
-             },
-             {
-               "text": "Identity Server Deployment",
-               "path": "Getting-Started-Running-Solution.md"
-             }
-           ]
-    },
-    {
-      "text": "Samples",
-      "items": [
-        {
-          "text": "All Samples",
-          "path": "Getting-Started-Running-Solution.md"
-        }
-      ]
-    },
-    {
       "text": "Startup Templates",
       "items": [
         {
