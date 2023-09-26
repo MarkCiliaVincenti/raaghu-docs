@@ -5,15 +5,15 @@
       "path": "Getting-Started-Overall.md",
           "items": [
             {
-              "text": "1: Setup Your Development Environment",
+              "text": " Setup Your Development Environment",
               "path": "Getting-Started-Setup-Environment.md"
             },
             {
-              "text": "2: Creating a New Solution",
+              "text": "Creating a New Solution",
               "path": "Getting-Started-Create-Solution.md"
             },
             {
-              "text": "3: Running the Solution",
+              "text": "Running the Solution",
               "path": "Getting-Started-Running-Solution.md"
             }
           ]
