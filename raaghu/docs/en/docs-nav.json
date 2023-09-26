@@ -20,26 +20,26 @@
     },
     {
       "text": "Tutorials",
-      "items": [
-        {
-          "text": "Web Application Development",
-          "path": "Getting-Started-Running-Solution.md",
-           "items": [
+          "items": [
             {
-              "text": "Creating Server Side",
-              "path": "Getting-Started-Running-Solution.md"
-            },
-             {
-              "text": "Book List Page",
-              "path": "Getting-Started-Running-Solution.md"
-            },
-             {
-              "text": "Creating, Updating and Deleting Book",
-              "path": "Getting-Started-Running-Solution.md"
-            },
+               "text": "Web Application Development",
+               "path": "Getting-Started-Running-Solution.md",
+               "items": [
+                 {
+                    "text": "Creating Server Side",
+                    "path": "Getting-Started-Running-Solution.md"
+                 },
+                 {
+                    "text": "Book List Page",
+                    "path": "Getting-Started-Running-Solution.md"
+                 },
+                 {
+                    "text": "Creating, Updating and Deleting Book",
+                    "path": "Getting-Started-Running-Solution.md"
+                 },
+               ]
+             }
            ]
-        }
-      ]
     },
     {
       "text": "GUIDES",
