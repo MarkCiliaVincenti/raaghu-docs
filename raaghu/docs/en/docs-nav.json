@@ -44,16 +44,17 @@
     },
     {
       "text": "GUIDES",
-      "items": [
-        {
-          "text": "Customizing the Modules",
-          "path": "Getting-Started-Running-Solution.md"
-        },
-        {
-          "text": "Identity Server Deployment",
-          "path": "Getting-Started-Running-Solution.md"
-        }
-      ]
+      "path": "Getting-Started-Running-Solution.md"
+           "items": [
+             {
+               "text": "Customizing the Modules",
+               "path": "Getting-Started-Running-Solution.md"
+             },
+             {
+               "text": "Identity Server Deployment",
+               "path": "Getting-Started-Running-Solution.md"
+             }
+           ]
     },
     {
       "text": "Samples",
