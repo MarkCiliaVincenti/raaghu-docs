@@ -23,19 +23,19 @@
       "items": [
         {
           "text": "Web Application Development",
-          "path": "",
+          "path": "Getting-Started-Running-Solution.md",
            "items": [
             {
               "text": "Creating Server Side",
-              "path": ""
+              "path": "Getting-Started-Running-Solution.md"
             },
              {
               "text": "Book List Page",
-              "path": ""
+              "path": "Getting-Started-Running-Solution.md"
             },
              {
               "text": "Creating, Updating and Deleting Book",
-              "path": ""
+              "path": "Getting-Started-Running-Solution.md"
             },
            ]
         }
@@ -46,11 +46,11 @@
       "items": [
         {
           "text": "Customizing the Modules",
-          "path": ""
+          "path": "Getting-Started-Running-Solution.md"
         },
         {
           "text": "Identity Server Deployment",
-          "path": ""
+          "path": "Getting-Started-Running-Solution.md"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "items": [
         {
           "text": "All Samples",
-          "path": ""
+          "path": "Getting-Started-Running-Solution.md"
         }
       ]
     },
