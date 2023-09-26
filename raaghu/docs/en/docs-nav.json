@@ -3,10 +3,6 @@
     {
       "text": "Getting Started",
       "path": "Getting-Started-Overall.md",
-      "items": [
-        {
-          "text": "Web Application - Layered Architecture",
-          "path": "Getting-Started.md",
           "items": [
             {
               "text": "1: Setup Your Development Environment",
@@ -21,42 +17,6 @@
               "path": "Getting-Started-Running-Solution.md"
             }
           ]
-        },
-        {
-          "text": "Web Application - Single-Layered Architecture",
-          "path": "Getting-Started-Single-Layered.md",
-          "items": [
-            {
-              "text": "1: Setup Your Development Environment",
-              "path": "Getting-Started-Setup-Environment-Single-Layer.md"
-            },
-            {
-              "text": "2: Creating a New Solution",
-              "path": "Getting-Started-Create-Solution-Single-Layer.md"
-            },
-            {
-              "text": "3: Running the Solution",
-              "path": "Getting-Started-Running-Solution-Single-Layer.md"
-            }
-          ]
-        },
-        {
-          "text": "Console Application",
-          "path": "Startup-Templates/Console.md"
-        },
-        {
-          "text": "WPF Application",
-          "path": "Startup-Templates/WPF.md"
-        },
-        {
-          "text": "MAUI",
-          "path": "Startup-Templates/MAUI.md"
-        },
-        {
-          "text": "Empty Web Project",
-          "path": "Getting-Started-AspNetCore-Application.md"
-        }
-      ]
     },
     {
       "text": "Startup Templates",
