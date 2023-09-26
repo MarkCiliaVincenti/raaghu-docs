@@ -20,6 +20,7 @@
     },
     {
       "text": "Tutorials",
+      "path": "Getting-Started-Overall.md",
           "items": [
             {
                "text": "Web Application Development",
