@@ -67,15 +67,15 @@
     },
     {
       "text": "Startup Templates",
-      "path": "Getting-Started-Overall.md",
+      "path": "Creating-Solution.md",
       "items": [
         {
           "text": "Application Template",
-          "path": "Getting-Started-Running-Solution.md",
+          "path": "Creating-Solution.md",
           "items": [
             {
               "text": "Create Solution",
-              "path": "Getting-Started-Running-Solution.md"
+              "path": "Creating-Solution.md"
             },
             {
               "text": "Solution Structure",
