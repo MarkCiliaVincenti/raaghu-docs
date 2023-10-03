@@ -41,8 +41,6 @@ If you've already installed, you can update it using the following command:
 
 In order to use ABP Commercial features, you need to login your account using the ABP CLI:
 
-    abp login`<username>`
-
 ```
 abp login username 
 ```

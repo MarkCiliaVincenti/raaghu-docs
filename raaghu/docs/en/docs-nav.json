@@ -2,15 +2,15 @@
   "items": [
     {
       "text": "Getting Started",
-      "path": "Getting-Started-Overall.md",
+      "path": "Getting-Started.md",
       "items": [
         {
           "text": "Setup Your Development Environment",
-          "path": "Getting-Started-Setup-Environment.md"
+          "path": "Setup-Your-Development-Environment.md"
         },
         {
           "text": "Creating a New Solution",
-          "path": "Getting-Started-Create-Solution.md"
+          "path": "Creating-A-New-Solution.md"
         },
         {
           "text": "Running the Solution",
@@ -20,7 +20,7 @@
     },
     {
       "text": "Tutorials",
-      "path": "Getting-Started-Overall.md",
+      "path": "Creating-The-Server-Side.md",
       "items": [
         {
           "text": "Web Application Development",
@@ -28,15 +28,15 @@
           "items": [
             {
               "text": "Creating Server Side",
-              "path": "Getting-Started-Running-Solution.md"
+              "path": "Creating-The-Server-Side.md"
             },
             {
               "text": "Book List Page",
-              "path": "Getting-Started-Running-Solution.md"
+              "path": "The-Book-List-Page.md"
             },
             {
               "text": "Creating, Updating and Deleting Book",
-              "path": "Getting-Started-Running-Solution.md"
+              "path": "Creating-Updating-And-Deleting-Book.md"
             }
           ]
         }
