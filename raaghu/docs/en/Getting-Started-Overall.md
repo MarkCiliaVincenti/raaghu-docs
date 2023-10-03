@@ -1,4 +1,4 @@
-# Getting Started: Overall
+# Getting Started
 
 ## Select the Solution Architecture
 
