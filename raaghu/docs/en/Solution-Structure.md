@@ -8,11 +8,11 @@ Default structure
 
 If you don't specify any additional option, you will have a solution in the **aspnet-core** folder like the below:
 
-![Default Structure](/images/defaultStructure.png)
+![Default Structure](./images/defaultStructure.png)
 
 Projects are located in aspnet-core/src and aspnet-core/test folders. While the aspnet-core/src folder contains the actual application, aspnet-core/test folder contains unit tests and test base projects. The below diagram shows the layers & project dependencies of the application:
 
-![flow-chart Structure](Assets/images/flow-chart.jpg)
+![flow-chart Structure](./images/flow-chart.jpg)
 
 Each section below describes the related project and its dependencies.
 
@@ -130,15 +130,15 @@ Following are the architecture on how raaghu-react is being used as a part of UI
 
 ### Raaghu - Authentication flow(login page)
 
-![raaghu-Authentication Flow](Assets/images/raaghuAuthenticationFlow.jpg)
+![raaghu-Authentication Flow](./images/raaghuAuthenticationFlow.jpg)
 
 ### Raaghu - Localization
 
-![raaghu Localization](Assets/images/raaghuLocalization.jpg)
+![raaghu Localization](./images/raaghuLocalization.jpg)
 
 ### Raaghu - Page flow
 
-![Raaghu - Page flow](Assets/images/raaghuPageFlow.jpg)
+![Raaghu - Page flow](./images/raaghuPageFlow.jpg)
 
 ### What's next?
 
