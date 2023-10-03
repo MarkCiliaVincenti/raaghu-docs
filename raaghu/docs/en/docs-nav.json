@@ -40,89 +40,28 @@
             }
           ]
         },
+      ]
+    },
+    {
+      "text": "GUIDES",
+      "path": "Getting-Started-Overall.md",
+      "items": [
         {
-          "text": "Console Application",
-          "path": "Startup-Templates/Console.md"
+          "text": "Customizing the Modules",
+          "path": "Getting-Started-Setup-Environment.md"
         },
         {
-          "text": "WPF Application",
-          "path": "Startup-Templates/WPF.md"
-        },
-        {
-          "text": "MAUI",
-          "path": "Startup-Templates/MAUI.md"
-        },
-        {
-          "text": "Empty Web Project",
-          "path": "Getting-Started-AspNetCore-Application.md"
+          "text": "Identity Server Deployment",
+          "path": "Getting-Started-Create-Solution.md"
         }
       ]
     },
     {
-      "text": "Tutorials",
+      "text": "Samples",
       "items": [
         {
-          "text": "Web Application Development",
-          "items": [
-            {
-              "text": "1: Creating the Server Side",
-              "path": "Tutorials/Part-1.md"
-            },
-            {
-              "text": "2: The Book List Page",
-              "path": "Tutorials/Part-2.md"
-            },
-            {
-              "text": "3: Creating, Updating and Deleting Books",
-              "path": "Tutorials/Part-3.md"
-            },
-            {
-              "text": "4: Integration Tests",
-              "path": "Tutorials/Part-4.md"
-            },
-            {
-              "text": "5: Authorization",
-              "path": "Tutorials/Part-5.md"
-            },
-            {
-              "text": "6: Authors: Domain layer",
-              "path": "Tutorials/Part-6.md"
-            },
-            {
-              "text": "7: Authors: Database Integration",
-              "path": "Tutorials/Part-7.md"
-            },
-            {
-              "text": "8: Authors: Application Layer",
-              "path": "Tutorials/Part-8.md"
-            },
-            {
-              "text": "9: Authors: User Interface",
-              "path": "Tutorials/Part-9.md"
-            },
-            {
-              "text": "10: Book to Author Relation",
-              "path": "Tutorials/Part-10.md"
-            }
-          ]
-        },
-        {
-          "text": "Community Articles",
-          "path": "https://community.abp.io/articles"
-        },
-        {
-          "text": "Migrating from the ASP.NET Boilerplate",
-          "path": "AspNet-Boilerplate-Migration-Guide.md"
-        }
-      ]
-    },
-    {
-      "text": "CLI",
-      "path": "CLI.md",
-      "items": [
-        {
-          "text": "Examples for the new command",
-          "path": "CLI-New-Command-Samples.md"
+          "text": "All Samples",
+          "path": "Getting-Started-Running-Solution.md"
         }
       ]
     },
