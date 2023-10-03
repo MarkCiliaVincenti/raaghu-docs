@@ -126,7 +126,7 @@ However, if you don't choose the \--tiered option when you create a solution, th
 
 Following are the architecture on how raaghu-react is being used as a part of UI application
 
-![Following are the architecture on how raaghu-react is being used as a part of UI application](Assets/images/raaghu-architecture.jpg)
+![Following are the architecture on how raaghu-react is being used as a part of UI application](Assets/images/raaghu-architecture.png)
 
 ### Raaghu - Authentication flow(login page)
 
