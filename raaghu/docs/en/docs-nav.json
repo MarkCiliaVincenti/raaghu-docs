@@ -39,7 +39,7 @@
               "path": "Getting-Started-Running-Solution.md"
             }
           ]
-        },
+        }
       ]
     },
     {
@@ -48,11 +48,11 @@
       "items": [
         {
           "text": "Customizing the Modules",
-          "path": "Getting-Started-Setup-Environment.md"
+          "path": "Customizing-The-Modules.md"
         },
         {
           "text": "Identity Server Deployment",
-          "path": "Getting-Started-Create-Solution.md"
+          "path": "Identity-Server-Deployment.md"
         }
       ]
     },
@@ -80,9 +80,9 @@
             {
               "text": "Solution Structure",
               "path": "Getting-Started-Running-Solution.md"
-            },
+            }
           ]
-        },
+        }
       ]
     },
     {
@@ -172,7 +172,7 @@
           "path": "Getting-Started-Running-Solution.md"
         }
       ]
-    },
+    }
     
   ]
 }
