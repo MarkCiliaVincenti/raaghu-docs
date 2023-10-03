@@ -8,7 +8,7 @@ Default structure
 
 If you don't specify any additional option, you will have a solution in the **aspnet-core** folder like the below:
 
-![Default Structure](Assets/images/defaultStructure.jpg)
+![Default Structure](/images/defaultStructure.png)
 
 Projects are located in aspnet-core/src and aspnet-core/test folders. While the aspnet-core/src folder contains the actual application, aspnet-core/test folder contains unit tests and test base projects. The below diagram shows the layers & project dependencies of the application:
 
