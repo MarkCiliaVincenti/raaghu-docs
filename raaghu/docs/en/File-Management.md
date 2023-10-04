@@ -57,7 +57,7 @@ File Management
 
 File Management page is used to create folders, upload files and view the list of folders and files that stored in the application.
 
-![File Management page is used to create folders, upload files and view the list of folders](Assets/images/fileManagement.jpg)
+![File Management page is used to create folders, upload files and view the list of folders](./images/file-management.png)
 
 ### Folders
 
@@ -67,11 +67,11 @@ You can create a new folder by clicking Create Folder button that located at top
 
 You can move a folder to another directory on the left tree view.
 
-![You can move a folder to another directory on the left tree view](Assets/images/moveFolder.jpg)
+![You can move a folder to another directory on the left tree view](./images/file-management-new.png)
 
 You can rename a folder by clicking Actions -> Rename on the table.
 
-![You can rename a folder](Assets/images/renameFolder.jpg)
+![You can rename a folder](/images/file-management-rename.png)
 
 ### Files
 
