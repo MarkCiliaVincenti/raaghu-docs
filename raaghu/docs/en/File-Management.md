@@ -71,7 +71,7 @@ You can move a folder to another directory on the left tree view.
 
 You can rename a folder by clicking Actions -> Rename on the table.
 
-![You can rename a folder](/images/file-management-rename.png)
+![You can rename a folder](./images/file-management-rename.png)
 
 ### Files
 
