@@ -67,4 +67,4 @@ If you’ve already installed , you can update it:
 
 ### Next Step
 
-* [Creating a new solution](Creating-A-New-Solution.html)
+* [Creating a new solution](Creating-A-New-Solution.md)

@@ -22,7 +22,6 @@ Run the ABP Suite with the following command:
 
 Click the **Create a new solution** button and fill the modal form:
 
-
 ![Create A New Solution for modal form](./images/createSol.png "createSol")
 
 Select the UI framework as raaghu-react, Database Provider, and other options based on your preferences, then click on the OK button
@@ -55,4 +54,4 @@ The solution has a layered structure (based on the [Domain Driven Design](https:
 
 ### Next Step
 
-* [Running the solution](Running-The-Solution.html)
+* [Running the solution](Running-The-Solution.md)

@@ -13,4 +13,4 @@ Developed with utilization of following technologies, this tutorial series will 
 
 ### The Next Part
 
-* See the [next part](The-Book-List-Page.html) of this tutorial.
+* See the [next part](The-Book-List-Page.md) of this tutorial.

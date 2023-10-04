@@ -1,4 +1,3 @@
-
 # Getting Started
 
 This tutorial assumes that you've already purchased an [ABP Commercial license](https://commercial.abp.io/pricing) and have an active ABP Commercial account.
@@ -19,4 +18,4 @@ This tutorial explains how to **create and run** a new web application using the
 
 ### See Also
 
-- [Startup Templates](Startup-Template.html)
+- [Startup Templates](Startup-Template.md)
