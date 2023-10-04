@@ -79,7 +79,7 @@ Tables / Collections
 
 **Entity Relationships**
 
-![Entity Relationships](./images/forms.png)
+![Entity Relationships](./images/forms-entity-relationship.png)
 
 ### Permissions
 
