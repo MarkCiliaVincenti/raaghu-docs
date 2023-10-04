@@ -28,7 +28,9 @@ Login Page
 
 Login page is used to log in to the system.
 
-![Login page is used to log in to the system](Assets/images/raaghu-login.jpg)
+![Home page](./images/home.png)
+
+![Login page is used to log in to the system](./images/login-auth.png)
 
 ### Register Page
 
