@@ -88,31 +88,27 @@
     },
     {
       "text": "Application Module",
-      "path": "Deployment/Index.md",
+      "path": "Overall.md",
       "items": [
         {
           "text": "Overall",
-          "path": "Deployment/Configuring-OpenIddict.md"
+          "path": "Overall.md"
         },
         {
           "text": "Account",
-          "path": "Deployment/Configuring-Production.md"
+          "path": "Account-Module.md"
         },
         {
           "text": "Audit Logging",
-          "path": "Deployment/Clustered-Environment.md"
+          "path": "Audit-Logging.md"
         },
         {
           "text": "Chat",
-          "path": "Deployment/Distributed-Microservice.md"
+          "path": "Chat-Module.md"
         },
         {
           "text": "CMS Kit Pro",
-          "path": "Deployment/Optimizing-Production.md"
-        },
-        {
-          "text": "CMS Kit Pro",
-          "path": "Deployment/Optimizing-Production.md"
+          "path": "CMS-KIt-Pro.md"
         },
         {
           "text": "File Management",
@@ -143,7 +139,7 @@
           "path": "Deployment/Optimizing-Production.md"
         },
            {
-          "text": "Saas",
+          "text": "Text Template Management",
           "path": "Deployment/Optimizing-Production.md"
         }
       ]
