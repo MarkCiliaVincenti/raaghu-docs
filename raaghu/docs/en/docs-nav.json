@@ -116,48 +116,48 @@
         },
         {
           "text": "Forms",
-          "path": "Deployment/Optimizing-Production.md"
+          "path": "Forms.md"
         },
         {
           "text": "Identity",
-          "path": "Deployment/Optimizing-Production.md"
+          "path": "Identity.md"
         },
         {
           "text": "OpenIddict",
-          "path": "Deployment/Optimizing-Production.md"
+          "path": "OpenIddict.md"
         },
         {
           "text": "Langauge Management",
-          "path": "Deployment/Optimizing-Production.md"
+          "path": "Language-Management.md"
         },
         {
           "text": "Payment",
-          "path": "Deployment/Optimizing-Production.md"
+          "path": "Payment.md"
         },
         {
           "text": "Saas",
-          "path": "Deployment/Optimizing-Production.md"
+          "path": "SaaS.md"
         },
-           {
+        {
           "text": "Text Template Management",
-          "path": "Deployment/Optimizing-Production.md"
+          "path": "Text-Template-Management.md"
         }
       ]
     },
     {
       "text": "UI Theme",
-       "path": "Deployment/Optimizing-Production.md"
+       "path": "UI-Theme.md"
     },
     {
       "text": "React UI",
       "items": [
         {
           "text": "Cutomization",
-          "path": "Getting-Started-Running-Solution.md"
+          "path": "Cutomization.md"
         },
         {
           "text": "Components",
-          "path": "Getting-Started-Running-Solution.md"
+          "path": "Components.md"
         }
       ]
     },
@@ -166,7 +166,7 @@
       "items": [
         {
           "text": "Realse Notes",
-          "path": "Getting-Started-Running-Solution.md"
+          "path": "Realse Notes.md"
         }
       ]
     }
