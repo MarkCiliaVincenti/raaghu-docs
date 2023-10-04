@@ -1,4 +1,3 @@
-
 Audit Logging module
 ====================
 
@@ -38,8 +37,7 @@ Audit Logs
 
 Audit logs tab is used to list, view and filter audit logs and entity changes in the system.
 
-![Audit logs tab is used to list, view and filter audit logs and entity changes in the
-system](Assets/images/auditLogsTab.jpg)
+![Audit logs tab is used to list, view and filter audit logs and entity changes in thesystem](./images/audit-logs.png)
 
 ### Audit Log Details
 
