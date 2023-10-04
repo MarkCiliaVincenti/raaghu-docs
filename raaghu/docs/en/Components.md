@@ -1,13 +1,7 @@
-React UI
-========
 
-CUSTOMIZATION
--------------
+COMPONENTS
+==========
 
-### Manage Profile Page Tabs
+Components used in abp-raaghu-react are reusable and if you want to use the components in any module, one can refer to the list of the components used in the storybook link [https://storybookreact.raaghu.io/](https://storybookreact.raaghu.io/)
 
-Under the My Account on clicking the dropdown of host admin profile, you get 4 tabs as Profile Picture, Change Password, Personal Info and Two factor
-
-The tabs in the manage profile page can be managed via ManageProfileTabsService which is exposed by the @volo/abp.ng.account/public/config package. You can add, remove, or edit a tab with using this service.
-
-![Manage Profile Page](Assets/images/manageProfilePage.jpg)
+![raaghu components](Assets/images/raaghuComponents.jpg)
