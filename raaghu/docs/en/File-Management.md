@@ -63,11 +63,11 @@ File Management page is used to create folders, upload files and view the list o
 
 You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory.
 
-![You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory.](Assets/images/createFolder.jpg)
+![You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory.](./images/file-management-new.png)
 
 You can move a folder to another directory on the left tree view.
 
-![You can move a folder to another directory on the left tree view](./images/file-management-new.png)
+![You can move a folder to another directory on the left tree view](./images/file-management-move.png)
 
 You can rename a folder by clicking Actions -> Rename on the table.
 
@@ -77,11 +77,11 @@ You can rename a folder by clicking Actions -> Rename on the table.
 
 You can upload files by clicking Upload Files button that located at top right on the page. This will open a new modal for selecting your local files to upload. The files will be uploaded at active directory.
 
-![You can upload files by clicking Upload Files button that located at top right on the page](Assets/images/uploadFiles.jpg)
+![You can upload files by clicking Upload Files button that located at top right on the page](./images/file-management-upload.png)
 
 You can move files by clicking Actions -> Move on the data table.
 
-![You can move files by clicking Actions Move on the data table.](Assets/images/moveFolderRaaghu.jpg)
+![You can move files by clicking Actions Move on the data table.](./images/file-management-move.png)
 
 You can rename a file by clicking Actions -> Rename on the data table.
 
