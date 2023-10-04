@@ -68,11 +68,11 @@
     },
     {
       "text": "Startup Templates",
-      "path": "Creating-Solution.md",
+      "path": "Startup-Template.md",
       "items": [
         {
           "text": "Application Template",
-          "path": "Creating-Solution.md",
+          "path": "Application-Templates.md",
           "items": [
             {
               "text": "Create Solution",
