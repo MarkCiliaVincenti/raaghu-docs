@@ -66,4 +66,4 @@ To create a new solution, see [how to create a new solution.](https://docs.abp.i
 
 ### What's next?
 
-* [Solution structure](Solution-Structure.html)
+* [Solution structure](Solution-Structure.md)
