@@ -54,4 +54,4 @@ The solution has a layered structure (based on the [Domain Driven Design](https:
 
 ### Next Step
 
-* [Running the solution](Running-The-Solution.md)
+* [Running the solution](Getting-Started-Running-Solution.md)
