@@ -8,13 +8,13 @@ Creating solution via ABP CLI
 
 If you have not yet installed ABP CLI, you need to install it with the following command. To check if you already have it, write abp to the command line.
 
-```
+```shell
    dotnet tool install -g Volo.Abp.Cli
 ```
 
 To create your solution, go to the directory where you want to create in and type the following command:
 
-```
+```shell
     abp new Acme.BookStore -t app-pro
 ```
 
@@ -22,8 +22,8 @@ To create your solution, go to the directory where you want to create in and typ
 * \-t or \--template is the template name. For commercial apps, use app-pro.
 * To discover other CLI new project options type:
 
-  ```
-  dotnet tool update -g Volo.Abp.Cli
+  ```shell
+    dotnet tool update -g Volo.Abp.Cli
   ```
 
 ### Specify the UI framework
@@ -39,7 +39,7 @@ The template provides multiple UI frameworks:
 
 Use \-u or \--ui option to specify the UI framework:
 
-```
+```shell
     abp new Acme.BookStore -t app-pro -u react
 ```
 
@@ -52,7 +52,7 @@ The template supports the following database providers:
 
 Use \-d or \--database-provider option to specify the database provider:
 
-```
+```shell
  abp new Acme.BookStore -t app-pro -d mongodb
 ```
 
