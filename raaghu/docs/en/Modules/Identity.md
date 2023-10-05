@@ -43,11 +43,11 @@ Role management
 
 Roles page is used to manage roles in the system. A role is a set of permissions assigned to the users.
 
-![New Role](Assets/images/newRole.jpg)
+![New Role](./images/users-role.png)
 
 You can create a new role or edit a role in this page:
 
-![You can create a new role or edit a role in this page](Assets/images/createNewRole.jpg)
+![You can create a new role or edit a role in this page](./images/role-new.png)
 
 * **Default** roles are assigned to new users by default.
 * **Public** roles are visible to other users.
@@ -67,7 +67,7 @@ You can manage permissions of a role:
 
 You can set custom claim values for a role:
 
-![Edit Role](Assets/images/editRole.jpg)
+![Edit Role](./images/role-claims.png)
 
 Claim types are retrieved from the claim list defined in the Claim Types Management page (see below).
 
@@ -75,21 +75,21 @@ Claim types are retrieved from the claim list defined in the Claim Types Managem
 
 Users page is used to manage the users in your system.
 
-![User Management ](Assets/images/userManagement.jpg)
+![User Management ](./images/users.png)
 
 You can create a new user or edit an existing user in this page:
 
-![You can create a new user or edit an existing user in this page ](Assets/images/createANewUser.jpg)
+![You can create a new user or edit an existing user in this page ](./images/users-new.png)
 
 * A user can have **zero or more roles** in the system.
 * You can set **two factor** verification and user **lockout** settings per user.
-  ![New User ](Assets/images/newUser.jpg)
+  ![New User ](./images/users-role.png)
 
 ### User permissions
 
 A user has union of the permissions of the assigned roles. Identity module also allows to grant extra permissions to a specific user.
 
-![Edit User ](Assets/images/editUser.jpg)
+![Edit User ](./images/user-permision.png)
 
 * A permission is an **action of the application** granted to roles and users.
 * A user with a role will **inherit** all the permissions granted for the role.
@@ -100,7 +100,7 @@ A user has union of the permissions of the assigned roles. Identity module also 
 
 Identity module allows to define custom claim types.
 
-![New Claim Type ](Assets/images/newClaimType.png)
+![New Claim Type ](./images/claim.png)
 
 * Custom claims can be used to store additional information to a user or role.
 * Custom claim values then can be accessed in the application code for an authenticated user.
@@ -110,15 +110,15 @@ Identity module allows to define custom claim types.
 
 Organization units page is used to manage organization units, members of organization units and roles of organization units.
 
-![Organization units page is used to manage organization units, members of organization units and roles of organization units](Assets/images/organizationUnit.jpg)
+![Organization units page is used to manage organization units, members of organization units and roles of organization units](./images/organization-Unit.png)
 
 You can add a new organization unit or edit an existing organization unit on this page. In order to add a new root organization unit, click "New root unit" button and fill the opening form.
 
-![New Organization Unit](Assets/images/newOrgUnit.jpg)
+![New Organization Unit](./images/organization-Unit-new.png)
 
 In order to add a sub-unit to an existing organization unit, right click on an existing organization unit and click "Add sub-unit" context menu item. Similarly, in order to edit an organization unit, right click on an existing organization unit and click "Edit" context menu item.
 
-![Edit Organization Unit](Assets/images/editOrgUnit.jpg)
+![Edit Organization Unit](./images/organization-Unit-edit.png)
 
 You can manage members of an organization unit using the members tab by selection an organization unit
 
@@ -126,4 +126,4 @@ You can manage members of an organization unit using the members tab by selectio
 
 Security logs page is used to search and view authentication related operations (login, logout, change password...) in the system.
 
-![Security Logs](Assets/images/securityLogs.jpg)
+![Security Logs](./images/security-logs.png)
