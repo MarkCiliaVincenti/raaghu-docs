@@ -6,7 +6,7 @@ Creating a new Book -
 
 In order to create a new book, we will create a new component called RdsCompBookForm. Run code below in root folder
 
-```
+```shell
     raaghu create:component --name=rds-comp-book-form
 ```
 
@@ -16,15 +16,16 @@ Go to following path and perform html operations
 
 Add following code in slice file and add builder case in extra reducer similar to fetchbooks
 
-```
+```javascript
   export const postNewBook = createAsyncThunk(
             "book/postNewBook",
-            (model:any) => {             return proxy.bookPOST(model).then((result:any)=>{              return result
-             })});
+            (model:any) => { return proxy.bookPOST(model).then((result:any)=>{
+                       return result
+             } ) } );
 ```
 
 Here, we bring a button of a New Book using RdsButton and on clicking, we get different parameters of a form inside a RdsOffcanvas
-
+```javascript
     <RdsOffcanvas
     offcanvasbutton={`<div>`
     <RdsButton
@@ -59,10 +60,10 @@ Here, we bring a button of a New Book using RdsButton and on clicking, we get di
         TypeEnumItems={TypeEnum}
         >`</RdsCompBook>`
     `</RdsOffcanvas>`
-
+```
 Now add this function inside book component
 
-```
+```javascript
    const onNewCreate = (datafromcomponent: any) => {
         let TypeIndex = datafromcomponent.data.Type
         const data = {
@@ -105,7 +106,7 @@ Now add this function inside book component
 
 Define the actions for Edit in the form of an array as shown below
 
-```
+```javascript
     const actions = [{ id: "edit", displayName: t("Edit"), offId: "BookEdit"}]
 ```
 
@@ -116,7 +117,7 @@ Update table using actions used in data table. Updated data table will look like
 
 Add following slice code inside Slice file and add builder cases similar to fetchbook
 
-```
+```javascript
     export const putBooksRequest = createAsyncThunk(
     'book/putBooksRequest',
     async   ({
@@ -125,7 +126,8 @@ Add following slice code inside Slice file and add builder cases similar to fetc
             }:{
                 id: string,
                 requestBody?: DemoSuite2_Books_BookUpdateDto,
-            }) => {                const response = await BookService.putBooks({
+            }) => {
+                const response = await BookService.putBooks({
                 id,
                 requestBody,
             });
@@ -136,7 +138,7 @@ Add following slice code inside Slice file and add builder cases similar to fetc
 
 Add these builder cases inside BookSlice extra reducer
 
-```
+```javascript
     builder.addCase(putBooksRequest.pending, (state) => {
         state.loading = true;
     });
@@ -152,7 +154,7 @@ Add these builder cases inside BookSlice extra reducer
 
 Add the Edit function in Book Page
 
-```
+```javascript
   const onEdithandler = (datafromcomponent: any) => {
     const id = dataEmit.id;
     let TypeIndex = datafromcomponent.data.Type
@@ -210,6 +212,7 @@ Add the Edit function in Book Page
 
 Add property of RdsOffcanvas element below RdsCompDatatable
 
+```javascript
     <RdsOffcanvas
         placement={"end"}
         backDrop={true}
@@ -231,19 +234,20 @@ Add property of RdsOffcanvas element below RdsCompDatatable
         >`</RdsCompBook>`
     </>
     `</RdsOffcanvas>`
+```
 
 ### Deleting a new Book –
 
 Add Edit function in Book Page
 
-```
-const actions = [            { id: "Delete", displayName: t("Delete"), modalId: "bookDel" }]
+```javascript
+const actions = [{ id: "Delete", displayName: t("Delete"), modalId: "bookDel" }]
                                ]
 ```
 
 We now add a slice file used for Delete functionality
 
-```
+```javascript
    export const deleteBooksRequest = createAsyncThunk(
     'book/deleteBooksRequest',
     async   ({
@@ -260,7 +264,7 @@ We now add a slice file used for Delete functionality
 
 Add these builder cases inside BookSlice extra reducer
 
-```
+```javascript
     builder.addCase(deleteBooksRequest.pending, (state) => {
         state.loading = true;
     });
@@ -276,9 +280,11 @@ Add these builder cases inside BookSlice extra reducer
 
 We integrate a component called RdsCompAlertPopup to display alert during deleting a book list
 
+```javascript
     <RdsCompAlertPopup
             alertID={"bookDel"}
             onSuccess={onDeleteHandler}
-            ></RdsCompAlertPopup>;
+            ></RdsCompAlertPopup>
+```
 
 Add delete function in Book Page
