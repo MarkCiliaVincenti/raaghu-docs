@@ -28,11 +28,11 @@ Languages
 
 Languages page is used to manage languages in the system.
 
-![New Language](Assets/images/newLanguage.jpg)
+![New Language](./images/language.png)
 
 You can create a new language or edit an existing language in this page:
 
-![Create New Language](Assets/images/createNewLanguage.jpg) ![Edit Language](Assets/images/editLanguage.png)
+![Create New Language](./images/language-new.png) ![Edit Language](./images/language-edit.png)
 
 * **Enabled** languages can be selected as the system language.
 
@@ -40,8 +40,8 @@ You can create a new language or edit an existing language in this page:
 
 Language texts page is used to manage texts in different languages.
 
-![Language Texts](Assets/images/languageTexts.jpg)
+![Language Texts](./images/langauge-text.png)
 
 You can translate a text for a language or edit the already existing translation in this page.
 
-![edit the already existing translation in this page](Assets/images/editLanguageManagement.jpg)
+![edit the already existing translation in this page](./images/language-text-edit.pngg)
