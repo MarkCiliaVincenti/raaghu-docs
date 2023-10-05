@@ -18,8 +18,12 @@ The GDPR module adds the following item to the "User" profile menu.
 
 Personal Data: Personal data management page. You can request your personal data, list all personal data requests, download and/or delete personal data, and delete the account permanently.
 
+![alt text](./images/main-menu.png)
+
 ### Pages
 
 ### Personal Data
 
 The "Personal Data" page is used to manage personal data requests. You can view the past requests, current status of the latest request, create a new request, download data or delete all your personal data and account from the application.
+
+![alt text](./images/personal-data.png)
