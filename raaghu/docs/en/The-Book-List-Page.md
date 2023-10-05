@@ -21,7 +21,7 @@ now, unzip file using following command
 Run below code at root level of your project folder
 
 ```shell
-   raaghu install-all
+  raaghu install-all
 ```
 
 ### Install Abp-React-Core
@@ -29,7 +29,7 @@ Run below code at root level of your project folder
 Run below code at root level of your project folder
 
 ```shell
-    raaghu create:core
+  raaghu create:core
 ```
 
 ### Generate Proxy
@@ -45,7 +45,7 @@ to create proxies, we run following command at root level
 Run following command line to create a new Module, named BookStore on root folder and a Book page within it of React application
 
 ```shell
-    raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
+  raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
 ```
 
 **Note:Creating a page is case sensitive. name of page should be in small letters**
@@ -57,10 +57,10 @@ Run following command line to create a new Module, named BookStore on root folde
 Here we integrate a Data Table using a component RdsCompDataDable component having table headers and data corresponding to it.
 
 code looks like as shown below
-
+```shell
     <RdsCompDatatable classes="table__userTable" tableHeaders={tableHeaders} pagination={true} tableData={Data} onActionSelection={onActionSelection} recordsPerPage={5}
     recordsPerPageSelectListOption={true}>`</RdsCompDatatable>`
-
+```
 in RdsCompDataTable, we can add the neccessary data we want to show in tableData and following array of actions that you require as well as neccessary function using onActionSelection
 
 ### Column Structure
