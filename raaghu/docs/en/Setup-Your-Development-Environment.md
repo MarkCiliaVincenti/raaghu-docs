@@ -27,13 +27,13 @@ The following tools should be installed on your development machine.
 
 First, you need to install the ABP CLI using the following command:
 
-```
+```json
   dotnet tool install -g Volo.Abp.Cli
 ```
 
 If you've already installed, you can update it using the following command:
 
-```
+```json
   dotnet tool update -g Volo.Abp.Cli
 ```
 
