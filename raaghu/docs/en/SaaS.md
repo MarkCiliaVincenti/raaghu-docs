@@ -26,22 +26,16 @@ Firstly, Payment module must be configured properly:
 ```
   abp add-module Volo.Payment
 ```
-Bash
-
-Copy
 
 Or you can install via using ABP Suite.
 
 * Configure Saas module to use Payment.
-
+```
   Configure(options =>
   {
   options.IsPaymentSupported = true;
   });
-
-C#
-
-Copy
+```
 
 * Follow the [subscriptions](https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions) section of [Payment Module Documentation](https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions). Complete [enabling webhooks](https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks) and [configuring plans](https://docs.abp.io/en/commercial/7.0/modules/payment#configuring-plans) sections.
 * Run the application and go to Saas > Editions page at your Web Application menu.
@@ -52,7 +46,7 @@ Copy
 SaaS module doesn't contain a public facing list page for listing editions for new customers/tenants to subscribe. First, you need to create such a page in your application. Then, when a new customer/tenant selects one of those Editions, you can create a subscription and redirect user to payment module as shown below.
 
 * Inject ISubscriptionAppService to create a subscription for a edition:
-
+```
   public class IndexModel : PageModel
   {
   protected ISubscriptionAppService SubscriptionAppService { get; }
@@ -74,7 +68,7 @@ SaaS module doesn't contain a public facing list page for listing editions for n
   return LocalRedirectPreserveMethod("/Payment/GatewaySelection?paymentRequestId=" + paymentRequest.Id);
   }
   }
-
+```
 When the payment is completed successfully, the tenant and edition relation will be updated according to subscription status. Make sure Payment Gateway Web Hooks are configured properly.
 
 After all, payment module will redirect user to the callbackUrl if configured in [payment configuration](https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions) with a paymentRequestId parameter. In this page, you can check the status of the payment request and show a success message to the user when the payment status is confirmed. Since the payment confirmation is asynchronous, you need to check the payment status repeatedly until it is confirmed.
@@ -96,11 +90,11 @@ Tenant management
 
 Tenant page is used to manage tenants in the system.
 
-![New Tenant](Assets/images/newTenant.jpg)
+![New Tenant](./images/tenant.png)
 
 You can create a new tenant or edit a tenant in this page:
 
-![You can create a new tenant or edit a tenant in this page](Assets/images/addNewTenant.jpg)
+![You can create a new tenant or edit a tenant in this page](./images/tenant-new.png)
 
 ### Connection String
 
@@ -112,20 +106,20 @@ You can also use the module-specific database connection string feature. In this
 
 You can set features of tenants.
 
-![You can set features of tenants](Assets/images/editTenant.jpg)
+![You can set features of tenants](./images/tenant-features.png)
 
 Edition management
 
 Editions page is used to manage the editions in your system.
 
-![Editions page is used to manage the editions in your system](Assets/images/newEdition.jpg)
+![Editions page is used to manage the editions in your system](./images/editions.png)
 
 You can create a new edition or edit an existing edition in this page:
 
-![Create a new edition or edit an existing edition](Assets/images/newEditionName.jpg)
+![Create a new edition or edit an existing edition](./images/edition-new.png)
 
 ### Edition Features
 
 You can set features of an edition in this page:
 
-![Set features of an edition in this page](Assets/images/editionFeatures.jpg)
+![Set features of an edition in this page](./images/editions-edit.png)
