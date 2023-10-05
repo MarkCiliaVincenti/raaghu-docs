@@ -23,9 +23,9 @@ SaaS module implements subscribing to Editions for Tenants using Payment module.
 Firstly, Payment module must be configured properly:
 
 * Install Volo.Payment module.
-
+```
   abp add-module Volo.Payment
-
+```
 Bash
 
 Copy
