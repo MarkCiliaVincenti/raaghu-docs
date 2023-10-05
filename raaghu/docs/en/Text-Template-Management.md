@@ -24,8 +24,8 @@ Text Templates
 
 Text Templates page is used to view the list of templates defined in the application.
 
-![Text Templates page is used to view the list of templates](Assets/images/textTemplate.jpg)
+![Text Templates page is used to view the list of templates](./images/text-template.png)
 
 Click to the Actions -> Edit Contents to edit content for a template. There are two types of UI to edit a template content:
 
-![Edit content for a template](Assets/images/contents.jpg)
+![Edit content for a template](./images/text-template-edit.png)
