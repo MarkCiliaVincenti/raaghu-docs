@@ -20,7 +20,7 @@ You can visit [Chat module package list page](https://abp.io/packages?moduleName
 
 This is the page that users send messages to each other.
 
-![This is the page that users send messages to each other](Assets/images/userSendMessage.jpg)
+![This is the page that users send messages to each other](./images/chat.png)
 
 ### Internals
 
