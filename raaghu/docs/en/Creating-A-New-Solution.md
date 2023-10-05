@@ -12,7 +12,7 @@ ABP Suite is recommended way to create new solutions for the ABP Commercial
 
 Run the ABP Suite with the following command:
 
-````
+```shell
   abp suite
 ````
 
@@ -30,7 +30,7 @@ Select the UI framework as raaghu-react, Database Provider, and other options ba
 
 Use the new command of the ABP CLI to create a new project:
 
-```
+```shell
   abp new Acme.Bookstore -t app-pro
 ```
 
