@@ -44,4 +44,4 @@ Language texts page is used to manage texts in different languages.
 
 You can translate a text for a language or edit the already existing translation in this page.
 
-![edit the already existing translation in this page](./images/language-text-edit.pngg)
+![edit the already existing translation in this page](./images/language-text-edit.png)
