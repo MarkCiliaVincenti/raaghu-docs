@@ -85,7 +85,7 @@ You can move files by clicking Actions -> Move on the data table.
 
 You can rename a file by clicking Actions -> Rename on the data table.
 
-![You can rename a file by clicking Actions Rename on the data table](Assets/images/renameFile.jpg)
+![You can rename a file by clicking Actions Rename on the data table](./images/file-management-rename-edit.png)
 
 ### Data Seed
 
