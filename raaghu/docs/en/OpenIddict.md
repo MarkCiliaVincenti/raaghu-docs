@@ -29,18 +29,18 @@ Application Management
 
 Applications page is used to manage OpenIddict applications. An application represent hosted applications that can request tokens from your authentication server.
 
-![New Application](Assets/images/newApplication.png)
+![New Application](./images/appliaction.png)
 
 You can create new application or edit existing applications in this page:
 
-![create new application or edit existing applications](Assets/images/newApp.jpg) ![Edit Application](Assets/images/editApplication.jpg)
+![create new application or edit existing applications](./images/appliaction-new.png) ![Edit Application](./images/appliaction-edit.png)
 
 API Scope Management
 
 OpenIddict module allows to manage API scope. To allow applications to request access tokens for APIs, you need to define API scopes.
 
-![New Scope](Assets/images/newScope.jpg)
+![New Scope](./images/scope.png)
 
 You can create a new API resource or edit an existing API resource in this page:
 
-![New Scope](Assets/images/Edit.jpg)
+![New Scope](./images/scope-edit.png)
