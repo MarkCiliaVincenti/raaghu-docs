@@ -120,7 +120,7 @@
         },
         {
           "text": "Identity",
-          "path": "./Modules/Identity.md"
+          "path": "Identity.md"
         },
         {
           "text": "OpenIddict",
