@@ -14,6 +14,22 @@
     margin: 0rem !important;
 }
 
+.abp-empty-layout .docs-page{
+    padding: 0rem !important;
+}
+
 #document-node-wrapper{
     border: 0 !important;
 }
+
+#GoToMainWebSite {
+    display: none !important;
+}
+
+/* .docs-version {
+    display: none !important;
+} */
+
+/* .ProjectName{
+    background-image: url( './images/logo/leptonx/icon.svg' );
+} */

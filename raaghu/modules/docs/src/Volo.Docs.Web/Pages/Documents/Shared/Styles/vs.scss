@@ -391,7 +391,7 @@ body {
         min-height: 100vh;
         width: calc(100% - 600px);
         margin-left: 300px;
-        padding: $gap-y-size $gap-y-size 100px $gap-y-size;
+        padding: $gap-y-size $gap-y-size 100px;
         
         &::-webkit-scrollbar {
             display: none;
