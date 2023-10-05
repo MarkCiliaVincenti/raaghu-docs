@@ -44,4 +44,10 @@ Payment plans page
 
 Payment plans for subscriptions can be managed on this page. You can connect external subscriptions for each gateway to a plan.
 
-![Admin Pages](Assets/images/admin.jpg)
+![Admin Pages](./images/payment-plan.png)
+
+Payment Request Page
+
+This page lists all the payment request operations in application.
+
+![Admin Pages](images/payment-request.png)
