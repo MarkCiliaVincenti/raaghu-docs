@@ -27,13 +27,13 @@ The following tools should be installed on your development machine.
 
 First, you need to install the ABP CLI using the following command:
 
-```json
+```shell
   dotnet tool install -g Volo.Abp.Cli
 ```
 
 If you've already installed, you can update it using the following command:
 
-```json
+```shell
   dotnet tool update -g Volo.Abp.Cli
 ```
 
@@ -41,7 +41,7 @@ If you've already installed, you can update it using the following command:
 
 In order to use ABP Commercial features, you need to login your account using the ABP CLI:
 
-```json
+```shell
 abp login username 
 ```
 
@@ -55,13 +55,13 @@ You can freely create a new account from the ABP Account web site. However, your
 
 First, you need to install the ABP Suite:
 
-```bash
+```shell
 abp suite install
 ```
 
 If you’ve already installed , you can update it:
 
-```bash
+```shell
   abp suite update
 ```
 
