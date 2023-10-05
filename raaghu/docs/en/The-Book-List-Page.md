@@ -58,8 +58,16 @@ Here we integrate a Data Table using a component RdsCompDataDable component havi
 
 code looks like as shown below
 ```javascript
-    <RdsCompDatatable classes="table__userTable" tableHeaders={tableHeaders} pagination={true} tableData={Data} onActionSelection={onActionSelection} recordsPerPage={5}
-    recordsPerPageSelectListOption={true}>`</RdsCompDatatable>`
+    <RdsCompDatatable
+        classes="table__userTable"
+        tableHeaders={tableHeaders}
+        pagination={true}
+        tableData={Data}
+        onActionSelection={onActionSelection}
+        recordsPerPage={5}
+        recordsPerPageSelectListOption={true}
+    >`
+    </RdsCompDatatable>`
 ```
 in RdsCompDataTable, we can add the neccessary data we want to show in tableData and following array of actions that you require as well as neccessary function using onActionSelection
 
