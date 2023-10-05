@@ -9,3 +9,7 @@
     --lpx-logo: url('/images/logo/leptonx/logo-dark.svg');
     --lpx-logo-icon: url('/images/logo/leptonx/icon.svg');
 }
+
+.abp-empty-layout .card{
+    margin: 0rem !important;
+}
