@@ -57,7 +57,7 @@ Run following command line to create a new Module, named BookStore on root folde
 Here we integrate a Data Table using a component RdsCompDataDable component having table headers and data corresponding to it.
 
 code looks like as shown below
-```shell
+```javascript
     <RdsCompDatatable classes="table__userTable" tableHeaders={tableHeaders} pagination={true} tableData={Data} onActionSelection={onActionSelection} recordsPerPage={5}
     recordsPerPageSelectListOption={true}>`</RdsCompDatatable>`
 ```
