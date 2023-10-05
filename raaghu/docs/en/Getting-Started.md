@@ -1,6 +1,6 @@
 # Getting Started
 
-This tutorial assumes that you've already purchased an [ABP Commercial license](https://commercial.abp.io/pricing) and have an active ABP Commercial account.
+This tutorial assumes that you've already purchased an  [(#heading-ids)ABP Commercial license](https://commercial.abp.io/pricing) and have an active ABP Commercial account.
 
 This document assumes that you refer to use raaghu-react Pages as the UI framework and Entity Framework Core as the database provider.
 
