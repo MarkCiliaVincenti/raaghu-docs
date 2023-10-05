@@ -13,7 +13,7 @@ ABP Suite is recommended way to create new solutions for the ABP Commercial
 Run the ABP Suite with the following command:
 
 ```shell
-  abp suite
+   abp suite
 ````
 
 * This command starts the ABP Suite and opens in your default browser:
@@ -31,7 +31,7 @@ Select the UI framework as raaghu-react, Database Provider, and other options ba
 Use the new command of the ABP CLI to create a new project:
 
 ```shell
-  abp new Acme.Bookstore -t app-pro
+   abp new Acme.Bookstore -t app-pro
 ```
 
 * \-t argument specifies the [startup template](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index) name. app-pro is the startup template that contains the essential [ABP Commercial Modules](https://commercial.abp.io/modules) pre-installed and configured for you.
