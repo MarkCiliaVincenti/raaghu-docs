@@ -13,3 +13,7 @@
 .abp-empty-layout .card{
     margin: 0rem !important;
 }
+
+#document-node-wrapper{
+    border: 0 !important;
+}
