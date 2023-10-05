@@ -56,7 +56,7 @@ You can freely create a new account from the ABP Account web site. However, your
 First, you need to install the ABP Suite:
 
 ```shell
-abp suite install
+  abp suite install
 ```
 
 If you’ve already installed , you can update it:
