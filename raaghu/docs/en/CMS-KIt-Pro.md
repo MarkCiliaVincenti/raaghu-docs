@@ -28,17 +28,13 @@ Existing Solutions
 
 If you want to add the CMS kit to your existing solution, you can use the ABP CLI add-module command:
 
-```
+```shell
  abp add-module Volo.CmsKit.Pro
 ```
 
-Bash
-
-Copy
-
 Open the GlobalFeatureConfigurator class in the Domain.Shared project and place the following code to the Configure method to enable all open-source and commercial features in the CMS Kit module.
 
-```
+```c#
   GlobalFeatureManager.Instance.Modules.CmsKit(cmsKit =>
                     {
                     cmsKit.EnableAll();});
@@ -48,9 +44,6 @@ Open the GlobalFeatureConfigurator class in the Domain.Shared project and place 
                     });
 ```
 
-C#
-
-Copy
 
 Alternatively, you can enable features individually, like cmsKit.Comments.Enable();.
 

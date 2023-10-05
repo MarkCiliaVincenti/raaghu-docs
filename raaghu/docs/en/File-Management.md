@@ -19,7 +19,7 @@ File Management module is based on the [BLOB Storing](https://docs.abp.io/en/abp
 
 You must set a BLOB provider for FileManagementContainer.
 
-```
+```C#
   Configure(options =>
             {
                 options.Containers.Configure(c =>
@@ -29,9 +29,6 @@ You must set a BLOB provider for FileManagementContainer.
                 });
 ```
 
-C#
-
-Copy
 
 Please check the [BLOB Storage Providers documentation](https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers) for more information about providers and how to use them.
 
