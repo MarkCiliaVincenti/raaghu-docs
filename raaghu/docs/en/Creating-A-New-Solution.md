@@ -12,9 +12,9 @@ ABP Suite is recommended way to create new solutions for the ABP Commercial
 
 Run the ABP Suite with the following command:
 
-```
+````
   abp suite
-```
+````
 
 * This command starts the ABP Suite and opens in your default browser:
 
