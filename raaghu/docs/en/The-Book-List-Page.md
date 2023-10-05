@@ -6,13 +6,13 @@ Github CLI
 
 Select a local Directory and run following command to download and output code using a local directory name where project is converted into zip
 
-```
+```json
  curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
 ```
 
 now, unzip file using following command
 
-```
+```json
     tar -xf (folder name).zip
 ```
 
@@ -20,7 +20,7 @@ now, unzip file using following command
 
 Run below code at root level of your project folder
 
-```
+```shell
    raaghu install-all
 ```
 
@@ -28,7 +28,7 @@ Run below code at root level of your project folder
 
 Run below code at root level of your project folder
 
-```
+```shell
     raaghu create:core
 ```
 
@@ -36,7 +36,7 @@ Run below code at root level of your project folder
 
 to create proxies, we run following command at root level
 
-```
+```shell
   raaghu create:proxy --url=https://raaghu-react.azurewebsites.net
 ```
 
@@ -44,7 +44,7 @@ to create proxies, we run following command at root level
 
 Run following command line to create a new Module, named BookStore on root folder and a Book page within it of React application
 
-```
+```shell
     raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
 ```
 
@@ -67,7 +67,7 @@ in RdsCompDataTable, we can add the neccessary data we want to show in tableData
 
 Now we integrate table headers in data table
 
-```
+```shell
 const tableHeaders = [
     {
         "displayName": "NAME",
@@ -144,7 +144,7 @@ const tableHeaders = [
 
 Add these builder cases inside BookSlice extra reducer
 
-```
+```shell
     builder.addCase(getBooksRequest.pending, (state) => {
         state.loading = true;
     });
@@ -160,7 +160,7 @@ Add these builder cases inside BookSlice extra reducer
 
 We now perform fetching data in Books Page and displaying it inside data table
 
-```
+```shell
     useEffect(() => {
         dispatch(getBooksRequest({}) as any);
     }, []);
