@@ -1,5 +1,35 @@
 /* Your Global Styles */
 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  body{
+    font-family: 'Poppins', sans-serif !important;
+  }
+
+  h1, h2, h3{
+    font-weight: 600 !important;
+  }
+
+  h1{
+    font-size: 40px !important;
+  }
+
+  h2{
+    font-size: 32px !important;
+  }
+
+  h3{
+    font-size: 28px !important;
+  }
+  
+  .docs-content-field a{
+    color: #721DEB !important;
+  }
+
+  p{
+    font-size: 16px !important;
+  }
+
 :root .lpx-theme-dim, :root .lpx-theme-dark {
     --lpx-logo: url('/images/logo/leptonx/logo-light.svg');
     --lpx-logo-icon: url('/images/logo/leptonx/icon.svg');
