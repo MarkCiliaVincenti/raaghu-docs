@@ -22,4 +22,4 @@ Raaghu design systems - React is compatible with ABP commercial license  and its
 
 ### Raaghu technology stack 
 
-![home(./images/home-2.png)
+![home](./images/home-2.png)
