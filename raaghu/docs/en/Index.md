@@ -1,21 +1,22 @@
-# Getting Started
+# Raaghu React documentation
 
-This tutorial assumes that you've already purchased an [ABP Commercial license](https://commercial.abp.io/pricing)and have an active ABP Commercial account.
+Raaghu design systems built using React 18, provides robust, modular architecture, fully compatible with ABP commercial.  
+It provides production ready end user application pages. Customizable dashboard templates, with 30 odd application pages, pre-defined themes, modules, End-to-end documentation.  
 
-This document assumes that you refer to use raaghu-react Pages as the UI framework and Entity Framework Core as the database provider.
 
----
+## Getting Started. 
 
-## Contents
-
-This tutorial explains how to **create and run** a new web application using the [application startup template](Application-Templates.html).
-
-1. [Setup your development environment](Setup-Your-Development-Environment.md)
-2. [Creating a new solution](Creating-A-New-Solution.md)
-3. [Running the solution](Running-The-Solution.md)
+This tutorial guides in creating & running a new web application using startup templates. 
 
 ---
 
-### See Also
+###  UI Frameworks. 
 
-- [Startup Templates](Startup-Template.md)
+Raaghu design systems - React is compatible with ABP commercial license  and its releases. 
+
+![home image](./images/home-1.png)
+
+
+### Raaghu technology stack 
+
+![home(./images/home-2.png)
