@@ -1,11 +1,11 @@
 {
   "items": [
     {
-      "text": "Getting Started",
+      "text": "Começando",
       "path": "Getting-Started.md",
       "items": [
         {
-          "text": "Setup Your Development Environment",
+          "text": "Configure seu ambiente de desenvolvimento",
           "path": "Setup-Your-Development-Environment.md"
         },
         {
@@ -13,29 +13,29 @@
           "path": "Creating-A-New-Solution.md"
         },
         {
-          "text": "Running the Solution",
+          "text": "Criando uma nova solução",
           "path": "Getting-Started-Running-Solution.md"
         }
       ]
     },
     {
-      "text": "Tutorials",
+      "text": "Tutoriais",
       "path": "Creating-The-Server-Side.md",
       "items": [
         {
-          "text": "Web Application Development",
+          "text": "Desenvolvimento de aplicações web",
           "path": "Getting-Started-Running-Solution.md",
           "items": [
             {
-              "text": "Creating Server Side",
+              "text": "Criando lado do servidor",
               "path": "Creating-The-Server-Side.md"
             },
             {
-              "text": "Book List Page",
+              "text": "Página da lista de livros",
               "path": "The-Book-List-Page.md"
             },
             {
-              "text": "Creating, Updating and Deleting Book",
+              "text": "Criando, atualizando e excluindo livro",
               "path": "Creating-Updating-And-Deleting-Book.md"
             }
           ]
@@ -43,43 +43,43 @@
       ]
     },
     {
-      "text": "GUIDES",
+      "text": "GUIAS",
       "path": "Customizing-The-Modules.md",
       "items": [
         {
-          "text": "Customizing the Modules",
+          "text": "Personalizando os Módulos",
           "path": "Customizing-The-Modules.md"
         },
         {
-          "text": "Identity Server Deployment",
+          "text": "Implantação do Servidor de Identidade",
           "path": "Identity-Server-Deployment.md"
         }
       ]
     },
     {
-      "text": "Samples",
+      "text": "Amostras",
       "path": "All-Samples.md",
       "items": [
         {
-          "text": "All Samples",
+          "text": "Todas as amostras",
           "path": "All-Samples.md"
         }
       ]
     },
     {
-      "text": "Startup Templates",
+      "text": "Modelos de inicialização",
       "path": "Startup-Template.md",
       "items": [
         {
-          "text": "Application Template",
+          "text": "Modelo de aplicativo",
           "path": "Application-Templates.md",
           "items": [
             {
-              "text": "Create Solution",
+              "text": "Criar solução",
               "path": "Creating-Solution.md"
             },
             {
-              "text": "Solution Structure",
+              "text": "Estrutura da Solução",
               "path": "Solution-Structure.md"
             }
           ]
@@ -87,35 +87,35 @@
       ]
     },
     {
-      "text": "Application Module",
+      "text": "Módulo de Aplicação",
       "path": "Overall.md",
       "items": [
         {
-          "text": "Overall",
+          "text": "Geral",
           "path": "Overall.md"
         },
         {
-          "text": "Account",
+          "text": "Conta",
           "path": "Account-Module.md"
         },
         {
-          "text": "Audit Logging",
+          "text": "Registro de auditoria",
           "path": "Audit-Logging.md"
         },
         {
-          "text": "Chat",
+          "text": "Bater papo",
           "path": "Chat-Module.md"
         },
         {
-          "text": "CMS Kit Pro",
+          "text": "Kit CMS Pró",
           "path": "CMS-KIt-Pro.md"
         },
         {
-          "text": "File Management",
+          "text": "Gerenciamento de arquivos",
           "path": "File-Management.md"
         },
         {
-          "text": "Forms",
+          "text": "Formulários",
           "path": "Forms.md"
         },
         {
@@ -123,7 +123,7 @@
           "path": "GDPR.md"
         },
         {
-          "text": "Identity",
+          "text": "Identidade",
           "path": "Identity.md"
         },
         {
@@ -131,11 +131,11 @@
           "path": "OpenIddict.md"
         },
         {
-          "text": "Langauge Management",
+          "text": "Gestão de Idiomas",
           "path": "Language-Management.md"
         },
         {
-          "text": "Payment",
+          "text": "Pagamento",
           "path": "Payment.md"
         },
         {
@@ -143,35 +143,35 @@
           "path": "SaaS.md"
         },
         {
-          "text": "Text Template Management",
+          "text": "Gerenciamento de modelos de texto",
           "path": "Text-Template-Management.md"
         }
       ]
     },
     {
-      "text": "UI Theme",
+      "text": "Tema da IU",
        "path": "UI-Theme.md"
     },
     {
-      "text": "React UI",
+      "text": "IU de reação",
       "path" : "Cutomization.md",
       "items": [
         {
-          "text": "Cutomization",
+          "text": "Costumização",
           "path": "Cutomization.md"
         },
         {
-          "text": "Components",
+          "text": "Componentes",
           "path": "Components.md"
         }
       ]
     },
      {
-      "text": "Release Information",
+      "text": "Liberar informações",
       "path": "Realse Notes.md",
       "items": [
         {
-          "text": "Realse Notes",
+          "text": "Notas de versão",
           "path": "Realse Notes.md"
         }
       ]
