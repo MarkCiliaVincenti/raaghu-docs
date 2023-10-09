@@ -1,328 +1,181 @@
 {
   "items": [
     {
-      "text": "Começando",
+      "text": "Getting Started",
+      "path": "Getting-Started.md",
       "items": [
         {
-          "text": "De Modelo de Inicialização",
-          "items": [
-            {
-              "text": "Aplicativo com MVC (Razor Pages) UI",
-              "path": "Getting-Started-AspNetCore-MVC-Template.md"
-            },
-            {
-              "text": "Aplicativo com Angular UI",
-              "path": "Getting-Started-Angular-Template.md"
-            }
-          ]
+          "text": "Setup Your Development Environment",
+          "path": "Setup-Your-Development-Environment.md"
         },
         {
-          "text": "De Projetos Vazios",
-          "items": [
-            {
-              "text": "Com Aplicativo ASP.NET Core Web",
-              "path": "Getting-Started-AspNetCore-Application.md"
-            },
-            {
-              "text": "Com Aplicativo Console",
-              "path": "Getting-Started-Console-Application.md"
-            }
-          ]
+          "text": "Creating a New Solution",
+          "path": "Creating-A-New-Solution.md"
+        },
+        {
+          "text": "Running the Solution",
+          "path": "Getting-Started-Running-Solution.md"
         }
       ]
     },
     {
-      "text": "Tutoriais",
+      "text": "Tutorials",
+      "path": "Creating-The-Server-Side.md",
       "items": [
         {
-          "text": "Desenvolvimento de Aplicações",
+          "text": "Web Application Development",
+          "path": "Getting-Started-Running-Solution.md",
           "items": [
             {
-              "text": "Com ASP.NET Core MVC UI",
-              "path": "Tutorials/AspNetCore-Mvc/Part-I.md"
+              "text": "Creating Server Side",
+              "path": "Creating-The-Server-Side.md"
             },
             {
-              "text": "Com Angular UI",
-              "path": "Tutorials/Angular/Part-I.md"
+              "text": "Book List Page",
+              "path": "The-Book-List-Page.md"
+            },
+            {
+              "text": "Creating, Updating and Deleting Book",
+              "path": "Creating-Updating-And-Deleting-Book.md"
             }
           ]
         }
       ]
     },
     {
-      "text": "CLI",
-      "path": "CLI.md"
-    },
-    {
-      "text": "Fundamentos",
+      "text": "GUIDES",
+      "path": "Customizing-The-Modules.md",
       "items": [
         {
-          "text": "Injeção de Dependência",
-          "path": "Dependency-Injection.md",
-          "items": [
-            {
-              "text": "Integração com Autofac",
-              "path": "Autofac-Integration.md"
-            }
-          ]
+          "text": "Customizing the Modules",
+          "path": "Customizing-The-Modules.md"
         },
         {
-          "text": "Sistema de Arquivos Virtual",
-          "path": "Virtual-File-System.md"
-        },
-        {
-          "text": "Localização",
-          "path": "Localization.md"
-        },
-        {
-          "text": "Manipulação de Exceção",
-          "path": "Exception-Handling.md"
-        },
-        {
-          "text": "Validação"
-        },
-        {
-          "text": "Autorização"
-        },
-        {
-          "text": "Armazenamento em Cache"
-        },
-        {
-          "text": "Auditoria"
-        },
-        {
-          "text": "Gerenciamento de Configurações"
+          "text": "Identity Server Deployment",
+          "path": "Identity-Server-Deployment.md"
         }
       ]
     },
     {
-      "text": "Eventos",
+      "text": "Samples",
+      "path": "All-Samples.md",
       "items": [
         {
-          "text": "Barramento de Eventos (local)"
-        },
+          "text": "All Samples",
+          "path": "All-Samples.md"
+        }
+      ]
+    },
+    {
+      "text": "Startup Templates",
+      "path": "Startup-Template.md",
+      "items": [
         {
-          "text": "Barramento de Eventos Distribuídos",
+          "text": "Application Template",
+          "path": "Application-Templates.md",
           "items": [
             {
-              "text": "Integração RabbitMQ"
+              "text": "Create Solution",
+              "path": "Creating-Solution.md"
+            },
+            {
+              "text": "Solution Structure",
+              "path": "Solution-Structure.md"
             }
           ]
         }
       ]
     },
     {
-      "text": "Serviços",
+      "text": "Application Module",
+      "path": "Overall.md",
       "items": [
         {
-          "text": "Serialização de Objetos"
+          "text": "Overall",
+          "path": "Overall.md"
         },
         {
-          "text": "Serialização JSON"
+          "text": "Account",
+          "path": "Account-Module.md"
         },
         {
-          "text": "Emailing"
+          "text": "Audit Logging",
+          "path": "Audit-Logging.md"
         },
         {
-          "text": "GUIDs"
+          "text": "Chat",
+          "path": "Chat-Module.md"
         },
         {
-          "text": "Threading"
+          "text": "CMS Kit Pro",
+          "path": "CMS-KIt-Pro.md"
         },
         {
-          "text": "Timing"
+          "text": "File Management",
+          "path": "File-Management.md"
+        },
+        {
+          "text": "Forms",
+          "path": "Forms.md"
+        },
+        {
+          "text": "GDPR",
+          "path": "GDPR.md"
+        },
+        {
+          "text": "Identity",
+          "path": "Identity.md"
+        },
+        {
+          "text": "OpenIddict",
+          "path": "OpenIddict.md"
+        },
+        {
+          "text": "Langauge Management",
+          "path": "Language-Management.md"
+        },
+        {
+          "text": "Payment",
+          "path": "Payment.md"
+        },
+        {
+          "text": "Saas",
+          "path": "SaaS.md"
+        },
+        {
+          "text": "Text Template Management",
+          "path": "Text-Template-Management.md"
         }
       ]
     },
     {
-      "text": "Múltiplos Inquilinos",
-      "path": "Multi-Tenancy.md"
+      "text": "UI Theme",
+       "path": "UI-Theme.md"
     },
     {
-      "text": "Desenvolvimento de Módulos",
+      "text": "React UI",
+      "path" : "Cutomization.md",
       "items": [
         {
-          "text": "Fundamentos",
-          "path": "Module-Development-Basics.md"
+          "text": "Cutomization",
+          "path": "Cutomization.md"
         },
         {
-          "text": "Módulos de plug-in"
-        },
-        {
-          "text": "Melhores práticas",
-          "path": "Best-Practices/Index.md"
+          "text": "Components",
+          "path": "Components.md"
         }
       ]
     },
-    {
-      "text": "Design Orientado a Domínio",
-      "path": "Domain-Driven-Design.md",
+     {
+      "text": "Release Information",
+      "path": "Realse Notes.md",
       "items": [
         {
-          "text": "Camada de Domínio",
-          "items": [
-            {
-              "text": "Entidades & Raízes Agregadas",
-              "path": "Entities.md"
-            },
-            {
-              "text": "Value Objects"
-            },
-            {
-              "text": "Repositórios",
-              "path": "Repositories.md"
-            },
-            {
-              "text": "Serviços de Domínio"
-            },
-            {
-              "text": "Especificações"
-            }
-          ]
-        },
-        {
-          "text": "Camada de Aplicação",
-          "items": [
-            {
-              "text": "Serviços de Aplicação",
-              "path": "Application-Services.md"
-            },
-            {
-              "text": "Objetos de Transferência de Dados"
-            },
-            {
-              "text": "Unidade de Trabalho"
-            }
-          ]
+          "text": "Realse Notes",
+          "path": "Realse Notes.md"
         }
       ]
-    },
-    {
-      "text": "ASP.NET Core",
-      "items": [
-        {
-          "text": "API",
-          "items": [
-            {
-              "text": "Controladores de API Automática",
-              "path": "AspNetCore/Auto-API-Controllers.md"
-            },
-            {
-              "text": "Clientes da API C # Dinâmica",
-              "path": "AspNetCore/Dynamic-CSharp-API-Clients.md"
-            }
-          ]
-        },
-        {
-          "text": "Interface de Usuário",
-          "items": [
-            {
-              "text": "Gerenciamento de Pacotes do Lado do Cliente",
-              "path": "AspNetCore/Client-Side-Package-Management.md"
-            },
-            {
-              "text": "Compactação & Minificação",
-              "path": "AspNetCore/Bundling-Minification.md"
-            },
-            {
-              "text": "Tag Helpers",
-              "path": "AspNetCore/Tag-Helpers/Index.md"
-            },
-            {
-              "text": "Widgets",
-              "path": "AspNetCore/Widgets.md"
-            },
-            {
-              "text": "Theming",
-              "path": "AspNetCore/Theming.md"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "text": "Acesso de Dados",
-      "items": [
-        {
-          "text": "Integração do Entity Framework Core",
-          "path": "Entity-Framework-Core.md",
-          "items": [
-            {
-              "text": "Integração do PostgreSQL",
-              "path": "Entity-Framework-Core-PostgreSQL.md"
-            }
-          ]
-        },
-        {
-          "text": "Integração do MongoDB",
-          "path": "MongoDB.md"
-        },
-        {
-          "text": "Integração do Dapper",
-          "path": "Dapper.md"
-        }
-      ]
-    },
-    {
-      "text": "Background",
-      "items": [
-        {
-          "text": "Trabalhos em Segundo Plano",
-          "path": "Background-Jobs.md",
-          "items": [
-            {
-              "text": "Integração do Hangfire",
-              "path": "Background-Jobs-Hangfire.md"
-            },
-            {
-              "text": "Integração do RabbitMQ",
-              "path": "Background-Jobs-RabbitMq.md"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "text": "Modelos de Inicialização",
-      "path": "Startup-Templates/Index.md",
-      "items": [
-        {
-          "text": "Aplicativo",
-          "path": "Startup-Templates/Application.md"
-        },
-        {
-          "text": "Módulo",
-          "path": "Startup-Templates/Module.md"
-        }
-      ]
-    },
-    {
-      "text": "Exemplos",
-      "items": [
-        {
-          "text": "Demonstração de Microsserviços",
-          "path": "Samples/Microservice-Demo.md"
-        }
-      ]
-    },
-    {
-      "text": "Módulos de Aplicação",
-      "path": "Modules/Index.md"
-    },
-    {
-      "text": "Arquitetura de Microsserviços",
-      "path": "Microservice-Architecture.md"
-    },
-    {
-      "text": "Testando"
-    },
-    {
-      "text": "Compilações Noturnas",
-      "path": "Nightly-Builds.md"
-    },
-    {
-      "text": "Guia de Contribuição",
-      "path": "Contribution/Index.md"
     }
+    
   ]
 }
