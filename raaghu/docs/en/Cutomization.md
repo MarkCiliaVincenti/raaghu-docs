@@ -1,5 +1,3 @@
-React UI
-========
 
 CUSTOMIZATION
 -------------
