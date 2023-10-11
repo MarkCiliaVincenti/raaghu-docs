@@ -4,7 +4,7 @@ namespace Volo.Docs
 {
     public class DocsUiOptions
     {
-        private string _routePrefix = "documents";
+        private string _routePrefix = "";
 
         /// <summary>
         /// Default value: "documents";
