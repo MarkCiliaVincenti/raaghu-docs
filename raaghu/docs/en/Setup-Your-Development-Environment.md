@@ -5,7 +5,7 @@ This tutorial assumes that you’ve already purchased an [ABP Commercial license
 
 This document assumes that you refer to use raaghu-react Pages as the UI framework and Entity Framework Core as the database provider.
 
-Setup development environment
+Setup Development Environment
 -----------------------------
 
 Let’s setup your development environment before creating the first project.
@@ -14,10 +14,10 @@ Let’s setup your development environment before creating the first project.
 
 The following tools should be installed on your development machine.
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (v17.3+) for Windows / [Visual Studio for Mac. 1](https://visualstudio.microsoft.com/vs/mac/)
+* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (v17.3+) for Windows / [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 * [.NET 7.0+](https://dotnet.microsoft.com/en-us/download/dotnet)
-* [Node v18](https://nodejs.org/en) or above
-* npm v8 and above or [Yarn v1.20+ (not v2) 2](https://classic.yarnpkg.com/en/docs/install#windows-stable).
+* [Node v18.18](https://nodejs.org/en) or above
+* npm v9.5 and above or [Yarn v1.20+ (not v2)](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 
 ### Install the ABP CLI
 
