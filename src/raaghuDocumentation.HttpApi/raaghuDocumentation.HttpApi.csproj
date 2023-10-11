@@ -21,8 +21,8 @@
     <PackageReference Include="Volo.Abp.Account.Pro.Admin.HttpApi" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.OpenIddict.Pro.HttpApi" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.LanguageManagement.HttpApi" Version="7.3.3" />
-    <PackageReference Include="Volo.Docs.Admin.HttpApi" Version="7.3.3" />
-    <PackageReference Include="Volo.Docs.HttpApi" Version="7.3.3" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Admin.HttpApi\Volo.Docs.Admin.HttpApi.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.HttpApi\Volo.Docs.HttpApi.csproj" />
     <PackageReference Include="Volo.Saas.Host.HttpApi" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.TextTemplateManagement.HttpApi" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.Gdpr.HttpApi" Version="7.3.3" />

@@ -71,3 +71,32 @@
 /* .ProjectName{
     background-image: url( './images/logo/leptonx/icon.svg' );
 } */
+
+
+.docs-second{
+  top: 17rem !important;
+}
+
+
+.resize-class{
+  height: 231px;
+    max-height: 100%
+}
+
+.bg-sec{
+  background-image: url(/images/logo/bg-new.png) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.bg-advertise{
+  background: linear-gradient(357deg, rgb(205 60 255 / 38%), rgb(150 75 255 / 30%), rgb(60 189 255 / 26%), rgb(255 255 255 / 50%));
+}
+
+.card-body .btn-primary {
+  color: #fff !important;
+    background-color: #721DEB !important;
+    border-color: #721DEB !important;
+    font-style: 15px !important;
+}

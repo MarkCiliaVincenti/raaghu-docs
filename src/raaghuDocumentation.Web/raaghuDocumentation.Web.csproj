@@ -40,8 +40,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="7.0.0" />
-    <PackageReference Include="Volo.Docs.Admin.Web" Version="7.3.3" />
-    <PackageReference Include="Volo.Docs.Web" Version="7.3.3" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Admin.Web\Volo.Docs.Admin.Web.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Web\Volo.Docs.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>

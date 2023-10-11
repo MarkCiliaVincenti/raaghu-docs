@@ -30,8 +30,8 @@ public class raaghuDocumentationMenuContributor : IMenuContributor
         //Home
         context.Menu.AddItem(
             new ApplicationMenuItem(
-                raaghuDocumentationMenus.Home,
-                l["Menu:Home"],
+                raaghuDocumentationMenus.Documents,
+                l["Menu:Documents"],
                 "~/",
                 icon: "fa fa-home",
                 order: 1

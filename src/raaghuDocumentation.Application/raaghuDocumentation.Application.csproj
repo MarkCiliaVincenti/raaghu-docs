@@ -17,8 +17,8 @@
     <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="7.3.3" />
-    <PackageReference Include="Volo.Docs.Admin.Application" Version="7.3.3" />
-    <PackageReference Include="Volo.Docs.Application" Version="7.3.3" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Admin.Application\Volo.Docs.Admin.Application.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Application\Volo.Docs.Application.csproj" />
     <PackageReference Include="Volo.Saas.Host.Application" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.AuditLogging.Application" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.Identity.Pro.Application" Version="7.3.3" />

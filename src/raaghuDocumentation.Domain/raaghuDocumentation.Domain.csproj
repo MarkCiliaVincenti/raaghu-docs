@@ -25,7 +25,7 @@
     <PackageReference Include="Volo.Abp.BlobStoring.Database.Domain" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.Identity.Pro.Domain" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.LanguageManagement.Domain" Version="7.3.3" />
-    <PackageReference Include="Volo.Docs.Domain" Version="7.3.3" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Domain\Volo.Docs.Domain.csproj" />
     <PackageReference Include="Volo.Saas.Domain" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.TextTemplateManagement.Domain" Version="7.3.3" />
     <PackageReference Include="Volo.Abp.Commercial.SuiteTemplates" Version="7.3.3" />
