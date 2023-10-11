@@ -9,7 +9,7 @@ Part 1: Creating Server Side
 Developed with utilization of following technologies, this tutorial series will guide you in constructing an ABP Commercial application named Acme.BookStore, which functions as a tool for managing a catalogue of books and their corresponding authors.
 
 * **Entity Framework Core** as database provider
-* **Raghu** as a React UI Framework
+* **Raaghu** as a React UI Framework
 
 ### The Next Part
 
