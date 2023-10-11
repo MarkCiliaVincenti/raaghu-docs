@@ -17,13 +17,13 @@ The following tools should be installed on your development machine.
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (v17.3+) for Windows / [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 * [.NET 7.0+](https://dotnet.microsoft.com/en-us/download/dotnet)
 * [Node v18.18](https://nodejs.org/en) or above
-* npm v9.5 and above or [Yarn v1.20+ (not v2)](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+* [npm v9.5](https://www.npmjs.com/package/npm) and above or [Yarn v1.20+ (not v2)](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 
 ### Install the ABP CLI
 
 [ABP CLI](https://docs.abp.io/en/abp/latest/CLI) is a command line interface that is used to automate some common tasks for ABP based solutions.
 
-[ABP CLI](https://docs.abp.io/en/abp/latest/CLI) is a free & open source tool for the ABP framework. It is also used for ABP Commercial application development.
+[ABP CLI](https://docs.abp.io/en/abp/latest/CLI) is a free & open source tool for the ABP Framework. It is also used for ABP Commercial application development.
 
 First, you need to install the ABP CLI using the following command:
 
@@ -47,7 +47,7 @@ abp login username
 
 It will ask a password, so you must enter the password of your account.
 
-You can freely create a new account from the ABP Account web site. However, your account should be registered to an organization as a developer to be able to use the ABP Commercial. If your company has an ABP Commercial license, ask your manager to add your account to the developer list of the organization.
+You can freely create a new account from the [ABP Account](https://account.abp.io/Account/Login) website. However, your account should be registered to an organization as a developer to be able to use the ABP Commercial. If your company has an ABP Commercial license, ask your manager to add your account to the developer list of the organization.
 
 ### Install the ABP Suite
 
