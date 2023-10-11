@@ -14,6 +14,16 @@ The solution is configured to use Entity Framework Core with MS SQL Server by de
 
 EF Core supports [various ](https://learn.microsoft.com/en-us/ef/core/providers/)database providers and you can use any supported DBMS. See [the Entity Framework integration document](https://docs.abp.io/en/abp/latest/Entity-Framework-Core) to learn how to [switch to another DBMS](https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS) if you need later.
 
+### Cors Origins
+
+Check the CorsOrigins in the **appsettings.json** file under the .Web project.
+
+````json
+ "CorsOrigins": "https://*.abp_react_7_3.com,http://localhost:4200,http://localhost:8080",
+````
+The CorsOrigins setting defines the allowed origins for Cross-Origin Resource Sharing (CORS). This setting allows requests from the specified origins. 
+In this configuration, 'http://localhost:8080' is included to allow requests from a local development server, typically used for development and testing purposes.
+
 ### Database Migrations
 
 The solution uses the [Entity Framework Core Code First Migrations.](https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli) It comes with a **.DbMigrator** console application which **applies the migrations** and also **seeds the initial data.** It is useful on **development** as well as on **production** environment.
