@@ -29,7 +29,6 @@ jobs:
       - name: install libs
         shell: pwsh
         run: abp install-libs
-        working-directory: aspnet-core
 
       - uses: microsoft/variable-substitution@v1
         with:
