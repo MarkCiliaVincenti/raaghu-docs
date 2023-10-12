@@ -1,11 +1,3 @@
-
-COMPONENTS
-==========
-
-Elemnets and Components used in abp-raaghu-react are reusable and if you want to use the components in any module, one can refer to the list of the components used in the storybook link [https://storybookreact.raaghu.io/](https://storybookreact.raaghu.io/)
-
-![raaghu components](./images/storybook-component.png)
-
 ### Storybook 
 
 Through the **storybook** you can visualize and navigate around the features of the raaghu. Snippets for the elements allow you to test and design your UI faster and efficiently.
