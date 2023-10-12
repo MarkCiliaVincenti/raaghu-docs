@@ -38,7 +38,7 @@ Default.args = {
  
 So take the example as button element. create the **button.stories** file.
 
- ![stories file image]()
+ ![stories file image](images/storybook-button.png)
 
 Replace MyComponent with the actual name of your component. This example assumes your component is named MyComponent.
 
@@ -113,5 +113,6 @@ Disable.args = {
 
 There is control pannel in storybook UI. It will show the multiple control.
 
+![control pannel](images/storybook-control.png)
 
 
