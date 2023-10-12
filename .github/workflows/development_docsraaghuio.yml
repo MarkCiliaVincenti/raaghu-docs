@@ -29,6 +29,7 @@ jobs:
       - name: install libs
         shell: pwsh
         run: abp install-libs
+        working-directory: src
 
       - uses: microsoft/variable-substitution@v1
         with:
@@ -49,7 +50,7 @@ jobs:
         working-directory: src/raaghuDocumentation.DbMigrator
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/db
 
-      - name: powershell
+      - name: PowerShell
         shell: pwsh
         run: dotnet raaghuDocumentation.DbMigrator.dll
         working-directory: ${{env.DOTNET_ROOT}}/db
