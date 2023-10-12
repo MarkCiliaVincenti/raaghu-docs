@@ -20,7 +20,7 @@ jobs:
           include-prerelease: false
 
       - name: install SSL
-        working-directory: aspnet-core/src/raaghuDocumentation.Web
+        working-directory: src/raaghuDocumentation.Web
         run: dotnet dev-certs https -v -ep authserver.pfx -p c4c2a05a-e4d0-484c-8273-cb4808b3877f
         
       - name: install abp cli
@@ -43,11 +43,11 @@ jobs:
           # Redis.Configuration: ${{ secrets.REDIS }}
           
       - name: dotnet publish
-        working-directory: aspnet-core/src/raaghuDocumentation.Web
+        working-directory: src/raaghuDocumentation.Web
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: DB Migration
-        working-directory: aspnet-core/src/raaghuDocumentation.DbMigrator
+        working-directory: src/raaghuDocumentation.DbMigrator
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/db
 
       - name: powershell
