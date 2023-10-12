@@ -1,7 +1,6 @@
 # Raaghu React Theme
 
 **Raaghu React Theme** is pre-installed in the Source code. So, no need to manually install it.
-npm package is directly installed in project level as you seen in root level **package.json** file and inside raaghumfe folder.
 
 ![package](images/raaghu-react-theme-package.png)
 
