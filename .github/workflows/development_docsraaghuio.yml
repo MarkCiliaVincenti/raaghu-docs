@@ -40,7 +40,6 @@ jobs:
           App.HealthCheckUrl: ${{ secrets.HEALTH_CHECK }}
           AuthServer.Authority: ${{ secrets.APP_SELFURL_ABP }}
           OpenIddict.Applications.raaghuDocumentation_Web.RootUrl: ${{ secrets.APP_SELFURL_ABP }}
-          # Redis.Configuration: ${{ secrets.REDIS }}
           
       - name: dotnet publish
         working-directory: src/raaghuDocumentation.Web
