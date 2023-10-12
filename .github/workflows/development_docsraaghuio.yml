@@ -1,12 +1,9 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - docsraaghuio
+name: Build and deploy docsraaghuio
 
 on:
-  push:
-    branches:
-      - development
   workflow_dispatch:
 
 jobs:
@@ -20,13 +17,43 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '7.x'
-          include-prerelease: true
+          include-prerelease: false
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
+      - name: install SSL
+        working-directory: aspnet-core/src/raaghuDocumentation.Web
+        run: dotnet dev-certs https -v -ep authserver.pfx -p c4c2a05a-e4d0-484c-8273-cb4808b3877f
+        
+      - name: install abp cli
+        run: dotnet tool install -g Volo.Abp.Cli --version 7.3.3 
+        
+      - name: install libs
+        shell: pwsh
+        run: abp install-libs
+        working-directory: aspnet-core
 
+      - uses: microsoft/variable-substitution@v1
+        with:
+          files: '**/appsettings.json'
+        env:
+          ConnectionStrings.Default: ${{ secrets.CONNECTIONSTRINGS_DEFAULT_ABP }}
+          App.SelfUrl: ${{ secrets.APP_SELFURL_ABP }}
+          App.HealthCheckUrl: ${{ secrets.HEALTH_CHECK }}
+          AuthServer.Authority: ${{ secrets.APP_SELFURL_ABP }}
+          OpenIddict.Applications.raaghuDocumentation_Web.RootUrl: ${{ secrets.APP_SELFURL_ABP }}
+          # Redis.Configuration: ${{ secrets.REDIS }}
+          
       - name: dotnet publish
+        working-directory: aspnet-core/src/raaghuDocumentation.Web
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+
+      - name: DB Migration
+        working-directory: aspnet-core/src/raaghuDocumentation.DbMigrator
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/db
+
+      - name: powershell
+        shell: pwsh
+        run: dotnet raaghuDocumentation.DbMigrator.dll
+        working-directory: ${{env.DOTNET_ROOT}}/db
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
