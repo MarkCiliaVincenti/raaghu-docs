@@ -5,4 +5,4 @@ ABP Commercial provides official themes for ABP Commercial. You can use these th
 
 * [Lepton](https://docs.abp.io/en/commercial/7.0/themes/lepton/index)
 * [LeptonX](https://docs.abp.io/en/commercial/7.0/themes/lepton-x/index)
-* [Raaghu-React](Account-Module.md)
+* [Raaghu-React](Raaghu-theme.md)
