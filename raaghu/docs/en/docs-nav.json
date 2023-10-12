@@ -153,6 +153,10 @@
        "path": "UI-Theme.md"
     },
     {
+          "text": "Storybook",
+          "path": "Components.md"
+    },
+    {
       "text": "React UI",
       "path" : "Cutomization.md",
       "items": [
