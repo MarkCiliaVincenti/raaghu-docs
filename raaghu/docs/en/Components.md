@@ -110,9 +110,21 @@ Disable.args = {
     size: "medium",
 };
 ```
+### Control
 
-There is control pannel in storybook UI. It will show the multiple control.
+Control allows you to tweak and customize the properties or props of a component in Storybook without modifying the source code. 
+For a button component, you can use controls to change its text, color, size, and other relevant properties. 
+This is particularly helpful for testing different configurations and states of your components.
+
+There is **control** pannel in storybook UI. It will show the multiple control.
 
 ![control pannel](images/storybook-control.png)
 
+### DOCS
+Documentation in Storybook is often generated using addons like @storybook/addon-docs. 
+It allows you to write documentation for your components directly within your story 
+files using a combination of Markdown and TSX. This documentation can be accessed from the Storybook interface,
+making it easier for developers to understand how to use your components.
+
+![docs](images/storybook-docs.png)
 
