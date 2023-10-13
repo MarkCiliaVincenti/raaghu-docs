@@ -1,8 +1,8 @@
-# criando uma nova ⁇
+# Criando uma nova solução
 ## crie um novo projeto
 Há duas formas de ⁇  um novo projeto: BP Suite e BP LI
-### usando amp suíte para ⁇  um novo projeto.
-ABP Suite é recomendada maneira de ⁇  novas ⁇  para o BP Comercial
+### Usando o ABP Suite para criar um novo projeto.
+ABP Suite é a forma recomendada para criar novas soluções para o ABP Comercial
 
 Execute o Suite BP com o seguinte comando:
 ```bash
@@ -13,7 +13,7 @@ Execute o Suite BP com o seguinte comando:
 
 ![Criar uma nova ⁇](./images/createANewSol.png "")
 
-Clique no Criar um novo ⁇  de ⁇  e preencha o formulário modal:
+Este comando inicia o ABP Suite e abre em seu navegador padrão:
 
 ![Criar uma nova ⁇  para a forma modal](./images/createSol.png "createSol")
 
