@@ -5,9 +5,9 @@ Há duas formas de ⁇  um novo projeto: BP Suite e BP LI
 ABP Suite é recomendada maneira de ⁇  novas ⁇  para o BP Comercial
 
 Execute o Suite BP com o seguinte comando:
-
+```bash
        abp suite
-
+```
 
 - Este comando inicia a ⁇ te BP e abre no seu navegador padrão:
 
@@ -20,9 +20,9 @@ Clique no Criar um novo ⁇  de ⁇  e preencha o formulário modal:
 ⁇  o framework UI como raaghu-react, Database Provider, e outras ⁇  com base em suas ⁇ , em seguida, clique no ⁇  Of
 ### usando o cli amplificador para ⁇  um novo projeto
 Use o novo comando do BP LI para ⁇  um novo projeto:
-
+```bash
        abp new Acme.Bookstore -t app-pro
-
+```
 
 - -t argumento especifica o[](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index "")[startup templateABP Módulos comerciais](https://commercial.abp.io/modules "")Nome . app-pro é o modelo de inicialização que ⁇  o essencial pré-instalado e configurado para você.
 - Podemos também usar um nível diferente de espaços de nomes; por exemplo. Livraria, Acme.Bookstore ou Came.Retail.Bookstore.
