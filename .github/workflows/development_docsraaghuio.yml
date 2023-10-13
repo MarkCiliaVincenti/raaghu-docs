@@ -45,6 +45,9 @@ jobs:
         working-directory: src/raaghuDocumentation.Web
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
+      - name: Zip artifact for deployment
+        run: zip -r release.zip ${{ env.DOTNET_ROOT }}/myapp/*
+
       - name: DB Migration
         working-directory: src/raaghuDocumentation.DbMigrator
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/db
@@ -58,7 +61,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
