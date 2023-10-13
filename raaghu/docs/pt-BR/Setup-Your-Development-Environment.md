@@ -19,17 +19,18 @@ Les outils suivants doivent être installés sur votre machine de développement
 
 Tout d'abord, vous devez installer l'IAP à l'aide du commandement suivant :
 
+```bash
       dotnet tool install -g Volo.Abp.Cli
-
+```
 Si vous avez déjà installé, vous pouvez le mettre à jour à l'aide de la commande suivante :
-
+```bash
       dotnet tool update -g Volo.Abp.Cli
-
+```
 ### Inscrire un registre à votre compte
 Afin d'utiliser les caractéristiques commerciales de BP, vous devez loger votre compte à l'aide de l'IPP :
-
+```bash
     abp login username 
-
+```
 Il vous demandera un mot de passe, de sorte que vous devez entrer le mot de passe de votre compte.
 
 Vous pouvez créer librement un nouveau compte à partir de[Compte BP](https://account.abp.io/Account/Login "")site Web. Toutefois, votre compte devrait être inscrit à un organisme en tant que développeur pour pouvoir utiliser le BP Commercial. Si votre entreprise a une licence commerciale BP, demandez à votre gestionnaire d'ajouter votre compte à la liste des promoteurs de l'organisation.
@@ -37,13 +38,13 @@ Vous pouvez créer librement un nouveau compte à partir de[Compte BP](https://a
 [Bureau BP](https://docs.abp.io/en/commercial/7.2/abp-suite/index "")C'est une demande qui vise à vous aider à votre développement.
 
 Tout d'abord, vous devez installer la suite BP :
-
+```bash
       abp suite install
-
+```
 Si vous avez déjà installé, vous pouvez le mettre à jour :
-
+```bash
       abp suite update
-
+```
 ### prochaine étape
 
 - [Créer une nouvelle solution](Creating-A-New-Solution.md "")
