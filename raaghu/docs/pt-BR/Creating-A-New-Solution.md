@@ -1,40 +1,40 @@
-# Création d'une nouvelle solution
-## Création d'un nouveau projet
-Il y a deux façons de créer un nouveau projet : BP Suite et BP LI
-### Utiliser une série d'amplification pour créer un nouveau projet.
-ABP Suite est recommandé pour créer de nouvelles solutions pour le BP Commercial
+# criando uma nova ⁇
+## crie um novo projeto
+Há duas formas de ⁇  um novo projeto: BP Suite e BP LI
+### usando amp suíte para ⁇  um novo projeto.
+ABP Suite é recomendada maneira de ⁇  novas ⁇  para o BP Comercial
 
-Runir la suite BP avec la commande suivante :
+Execute o Suite BP com o seguinte comando:
 
        abp suite
 
 
-- Cette commande commence la suite BP et s'ouvre dans votre navigateur par défaut :
+- Este comando inicia a ⁇ te BP e abre no seu navegador padrão:
 
-![Créer une nouvelle solution](./images/createANewSol.png "")
+![Criar uma nova ⁇](./images/createANewSol.png "")
 
-Cliquez sur le bouton Créer un nouveau bouton de solution et remplissez le formulaire modal :
+Clique no Criar um novo ⁇  de ⁇  e preencha o formulário modal:
 
-![Créer une nouvelle solution pour la forme modale](./images/createSol.png "createSol")
+![Criar uma nova ⁇  para a forma modal](./images/createSol.png "createSol")
 
-Choisissez le cadre de UI comme « raaghu-réact », Database Provider et d'autres options fondées sur vos préférences, puis cliquez sur le bouton « De »
-### Utiliser la falaise d'amplification pour créer un nouveau projet
-Utiliser la nouvelle commande du BP LI pour créer un nouveau projet :
+⁇  o framework UI como raaghu-react, Database Provider, e outras ⁇  com base em suas ⁇ , em seguida, clique no ⁇  Of
+### usando o cli amplificador para ⁇  um novo projeto
+Use o novo comando do BP LI para ⁇  um novo projeto:
 
        abp new Acme.Bookstore -t app-pro
 
 
-- -t l'argument spécifie[gabarit de démarrage](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index "")nom. app-pro est le modèle de démarrage qui contient le modèle essentiel.[BP Modules commerciaux](https://commercial.abp.io/modules "")pré-installés et configurés pour vous.
-- Nous pouvons également utiliser un niveau différent de lieux de noms, p. ex. Bookstore, Acme.Bookstore ou Came.Retail.Bookstore.
+- -t argumento especifica o[](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index "")[startup templateABP Módulos comerciais](https://commercial.abp.io/modules "")Nome . app-pro é o modelo de inicialização que ⁇  o essencial pré-instalado e configurado para você.
+- Podemos também usar um nível diferente de espaços de nomes; por exemplo. Livraria, Acme.Bookstore ou Came.Retail.Bookstore.
 
-## thème
-### Thèmes raaghu-thèmes
-Un nouveau thème, moderne et stylish raaghu avec différentes options de couleur, c’est le thème le plus récent. Vous pouvez choisir une des trois options Dark, Light et Semi Dark.
-### ⁇  les commandements et les options d'amplification
-[Document de l'IAP](https://docs.abp.io/en/abp/latest/CLI "")couvre tous les commandements et toutes les options disponibles pour l'IAPP. La principale différence pour le BP Commercial est le nom du modèle. Voir[BP Modèles de démarrage commercial](https://docs.abp.io/en/commercial/7.2/startup-templates/index "")document pour d'autres modèles commerciaux.
-### la structure de la solution
-La solution a une structure stratifiée ( basée sur[Conception des conducteurs de champ](https://docs.abp.io/en/abp/Domain-Driven-Design "")) et contient des projets d'essais d'intégration. Voir[document de structure de la solution](https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure "")pour comprendre la structure de la solution en détails.
-### prochaine étape
+## tema
+### raaghu-temas
+Um novo, moderno e elegante tema raaghu com diferentes ⁇  de cores, é o tema mais novo. Você pode ⁇  uma de 3 ⁇  Escura, Luz e Semi Escuro.
+### comandos &amp;amp; ⁇  de cli
+[documento BP LI](https://docs.abp.io/en/abp/latest/CLI "")cobre todos os comandos e ⁇  ⁇  para o BP LI. A principal diferença para o BP Comercial é o nome do modelo. [Modelos de inicialização comercial BP](https://docs.abp.io/en/commercial/7.2/startup-templates/index "")documento para outros modelos comerciais.
+### a estrutura de ⁇
+A ⁇  tem uma estrutura em camadas (baseada na[Design Driven de Domínio](https://docs.abp.io/en/abp/Domain-Driven-Design "")) e ⁇  projetos de teste de unidade &amp; ⁇ . [documento de estrutura de ⁇](https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure "")para ⁇  a estrutura de ⁇  em detalhes.
+### próximo passo
 
-- [Runir la solution](Getting-Started-Running-Solution.md "")
+- [Executando a ⁇](Getting-Started-Running-Solution.md "")
 
