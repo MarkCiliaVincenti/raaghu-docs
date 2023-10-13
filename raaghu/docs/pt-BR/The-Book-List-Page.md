@@ -12,7 +12,7 @@ agora, até o arquivo usando o seguinte comando
 Execute o código abaixo no nível raiz da pasta do seu projeto
 ```bash
       raaghu install-all
-``
+```
 ### instalar amp-react-core
 Execute o código abaixo no nível raiz da pasta do seu projeto
 ```bash
