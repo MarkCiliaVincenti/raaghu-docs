@@ -1,37 +1,37 @@
-# tema de reagem de raaghu
-**Raghu React Theme está pré-instalado no código fonte. ⁇ , não é preciso instalá-lo imediatamente. npm package é ⁇  diretamente no nível do projeto como você ⁇  no arquivo root level.son e dentro da pasta raaghumfe.**
-
+# Tema de reação Raaghu
+O tema **Raaghu React** está pré-instalado no código-fonte. Portanto, não há necessidade de instalá-lo manualmente. O pacote npm é instalado diretamente no nível do projeto, como você pode ver no arquivo **package.json** de nível raiz e dentro da pasta raaghumfe.
+```bash
     npm i raaghu-react-themes
-
+```
 ![⁇](images/raaghu-react-theme-package.png "")
 # customize raaghu reage tema
 ### como usar raaghu-react-temas
-obter código fonte do repositório, colocar no ⁇  de nível raiz do projeto.
+obtenha o código-fonte do repositório e coloque-o no diretório raiz do projeto.
 
 Na pasta seguinte, você vai encontrar todo o Raghu React Theme.
 
 ![estrutura da pasta](images/raaghu-theme-folder.png "")
 ### nível do projeto
-Passos a seguir se você deseja personalizar css , cor-variáveis , ⁇  novas classes de acordo com seu tema personalizar.
+Passos a seguir se você deseja customizar css, color-variables, adicionando novas classes de acordo com seu tema customizado.
 
 No nível da raiz você vai ver a pasta raaghu-me dentro que ir para
-
+```json
     rds-pages &gt; host &gt; src &gt; App.scss
-
+```
 você vai conseguir ver a linha abaixo
-
+```json
     @import "../../../../raaghu-react-themes/src/styles/default.scss";
-
+```
 ![arquivo de aplicativo](images/raaghu-react-theme-app.png "")
 
-usando a linha acima você pode ⁇  a pasta raaghu-react-themes como você está adicionando todas as coisas relacionadas temas através do arquivo default.css no tema que é por isso que estamos apontando para o arquivo default.css.
+usando a linha acima, você pode acessar a pasta raaghu-react-themes enquanto aplica todas as coisas relacionadas aos temas por meio do arquivo default.scss no tema, é por isso que estamos apontando para o arquivo default.scss.
 
 Dentro de raaghu-react-temas você vai conseguir ver duas pastas como Public e src![estrutura da pasta](images/raaghu-theme-folder.png "")
 
-Se você ⁇  fazer ⁇  para ⁇  você pode ir para a pasta de ⁇  dentro da pasta pública -
+Se você quiser fazer alterações nas fontes, você pode ir para a pasta de fontes dentro da pasta pública -
 
 ![⁇  de ⁇](images/raaghu-react-public.png "")
 
-Se você ⁇  personalizar o elemento css para a ⁇ , você pode ir para a pasta de estilos dentro da pasta src -
+Se você deseja personalizar o elemento css para o aplicativo, você pode ir para a pasta estilos dentro da pasta src -
 
 ![projeto css](images/raaghu-theme-style.png "")
