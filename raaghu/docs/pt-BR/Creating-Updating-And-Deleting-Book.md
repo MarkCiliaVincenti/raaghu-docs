@@ -1,14 +1,15 @@
-# parte 3: criação, atualização e ⁇  do livro
+# Parte 3: Criando, Atualizando e Excluindo Livro
 ## criando um novo livro -
-Para ⁇  um novo livro, vamos ⁇  um novo componente ⁇  RdsCompBookForm. Executar código abaixo na pasta root
+Para criar um novo livro, criaremos um novo componente chamado RdsCompBookForm. Execute o código abaixo na pasta raiz
 ```bash
-        raaghu create:component --name=rds-comp-book-form
+   raaghu create:component --name=rds-comp-book-form
 ```
-Ir para o ⁇  seguinte e realizar html ⁇
+Vá para o seguinte caminho e execute operações HTML
 
     &lt;project path&gt;\raaghu-components\src\rds-comp-book-form
 
-Adicionar o seguinte código no arquivo de fatia e ⁇  a ⁇  do construtor em extra ⁇  ⁇  aos fetchbooks
+Adicione o seguinte código no arquivo de fatia e adicione o construtor case no redutor extra semelhante aos fetchbooks
+
 ```json
       export const postNewBook = createAsyncThunk(
                 "book/postNewBook",
@@ -16,7 +17,7 @@ Adicionar o seguinte código no arquivo de fatia e ⁇  a ⁇  do construtor em 
                            return result
                  } ) } );
 ```
-Aqui, trazemos um ⁇  de um Novo Livro usando RdsButton e, clicando, obtemos diferentes ⁇  de um formulário dentro de um RdsOffcanvas
+Aqui trazemos um botão de um Novo Livro usando RdsButton e ao clicar obtemos diferentes parâmetros de um formulário dentro de um RdsOffcanvas
 
 ```json
         <rdsoffcanvas offcanvasbutton="{`<div">`
@@ -35,7 +36,7 @@ Aqui, trazemos um ⁇  de um Novo Livro usando RdsButton e, clicando, obtemos di
         `</rdsoffcanvas>`
 ```
 
-Agora ⁇  esta função dentro do componente do livro
+Agora adicione esta função dentro do componente book
 
 ```json
        const onNewCreate = (datafromcomponent: any) =&gt; {
@@ -77,11 +78,11 @@ Agora ⁇  esta função dentro do componente do livro
 ```
 
 ### actualizando um novo livro -
-Defina as ações para Editar na forma de um array como ⁇  abaixo
+Defina as ações para Editar na forma de um array conforme mostrado abaixo
 ```json
         const actions = [{ id: "edit", displayName: t("Edit"), offId: "BookEdit"}]
 ```
-Atualizar a ⁇  usando ações usadas na ⁇  de dados. ⁇  de dados atualizadas vai parecer
+Atualize a tabela usando ações usadas na tabela de dados. A tabela de dados atualizada será semelhante a
 ```json
     &lt;RdsCompDatatable classes="table__userTable" tableHeaders={tableHeaders} pagination={true}
         tableData={Data} actions={actions}onActionSelection={onActionSelection} recordsPerPage={5}  recordsPerPageSelectListOption={true}&gt;`&lt;/RdsCompDatatable &gt;`
@@ -105,7 +106,7 @@ Adicionar o seguinte código de corte dentro do arquivo de Slice e ⁇  casos de
                 }
         );
 ```
-Adicionar estes casos de construtor dentro BookSlice extra ⁇
+Adicione esses casos de construtor dentro do redutor extra BookSlice
 ```json
         builder.addCase(putBooksRequest.pending, (state) =&gt; {
             state.loading = true;
@@ -184,12 +185,12 @@ Adicionar propriedade de RdsOffcanvas elemento abaixo RdsCompDatable
         `</rdsoffcanvas>`
 ```
 ### excluindo um novo livro –
-⁇  a função Editar em Book Page
+Adicionar função de edição na página do livro
 ```json
     const actions = [{ id: "Delete", displayName: t("Delete"), modalId: "bookDel" }]
 ```                                 ]
 
-Agora adicionamos um arquivo de corte usado para Apagar a ⁇
+Agora adicionamos um arquivo de fatia usado para a funcionalidade Excluir
 ```json
        export const deleteBooksRequest = createAsyncThunk(
         'book/deleteBooksRequest',
@@ -204,7 +205,7 @@ Agora adicionamos um arquivo de corte usado para Apagar a ⁇
                 }
         );
 ```
-Adicionar estes casos de construtor dentro BookSlice extra ⁇
+Adicione esses casos de construtor dentro do redutor extra BookSlice
 ```json
         builder.addCase(deleteBooksRequest.pending, (state) =&gt; {
             state.loading = true;
@@ -218,8 +219,8 @@ Adicionar estes casos de construtor dentro BookSlice extra ⁇
             state.error = action.error.message || "Something went wrong";
         });
 ```
-Integramos um componente ⁇  RdsCompAlertPopup para ⁇  alerta durante a ⁇  de uma lista de livros
+Integramos um componente chamado RdsCompAlertPopup para exibir alerta durante a exclusão de uma lista de livros
 ```json
         <rdscompalertpopup alertid="{&quot;bookDel&quot;}" onsuccess="{onDeleteHandler}"></rdscompalertpopup>
 ```
-Adicionar função de ⁇  em Book Page
+Adicionar função de exclusão na página do livro
