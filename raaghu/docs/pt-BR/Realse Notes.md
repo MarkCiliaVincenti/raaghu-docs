@@ -1,102 +1,102 @@
-# notas de lançamento
-### lançamento 7.3 (compatível com amp comercial 7.3)
+# Notas de versão
+### Versão 7.3 (compatível com o comercial ABP 7.3)
 
-- Adicionou uma geração de páginas CRU Baseada em Linha de Comando para diferentes ⁇ , como ⁇  one-to-one, one-to-many e muitos-to-many.
-- ⁇  ⁇  e correções para a versão 7.2.
+- Adicionada uma geração de página CRUD baseada em linha de comando para diferentes relacionamentos, como relacionamentos um para um, um para muitos e muitos para muitos.
+- Muitas melhorias e correções para a versão 7.2.
 
-### lançamento 7.2 (compatível com amp comercial 7.2)
+### Versão 7.2 (compatível com comercial ABP 7.2)
 
-- Adicionado ⁇  em menus de ⁇  lateral para Tenant e ⁇
-- ⁇  ⁇  e correções para a versão 7.2.
-- Integração do ⁇  de bate-papo para diferentes usuários.
+- Adicionada permissão nos menus de navegação lateral para locatário e usuário.
+- Muitas melhorias e correções para a versão 7.2.
+- Integração do módulo de chat para diferentes usuários.
 - Melhorias e correções para a versão 7.2
 
-### lançamento 7.1 (compatível com amp comercial 7.1)
+### Versão 7.1 (compatível com comercial ABP 7.1)
 
-- Permita-se passar por um ⁇  arbitrário no ⁇  Saad.
-- Usuário bem sucedido pode ⁇  a imagem do perfil em MyAccounts
-- ⁇  ⁇  e correções para a versão 7.1.
+- Permitir representar um usuário arbitrário no módulo SaaS.
+- O usuário bem-sucedido pode adicionar uma foto de perfil em Minhas contas
+- Muitas melhorias e correções para a versão 7.1.
 - Melhorias e correções para a versão 7.1
 
-### lançamento 7.0 (compatível com amp comercial 7.0)
+### Versão 7.0 (compatível com ABP comercial 7.0)
 
-- ⁇  totalmente ⁇  com BP, incluindo páginas incorporadas, como Dashboard, Tenant, Usuário, ⁇ , idiomas e muito mais.
-- **Componentes totalmente substituíveis e personalizáveis: Tabela de dados, Uploader de arquivos, Formas, e-mail, etc.**
-- Fácil de ⁇  para ⁇  de luz, escuro e semi escuro.
-- Adobe XD UI kit de biblioteca de design.
-- Diferentes ⁇  de seleção de idiomas estão ⁇  na Login página.
-- Alterar a ⁇  de linguagem em painéis e ⁇
-- Permitiu uma nova ⁇  de geração de proxy de serviço ⁇  com TO, ⁇  e ⁇  com diferentes suporte do cliente de http.
-- Biblioteca de ⁇  personalizado com mais adições e ⁇ .
-- Introdução de um livro de ⁇  para o ⁇  visualizar elementos, componentes e ⁇  o comportamento em diferentes estados.
-- Modules integradas nas aplicações são mencionadas na ⁇  seguinte.
-- Localização implementada para diferentes Modules
+- Aplicativo totalmente compatível com ABP, incluindo páginas integradas como Dashboards, Tenant, User, configurações, idiomas e muito mais.
+- Componentes totalmente substituíveis e personalizáveis: tabela de dados, uploader de arquivos, formulários, email, etc.
+- Fácil de mudar para opções de temas claros, escuros e semiescuros.
+- Biblioteca de design de kit de UI do Adobe XD.
+- Diferentes opções de seleção de idioma estão disponíveis na página de login.
+- Recurso de alteração de idioma no painel e módulos
+- Habilitado novo recurso de geração automática de proxy de serviço com DTO, serviços e esquemas com diferentes suportes ao cliente http.
+- Biblioteca de ícones personalizados com mais adições e melhorias.
+- Introdução de um livro de histórias para o usuário visualizar elementos, componentes e verificar o comportamento em diferentes estados.
+- Os módulos integrados nas aplicações são mencionados na seção seguinte.
+- Localização implementada para diferentes módulos
 
-### ⁇
+### MÓDULOS
 #### conta
 
-- Fornece uma página de login com nome de ⁇  e senha.
-- Fornece uma página de registro para ⁇  uma nova conta.
-- Implements servidor de autenticação de servidor de Identidade I e ⁇ .
+- Fornece uma página de login com nome de usuário e senha.
+- Fornece uma página de registro para criar uma nova conta.
+- Implementa a interface e a funcionalidade do servidor de autenticação do servidor de identidade.
 
 #### registro de auditoria
 
-- Fornece o registro de auditoria relatando UI para a ⁇  de auditoria e permite pesquisar, filtrar e mostrar entidades de log de auditoria e logs de mudança de ⁇ .
-- Consiste em dados críticos sobre cada pedido de cliente, como método HTTP, status de retorno HTTP, ⁇  a ⁇  ⁇  e a ⁇  de sucesso ⁇ .
+- Fornece a UI de relatórios de log de auditoria para a infraestrutura de auditoria e permite pesquisar, filtrar e mostrar entidades de log de auditoria e logs de alterações de entidade.
+- Consistem em dados críticos sobre cada solicitação do cliente, como método HTTP, status de retorno HTTP, duração da execução da solicitação e falha no sucesso, respectivamente.
 
 #### diz
 
-- ⁇  Páginas como Tenant e Edição
-- Permite gerenciar inquilinos onde um inquilino é um cliente de sua ⁇ .
-- Permite ⁇  edições onde uma edição pode ter conjunto de recursos diferentes de sua ⁇  atribuída a inquilinos.
-- Permitir que os usuários do host alterem a senha de um ⁇  de um inquilino.
+- Inclui páginas como Tenant e Edition
+- Permite gerenciar locatários onde um locatário é cliente do seu aplicativo.
+- Permite criar edições onde uma edição pode ter diferentes conjuntos de recursos do seu aplicativo atribuídos aos locatários.
+- Permitir que os usuários do host alterem a senha de um usuário de um locatário.
 
-#### blog
+#### Blogue
 
-- Crie vários blogs em uma única ⁇ .
+- Crie vários blogs em um único aplicativo.
 
 #### cms kit
 
-- Fornece um sistema de gestão de páginas para gerenciar páginas din ⁇ .
-- Um sistema de blog para ⁇  blogs e publicar posts.
-- Sistema de tag para marcar qualquer tipo de recursos, como posts de blog.
-- Sistema de comentários para ⁇  comentários ⁇  a qualquer tipo de recurso, como posts do blog.
+- Fornece um sistema de gerenciamento de páginas para gerenciar páginas dinâmicas.
+- Um sistema de blog para criar blogs e publicar postagens.
+- Sistema de tags para marcar qualquer tipo de recurso, como postagens de blog.
+- Sistema de comentários para adicionar recurso de comentários a qualquer tipo de recurso, como postagens de blog.
 
 #### gestão de arquivos
 
-- É usado para carregar e ⁇  arquivos em uma estrutura de pasta hierárquica.
-- Este ⁇  é baseado no sistema de ⁇  LB, onde pode usar diferentes provedores de armazenamento para ⁇  conteúdos de arquivos.
+- Ele é usado para fazer upload e organizar arquivos em uma estrutura hierárquica de pastas.
+- Este módulo é baseado no sistema BLOB Storing, onde pode utilizar diferentes provedores de armazenamento para armazenar o conteúdo dos arquivos.
 
 #### formas
 
-- Crie ⁇ , gerencie inscrições de eventos, colete campanhas de email para um ⁇  informativo, crie um questionário pop ou até obter um pedido de encomenda.
+- Crie pesquisas, gerencie inscrições em eventos, colete endereços de e-mail para um boletim informativo, crie um questionário ou até mesmo receba uma solicitação de pedido.
 
 #### identidade
 
-- O papel do ⁇  e os usuários no sistema em que o ⁇  é ⁇  ter ⁇  ⁇ .
-- Permite permissões no papel e nos níveis de ⁇ .
-- Ativar/desactivar a autenticação de dois fatores e o ⁇  de ⁇  por ⁇ .
-- Gerencie o perfil ⁇  do ⁇  e a senha.
-- Gerente tipos de reivindicação no sistema , definir reivindicações para o papel e usuários.
-- Configuração da página para gerenciar ⁇  de senha, login do ⁇ , conta e ⁇ .
-- Suporta interações de login social (Microsoft, Google, Twitter.)
+- Gerencia funções e usuários no sistema em que o usuário pode ter várias funções.
+- Permite permissões em níveis de função e usuário.
+- Ativar/desativar autenticação de dois fatores e bloqueio de usuário por usuário.
+- Gerenciar perfil de usuário básico e senha.
+- Gerencia tipos de declarações no sistema, define declarações para funções e usuários.
+- Página de configuração para gerenciar a complexidade da senha, login do usuário, conta e bloqueio.
+- Suporta interações de login social (Microsoft, Google, Twitter).
 
 #### gestão linguística
 
-- Idiomas de ⁇  gerentes e textos de localização.
-- Dinamicamente ⁇  ou remover idiomas.
-- Alterar dinamicamente todos os textos sobre o I
-- Características como ⁇ , remover, ⁇  o idioma
-- ⁇  um texto de linguagem que traduz o I do aplicativo para uma nova língua ou textos de atualização para uma língua existente.
+- Gerencia idiomas de aplicativos e textos de localização.
+- Adicione ou remova idiomas dinamicamente.
+- Altere dinamicamente todos os textos na UI
+- Recursos como adicionar, remover, atualizar o idioma
+- Inclui um texto de idioma que traduz a interface do usuário do aplicativo para um novo idioma ou atualiza textos para um idioma existente.
 
 #### openid
 
-- ⁇  páginas como ⁇  e Scopes
-- Página de ⁇  ⁇  recursos como ⁇  ou editar aplicações
-- Um conjunto de permissões disponível na página da lista de aplicações
+- Inclui páginas como Aplicativo e Escopos
+- Página do aplicativo que fornece recursos como adicionar ou editar aplicativos
+- Um conjunto de permissões disponíveis na página de lista de aplicativos
 
 #### pagamento
 
-- Características ⁇  ⁇  para gateways de pagamento
-- Suporta ⁇  de uma vez ou recorrentes
+- Os recursos incluem integração para gateways de pagamento
+- Suporta pagamentos únicos ou recorrentes
 
