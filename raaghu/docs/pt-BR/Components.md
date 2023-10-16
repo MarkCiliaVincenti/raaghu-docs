@@ -1,12 +1,12 @@
-### livro de ⁇
-⁇  do livro de ⁇  você pode visualizar e ⁇  em torno das características do raaghu. Snippets para os elementos ⁇  testar e projetar seu I mais rápido e eficientemente.
+### Livro de histórias
+Através do livro de histórias você pode visualizar e navegar pelas características do raaghu. Os snippets dos elementos permitem testar e projetar sua IU de maneira mais rápida e eficiente.
 
-Você pode personalizar e estender Storybook para atender às necessidades do seu projeto. O ⁇  .storybook conterá arquivos de configuração, e você pode personalizar a ⁇  de Storybook, ⁇  addons e muito mais.
+Você pode personalizar e estender ainda mais o Storybook para atender às necessidades do seu projeto. O diretório .storybook conterá arquivos de configuração e você poderá personalizar a aparência do Storybook, adicionar complementos e muito mais.
 
-Em Storybook, os componentes são ⁇  organizados em "histórias" para mostrar seus diferentes estados, ⁇  e casos de uso. Storybook oferece uma maneira de documentar visualmente e testar seus componentes em ⁇ . Elementos de botões são um exemplo comum para a criação de ⁇  em Storybook.
+No Storybook, os componentes são frequentemente organizados em “histórias” para mostrar seus diferentes estados, variações e casos de uso. O Storybook fornece uma maneira de documentar visualmente e testar seus componentes isoladamente. Os elementos de botão são um exemplo comum de criação de histórias no Storybook.
 
-⁇  o arquivo de ⁇  para elementos particulares usando o nome.stories do arquivo. stotybook ⁇  por código padrão na criação de arquivos.
-
+crie o arquivo stoires para elementos específicos usando filename.stories. stotybook fornece código padrão na criação do arquivo.
+```json
     import React from 'react';
     import { Story, Meta } from '@storybook/react';
     
@@ -24,20 +24,21 @@ Em Storybook, os componentes são ⁇  organizados em "histórias" para mostrar 
       // Add default props here
     };
     </mycomponent>
-⁇ , tome o exemplo como elemento de ⁇ . ⁇  o arquivo ⁇ .stories.
+```
+Então pegue o exemplo como elemento de botão. crie o arquivo button.stories.
 
 ![⁇  imagem de arquivo](images/storybook-button.png "")
 
-Substitua MyComponent com o nome real do seu componente. Este exemplo assume que o seu componente é ⁇  MyComponent.
+Substitua MyComponent pelo nome real do seu componente. Este exemplo pressupõe que seu componente se chama MyComponent.
 
-Run Storybook, e você deve ver sua história de componentes em the Storybook UI.
+Execute o Storybook e você deverá ver a história do seu componente na interface do Storybook.
 
-⁇  mais ⁇  conforme necessário para outros componentes no seu projeto.
+Adicione mais histórias conforme necessário para outros componentes do seu projeto.
 
-Isso mesmo! Agora você tem um Storybook configurado com React e TypeScript, e você pode ⁇ -lo para documentar e mostrar seus componentes. Certifique-se de personalizar as ⁇  do Storybook e suas
+É isso! Agora você tem um Storybook configurado com React e TypeScript e pode usá-lo para documentar e mostrar seus componentes. Certifique-se de personalizar as configurações do Storybook e seu
 
-⁇  são o controle e a ação que passa embora o argTypes, aqui é o exemplo para o elemento de ⁇ .
-
+Esses são o controle e a ação que passam pelos argTypes, aqui está um exemplo do elemento botão.
+```json
     export default {
         title: "Elements/Button",
         component: RdsButton,
@@ -70,11 +71,13 @@ Isso mesmo! Agora você tem um Storybook configurado com React e TypeScript, e v
     const Template: ComponentStory<typeof rdsbutton=""> = (args) =&gt; (
         <rdsbutton {...args}="">
     );
-    </rdsbutton></typeof></typeof>
-crie as ⁇  ⁇  para elementos de botões.
+    </rdsbutton>
+```
+</typeof></typeof>
+crie vários andares para elementos de botão.
 
-Estado padrão de ⁇  ⁇  abaixo
-
+Estado padrão do botão colocado abaixo
+```json
     export const Default = Template.bind({});
     Default.args = {
         colorVariant: "primary",
@@ -83,9 +86,9 @@ Estado padrão de ⁇  ⁇  abaixo
         size: "medium",
         showLoadingSpinner:true,
     };
-
-Estado ⁇  de ⁇  ⁇  abaixo
-
+```
+Estado desequilibrado do botão colocado abaixo
+```json
     export const Disable = Template.bind({});
     Disable.args = {
         colorVariant: "primary",
@@ -94,14 +97,15 @@ Estado ⁇  de ⁇  ⁇  abaixo
         block: false,
         size: "medium",
     };
+```
 
 ### controle
-O controle permite que você ajuste e personalize as propriedades ou suportes de um componente em Storybook sem ⁇  o código fonte. Para um componente de ⁇ , você pode usar controles para alterar seu texto, cor, ⁇  e outras propriedades ⁇ . Isso é particularmente ⁇  para testar diferentes ⁇  e estados de seus componentes.
+O controle permite ajustar e personalizar as propriedades ou acessórios de um componente no Storybook sem modificar o código-fonte. Para um componente de botão, você pode usar controles para alterar seu texto, cor, tamanho e outras propriedades relevantes. Isto é particularmente útil para testar diferentes configurações e estados dos seus componentes.
 
-Há um ⁇  de controle no livro de ⁇  UI. Vai mostrar o controle múltiplo.
+Há um painel de controle na interface do livro de histórias. Ele mostrará o controle múltiplo.
 
 ![⁇  de controle](images/storybook-control.png "")
 ### docs
-A ⁇  em Storybook é muitas vezes gerada usando addons como  ⁇ storybook/addons-docs. Ele permite que você ⁇ va a ⁇  para seus componentes diretamente dentro de seus arquivos de história usando uma combinação de Markdown e TX. Esta ⁇  pode ser obtida a partir da interface Storybook, ⁇  mais fácil para os desenvolvedores ⁇ em como usar seus componentes.
+A documentação no Storybook geralmente é gerada usando complementos como @storybook/addon-docs. Ele permite que você escreva documentação para seus componentes diretamente nos arquivos de história usando uma combinação de Markdown e TSX. Esta documentação pode ser acessada na interface do Storybook, facilitando o entendimento dos desenvolvedores sobre como usar seus componentes.
 
 ![docs](images/storybook-docs.png "")
