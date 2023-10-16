@@ -1,4 +1,4 @@
 # modelos de inicialização
 ## modelos de inicialização de aplicativos
 ### introdução
-A ⁇  BP é o projeto do Visual Studio que ⁇  uma estrutura em camadas com base nas melhores práticas do Domain Driven Design (DD). Este documento explica como ⁇  uma nova ⁇ , a estrutura da ⁇  e a ⁇  dos projetos dentro da ⁇ .
+A solução ABP é um projeto do Visual Studio que fornece uma estrutura em camadas baseada nas melhores práticas de Domain Driven Design (DDD). Este documento explica como criar uma nova solução, a estrutura da solução e os objetivos dos projetos dentro da solução.
