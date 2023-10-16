@@ -1,20 +1,21 @@
-# gdpr module
-Este ⁇  permite que os usuários baixem e excluam seus dados ⁇  coletados pela ⁇ .
+# GDPR module
+Este módulo permite aos usuários baixar e excluir seus dados pessoais coletados pelo aplicativo.
 ## como instalar
-O ⁇  do PIB é pré-instalado nos modelos de ⁇  e ⁇  (camada de ⁇ ). ⁇ , não é preciso instalá-lo imediatamente.
+O módulo GDPR está pré-instalado nos modelos Aplicativo e Aplicativo (Camada Única). Portanto, não há necessidade de instalá-lo manualmente.
 
-Se você precisa instalá-lo ⁇ , há 2 ⁇  de instalá-lo:
+Se precisar instalá-lo manualmente, existem 2 maneiras de instalá-lo:
 
-Via BP LI: Abra um terminal de linha de comando na pasta de ⁇  (na pasta onde o arquivo *.son está ⁇ ) e digite o seguinte comando: Amp add-module Volo.Gdpr Bash Via BP Suite: Run ABP Suite, ⁇
-## interface de ⁇
+Via ABP CLI: Abra um terminal de linha de comando na pasta de sua solução (na pasta onde o arquivo *.sln está localizado) e digite o seguinte comando: abp add-module Volo.Gdpr Bash Via ABP Suite: Execute ABP Suite, selecione seu projeto, vá para a página de módulos no menu superior e encontre o cartão GDPR e clique no botão adicionar como projeto (com código-fonte) ou adicionar como pacote (sem código-fonte) para adicionar o módulo ao seu projeto.
+
+## Interface de usuário
 ### itens de menu
-O ⁇  do PIB adiciona o seguinte item ao menu de perfil "User".
+O módulo GDPR adiciona o seguinte item ao menu de perfil "Usuário".
 
-Dados Pessoais: Página de Gestão de Dados Pessoais. Você pode solicitar seus dados ⁇ , listar todos os pedidos de dados ⁇ , baixar e/ou ⁇  dados ⁇ , e ⁇  a conta ⁇ .
+Dados Pessoais: página de gerenciamento de dados pessoais. Você pode solicitar seus dados pessoais, listar todas as solicitações de dados pessoais, baixar e/ou excluir dados pessoais e excluir a conta permanentemente.
 
 ![texto alt](./images/main-menu.png "")
 ### páginas
 ### dados ⁇
-A página "Dados Pessoais" é usada para gerenciar pedidos de dados ⁇ . Você pode ver os pedidos passados, status atual do último pedido, ⁇  um novo pedido, baixar dados ou ⁇  todos os seus dados ⁇  e conta do aplicativo.
+A página “Dados Pessoais” é utilizada para gerir os pedidos de dados pessoais. Você pode visualizar as solicitações anteriores, o status atual da última solicitação, criar uma nova solicitação, baixar dados ou excluir todos os seus dados pessoais e da conta do aplicativo.
 
 ![texto alt](./images/personal-data.png "")
