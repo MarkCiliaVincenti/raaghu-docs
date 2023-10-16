@@ -39,5 +39,5 @@ Um novo tema raaghu moderno e elegante com diferentes opções de cores, é o te
 A solução possui uma estrutura em camadas  (baseada no[Design Driven de Domínio](https://docs.abp.io/en/abp/Domain-Driven-Design "")) e contém  projetos de teste de unidade &amp; ⁇ . [documento de estrutura de ⁇](https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure "")para ⁇  a estrutura de ⁇  em detalhes.
 ### próximo passo
 
-- [Executando a ⁇](Getting-Started-Running-Solution.md "")
+- [Executando a solução](Getting-Started-Running-Solution.md "")
 
