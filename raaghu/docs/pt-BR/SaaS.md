@@ -1,43 +1,46 @@
-Este ⁇  é usado para gerenciar seus inquilinos e edições em aplicações multi-tenantes;
+Este módulo é usado para gerenciar seus locatários e edições em aplicativos multilocatários;
 
 - Gerencie inquilinos e edições no sistema. Um inquilino pode ter uma edição.
 - Definir características de inquilinos.
-- Definir ⁇  de inquilinos.
+- Defina a cadeia de conexão dos locatários.
 - Definir características de edições e inquilinos.
 
-Ver[a página da ⁇  do ⁇](https://commercial.abp.io/modules/Volo.Saas "")para uma visão geral dos recursos do ⁇ .
+Consulte [a página de descrição do módulo](https://commercial.abp.io/modules/Volo.Saas "") para obter uma visão geral dos recursos do módulo.
+
 ## pacotes
-Este ⁇  ⁇  a[guia de melhores práticas de desenvolvimento de ⁇](https://docs.abp.io/en/abp/latest/Best-Practices/Index "")e ⁇  de vários pacotes de NuGet e PM. Consulte o guia se você ⁇  ⁇  os pacotes e as ⁇  entre eles.
 
-Você pode visitar[Página de lista de pacotes de ⁇  Saad](https://abp.io/packages?moduleName=Volo.Saas "")para ver a lista de pacotes relacionados com este ⁇ .
-### subscrição de inqu ⁇
-Módulo Saad implementa assinando Edições para Tenantes usando o ⁇  de Pagamento. Para ativá-lo, o projeto deve conter Volo.Saas e Volo.Payment ⁇  e estes ⁇  devem ser configurados como ⁇  abaixo.
+Este módulo segue o [guia de práticas recomendadas de desenvolvimento de módulo](https://docs.abp.io/en/abp/latest/Best-Practices/Index "") e consiste em vários pacotes NuGet e NPM. Consulte o guia se quiser entender os pacotes e as relações entre eles.
+
+Você pode visitar a [página da lista de pacotes do módulo ](https://abp.io/packages?moduleName=Volo.Saas "")SaaS para ver a lista de pacotes relacionados a este módulo.
+
+### Assinatura da edição de locatário
+O módulo SaaS implementa a assinatura de Edições para Locatários usando o módulo Pagamento. Para habilitá-lo, o projeto deve conter os módulos Volo.Saas e Volo.Payment e estes módulos devem ser configurados conforme mostrado abaixo.
 ### configuração
-Em primeiro lugar, o ⁇  de pagamento deve ser configurado ⁇ :
+Em primeiro lugar, o módulo de Pagamento deve estar configurado corretamente:
 
-- Instalar Volo.Payment ⁇ .
-
+- Instale o módulo Volo.Payment.
+```bash
       abp add-module Volo.Payment
-
+```
 Ou você pode instalar usando o BP Suite.
 
-- Configure Saas ⁇  para usar o Pagamento.
-
+- Configure o módulo Saas para usar o Payment.
+```json                  
       Configure(options =&gt;
       {
       options.IsPaymentSupported = true;
       });
-
+```
 
 - Seguir[assinaturas](https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions "")⁇  de[Documentação do Módulo de Pagamento](https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions ""). Completo[que permite ebooks](https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks "")[planos de configuração](https://docs.abp.io/en/commercial/7.0/modules/payment#configuring-plans "")seções.
 - Execute o aplicativo e vá para Saas  ⁇  Edições página no seu menu Web Application.
 - Crie ou Edite uma edição existente. Plan dropdown deve ser ⁇  se você fez os ⁇  ⁇  ⁇ . Escolha um plano para a edição.
 
 ### uso
-O ⁇  Saad não ⁇  uma página de lista de inspeção pública para listar edições para novos clientes/tenants se inscreverem. Primeiro, você precisa ⁇  tal página em sua ⁇ . Em seguida, quando um novo cliente/tenant ⁇  uma ⁇  Edições, você pode ⁇  uma subscrição e redirecionar o ⁇  para o ⁇  de pagamento como ⁇  abaixo.
+O módulo SaaS não contém uma página de lista pública para listar edições para novos clientes/inquilinos assinarem. Primeiro, você precisa criar essa página em seu aplicativo. Então, quando um novo cliente/locatário selecionar uma dessas edições, você poderá criar uma assinatura e redirecionar o usuário para o módulo de pagamento conforme mostrado abaixo.
 
-- Insect ISubscriptionAppService para ⁇  uma subscrição para uma edição:
-
+- Injete ISubscriptionAppService para criar uma assinatura para uma edição:
+```json
       public class IndexModel : PageModel
       {
       protected ISubscriptionAppService SubscriptionAppService { get; }
@@ -59,18 +62,20 @@ O ⁇  Saad não ⁇  uma página de lista de inspeção pública para listar ed
       return LocalRedirectPreserveMethod("/Payment/GatewaySelection?paymentRequestId=" + paymentRequest.Id);
       }
       }
+```
+Quando o pagamento for concluído com sucesso, a relação de locatário e edição será atualizada de acordo com o status da assinatura. Certifique-se de que os Web Hooks do Payment Gateway estejam configurados corretamente.
 
-Quando o pagamento for ⁇  com sucesso, a relação de inquilino e edição será atualizada de acordo com o status de ⁇ . Certifique-se de Ganchos Gateway Web são configurados ⁇ .
+Afinal, o módulo de pagamento redirecionará o usuário para callbackUrl se configurado na configuração de pagamento com um parâmetro paymentRequestId. Nesta página você pode verificar o status da solicitação de pagamento e mostrar uma mensagem de sucesso ao usuário quando o status do pagamento for confirmado. Como a confirmação do pagamento é assíncrona, é necessário verificar repetidamente o status do pagamento até que ele seja confirmado.
 
-Afinal, o ⁇  de pagamento irá redirecionar o ⁇  para o callbackUrl se configurado em[configuração de pagamento](https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions "")com um ⁇  pagamentoRequestId. Nesta página, você pode ⁇  o status do pedido de pagamento e mostrar uma mensagem de sucesso ao ⁇  quando o status de pagamento for especificado. Uma vez que a ⁇  de pagamento é assíncrona, você precisa ⁇  o status de pagamento repetidamente até que seja ⁇ .
-### interface de ⁇
+### Interface de usuário
 #### itens de menu
-O ⁇  Saad adiciona os seguintes itens ao menu "Main", sob o item de menu "Administração":
+O módulo SaaS adiciona os seguintes itens ao menu "Principal", no item de menu "Administração":
 
-- **Tenants: Tenant página de gestão.**
-- **Edições: Página de ⁇  da edição.**
+- **Tenants**: Tenant página de gestão.
+- **Edições**: Página de gerenciamento de edição.
 
-As classes SaasHostMenuNames e SaasTenantMenuNames ⁇  as constantes para os nomes dos itens do menu.
+As classes SaasHostMenuNames e SaasTenantMenuNames possuem as constantes para os nomes dos itens de menu.
+
 ### páginas
 Gestão de inquilinos
 
@@ -78,13 +83,14 @@ A página de inquilinos é usada para administrar inquilinos no sistema.
 
 ![Novo inquilino](./images/tenant.png "")
 
-Você pode ⁇  um novo inquilino ou editar um inquilino nesta página:
+Você pode criar um novo locatário ou editar um locatário nesta página:
 
 ![Você pode ⁇  um novo inquilino ou editar um inquilino nesta página](./images/tenant-new.png "")
-### string de ⁇
-Você pode gerenciar a string de ⁇  de um inquilino no caso de você ⁇  usar um banco de dados ⁇  para um inquilino específico. Se você ⁇  usar o banco de dados Host para um inquilino, ⁇  "Use o banco de dados compartilhado" ⁇ .
+### Cadeia de conexão
+Você pode gerenciar a cadeia de conexão de um locatário caso queira usar um banco de dados separado para um locatário específico. Se quiser usar o banco de dados Host para um locatário, selecione a opção "Usar o banco de dados compartilhado".
 
-Você também pode usar o recurso de ⁇  de banco de dados específico do ⁇ . Neste caso, você deve ⁇  a ⁇  "Use module específico de ⁇  de banco de dados", então você pode ⁇  seus ⁇  e suas ⁇  de ⁇ . Antes de ⁇  você pode ⁇  sua ⁇  clicando em "Confirmar"
+Você também pode usar o recurso de cadeia de conexão de banco de dados específico do módulo. Nesse caso, você deve selecionar a opção "Usar cadeia de conexão de banco de dados específica do módulo" e, em seguida, determinar seus módulos e suas cadeias de conexão. Antes de adicionar você pode verificar sua conexão clicando em "Verificar".
+
 ### características de inquilinos
 Você pode definir características de inquilinos.
 
@@ -96,7 +102,7 @@ A página de edições é usada para gerenciar as edições em seu sistema.
 
 ![A página de edições é usada para gerenciar as edições em seu sistema](./images/editions.png "")
 
-Você pode ⁇  uma nova edição ou editar uma edição existente nesta página:
+Você pode criar uma nova edição ou editar uma edição existente nesta página:
 
 ![Criar uma nova edição ou editar uma edição existente](./images/edition-new.png "")
 ### características da edição
