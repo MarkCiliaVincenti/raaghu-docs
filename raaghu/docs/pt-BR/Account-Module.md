@@ -1,16 +1,21 @@
-# conta
-Este ⁇  implementa o Login, Registro, Forgot Password, Confirmação de e-mail, Password Reset, enviando e confirmando Two-Factor Autenticação, ⁇  de ⁇ , alternar entre as funcionalidades de um aplicativo;
+# Conta
+Este módulo implementa as funcionalidades de Login, Cadastro, Esqueci a Senha, Confirmação de Email, Redefinição de Senha, envio e confirmação de Autenticação de Dois Fatores, bloqueio de usuário, alternância entre locatários de uma aplicação;
 
-Ver[a página da ⁇  do ⁇](https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968 "")para uma visão geral dos recursos do ⁇ .
+Consulte [a página de](https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968 "") descrição do módulo para obter uma visão geral dos recursos do módulo.
+
 ## como instalar
-A conta está pré-instalada[os modelos de inicialização.](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index "")⁇ , não é preciso instalá-lo imediatamente.
-### pacotes
-Este ⁇  ⁇  a[guia de melhores práticas de desenvolvimento de ⁇](https://docs.abp.io/en/abp/latest/Best-Practices/Index "")e ⁇  de vários pacotes de NuGet e PM. Consulte o guia se você ⁇  ⁇  os pacotes e as ⁇  entre eles.
+A conta está pré-instalada [nos modelos de inicialização](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index ""). Portanto, não há necessidade de instalá-lo manualmente.
 
-Você pode visitar[Página de lista de ⁇  de ⁇  de ⁇](https://abp.io/packages?moduleName=Volo.Account.Pro "")para ver a lista de pacotes relacionados com este ⁇ .
-### interface de ⁇
-### itens de menu
-Este ⁇  não define nenhum item de menu.
+### pacotes
+
+Este módulo segue o [guia de práticas recomendadas de](https://docs.abp.io/en/abp/latest/Best-Practices/Index "") desenvolvimento de módulo e consiste em vários pacotes NuGet e NPM. Consulte o guia se quiser entender os pacotes e as relações entre eles.
+
+Você pode visitar a [página de lista de pacotes do módulo de](https://abp.io/packages?moduleName=Volo.Account.Pro "") conta para ver a lista de pacotes relacionados a este módulo.
+
+### Interface de usuário
+
+### itens do cardápio
+Este módulo não define nenhum item de menu.
 ### páginas
 Login Page
 
@@ -22,8 +27,8 @@ A página de login é usada para fazer login no sistema.
 ### página de registo
 A página de registo permite que novos usuários se registrem no seu sistema.
 ### interno
-### ⁇
-Consulte os ⁇  da classe IAccountSettingNames para todas as ⁇  ⁇  para este ⁇ .
-### ⁇  de ⁇
+### Configurações
+Consulte os membros da classe IAccountSettingNames para todas as configurações definidas para este módulo.
+### Camada de aplicação
 ### permissões
-Consulte os AccountPermissions ⁇  de classe para todas as permissões ⁇  para este ⁇ .
+See the AccountPermissions class members for all permissions defined for this module.
