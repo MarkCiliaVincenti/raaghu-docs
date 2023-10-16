@@ -1,7 +1,7 @@
 ## personalização
 ### gerenciar abas da página do perfil
-Sob a Minha Conta, clicando no drop-down do perfil de ⁇  do host, você recebe 4 tabs como Perfil Imagem, Alterar senha, Informações Pessoais e Dois ⁇
+Em Minha conta, ao clicar no menu suspenso do perfil de administrador do host, você obtém 4 guias como Imagem do perfil, Alterar senha, Informações pessoais e Dois fatores
 
-As abas na página de perfil de ⁇  podem ser geridas através do ManageProfileTabsService que é ⁇  pelo ⁇   ⁇ vol/amp.ng.account/public/config. Você pode ⁇ , remover ou editar uma aba com este serviço.
+As guias na página de gerenciamento de perfil podem ser gerenciadas por meio do ManageProfileTabsService, que é exposto pelo pacote @volo/abp.ng.account/public/config. Você pode adicionar, remover ou editar uma guia usando este serviço.
 
 ![Página de perfil de ⁇](./images/my-account.png "")
