@@ -1,19 +1,20 @@
-# ⁇  de bate-papo
-Este ⁇  implementa mensagens em tempo real entre usuários para uma ⁇ .
+# Módulo de bate-papo
+Este módulo implementa mensagens em tempo real entre usuários para um aplicativo.
 ## instalação
-Nenhuma instalação adicional é ⁇  em termos de ⁇  do BP Suite e da Instalação Manual como ele vem junto com o modelo de inicialização
+Nenhuma instalação adicional é necessária em termos de uso do ABP Suite e instalação manual, pois vem junto com o modelo de inicialização
 ### pacotes
-Este ⁇  ⁇  a[guia de melhores práticas de desenvolvimento de ⁇](https://docs.abp.io/en/abp/latest/Best-Practices/Index "")e ⁇  de vários pacotes de NuGet e PM. Consulte o guia se você ⁇  ⁇  os pacotes e as ⁇  entre eles.
 
-Você pode visitar[Página de lista de pacotes de ⁇  de Chat](https://abp.io/packages?moduleName=Volo.Chat "")para ver a lista de pacotes relacionados com este ⁇ .
-### interface de ⁇
+Este módulo segue o [guia de práticas recomendadas de desenvolvimento de módulo](https://docs.abp.io/en/abp/latest/Best-Practices/Index "") e consiste em vários pacotes NuGet e NPM. Consulte o guia se quiser entender os pacotes e as relações entre eles.
+
+Você pode visitar a [página da lista de pacotes do módulo Chat](https://abp.io/packages?moduleName=Volo.Chat "") para ver a lista de pacotes relacionados a este módulo.
+### Interface de usuário
 ### página de bate-papo
 Esta é a página que os usuários enviam mensagens uns aos outros.
 
 ![Esta é a página que os usuários enviam mensagens entre si](./images/chat.png "")
 ### interno
-### ⁇  de ⁇
-Entidades e ⁇  agregadas
+### Camada de Domínio
+Entidades e raízes agregadas
 
 - 
     
@@ -76,25 +77,25 @@ Implements IUser e IUpdateUserData interfaces.
 
 
 ### repositórios
-Este ⁇  ⁇  a[Melhores Práticas e Convenções Repositórios](https://docs.abp.io/en/abp/latest/Best-Practices/Repositories "")Guia .
+Este módulo segue o guia [Melhores práticas e convenções do repositório.](https://docs.abp.io/en/abp/latest/Best-Practices/Repositories "").
 
-Seguindo os repositórios personalizados são ⁇  para este ⁇ :
+Os seguintes repositórios personalizados são definidos para este módulo:
 
 - IConversationRepository
 - IUserMessageRepository
 - IChatUserRepositório
 - IMessageRepositório
 
-### ⁇  de ⁇
+### Serviços de Domínio
 
 - MessagingManager
 
-### ⁇  de ⁇
-### ⁇  de ⁇
+### Camada de aplicação
+### Serviços de aplicativos
 
-- ConversaçãoAppService (implements IConversationAppService): Usado para enviar mensagens, conversar entre usuários e marcar uma conversa como ler.
-- SettingsAppService (implements ISettingsAppService): Usado para salvar as ⁇  do chat.
-- ContactAppService (implements IContactAppService): Usado para obter uma lista de ⁇  e ⁇  total de mensagens de ⁇ -vivos de um ⁇ .
-- DistribuídoEventBusRealTimeChatMessageSender (implements IRealTimeChatMessageSender): Utilizado para publicar mensagens de bate-papo para distribuído bus de eventos.
+- ConversationAppService (implementa IConversationAppService): Usado para enviar mensagens, obter conversas entre usuários e marcar uma conversa como lida.
+- SettingsAppService (implementa ISettingsAppService): usado para salvar configurações de bate-papo.
+- ContactAppService (implementa IContactAppService): Usado para obter lista de contatos e contagem total de mensagens não lidas de um usuário.
+- DistributedEventBusRealTimeChatMessageSender (implementa IRealTimeChatMessageSender): usado para publicar mensagens de bate-papo no barramento de eventos distribuído.
 - SignalRRealTimeChatMessageSender (implements IRealTimeChatMessageSender): Usado para enviar mensagens para o cliente de sinal de destino.
 
