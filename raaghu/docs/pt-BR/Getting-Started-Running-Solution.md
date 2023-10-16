@@ -1,16 +1,20 @@
-# ⁇  o banco de dados
-### string de ⁇
-⁇  a string de ⁇  no arquivo appsettings.son sob o projeto .Web .
+# Crie o banco de dados
+### Cadeia de conexão
+Verifique a cadeia de conexão no arquivo appsettings.json no projeto .Web.
 ```json
     "ConnectionStrings": {"Default": "Server=localhost;Database=BookStore;Trusted_Connection=True"}
 ```
-**Sobre as ⁇  de ⁇  e sistemas de gestão de banco de dados**
+**Sobre as cadeias de conexão e sistemas de gerenciamento de banco de dados**
 
-A ⁇  é configurada para usar Entity Framework Core com M SQL Server por padrão. No entanto, se você tiver ⁇ ado outro MS usando o ⁇  -dms no novo comando BP LI (como -dms SQL), a string de ⁇  pode ser diferente para você.
+A solução está configurada para usar o Entity Framework Core com MS SQL Server por padrão. No entanto, se você selecionou outro DBMS usando o parâmetro -dbms no novo comando da CLI do ABP (como -dbms MySQL), a cadeia de conexão poderá ser diferente para você.
 
 En Core ⁇[vários](https://learn.microsoft.com/en-us/ef/core/providers/ "")provedores de banco de dados e você pode usar qualquer MS suportado. Ver[o documento de ⁇  do ⁇  de Entidade](https://docs.abp.io/en/abp/latest/Entity-Framework-Core "")aprender a aprender[alternar para outro MS](https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS "")Se ⁇  mais tarde.
+
+O EF Core suporta [vários](https://learn.microsoft.com/en-us/ef/core/providers/ "") provedores de banco de dados e você pode usar qualquer SGBD suportado. Consulte o [documento de integração do Entity Framework 
+para](https://docs.abp.io/en/abp/latest/Entity-Framework-Core "") aprender [como alternar para outro SGBD](https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS ""), se necessário posteriormente.
+
 ### origens de carros
-⁇  o CorsOrigins no arquivo appsettings.son sob o .Web projeto.
+Verifique o CorsOrigins no arquivo appsettings.json no projeto .Web.
 ```json
      "CorsOrigins": "https://*.abp_react_7_3.com,http://localhost:4200,http://localhost:8080",
 ```
