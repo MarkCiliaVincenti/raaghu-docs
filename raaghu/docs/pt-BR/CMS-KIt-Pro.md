@@ -1,27 +1,27 @@
 # Módulo cms kit pro
-Este ⁇  estende-se[open-source MS Kit module](https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index "")e adiciona ⁇  adicionais de MS (Content Management System) à sua ⁇ .
+Este módulo estende [o módulo CMS Kit](https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index "") de código aberto e adiciona recursos adicionais de CMS (Content Management System) ao seu aplicativo.
 
-As seguintes características são ⁇  pelo ⁇  de código aberto MS Kit:
+Os seguintes recursos são fornecidos pelo módulo CMS Kit de código aberto:
 
-- Sistema de registro para ⁇  postagens de blog de publicação com suporte de blog múltiplo.
+- Sistema de blog para criar postagens de blog com suporte a vários blogs.
 - Sistema de marcação para marcar qualquer tipo de recurso, como um post do blog.
-- Sistema de comentários para ⁇  comentários ⁇  a qualquer tipo de recurso, como o post do blog ou uma página de revisão do produto.
-- Sistema de reação para ⁇  ⁇  (smiles) a qualquer tipo de recurso, como um post de blog ou um comentário.
-- Sistema de classificação para ⁇  ⁇  de classificação a qualquer tipo de recurso.
-- Sistema de menu para gerenciar menus ⁇  dinamicamente
-- Sistema de recursos ⁇  para ⁇  estilos e scripts ⁇  dinamicamente.
-- Sistema de widget dinâmico para ⁇  widgets dinâmicos para posts de página e blog.
+- Sistema de comentários para adicionar recurso de comentários a qualquer tipo de recurso, como postagem de blog ou página de avaliação de produto.
+- Sistema de reação para adicionar recurso de reações (smileys) a qualquer tipo de recurso, como uma postagem de blog ou um comentário.
+- Sistema de classificação para adicionar recurso de classificação a qualquer tipo de recurso.
+- Sistema de menu para gerenciar menus públicos dinamicamente
+- Sistema de recursos globais para adicionar estilos e scripts globais dinamicamente.
+- Sistema de widget dinâmico para criar widgets dinâmicos para postagens de páginas e blogs.
 
-E as seguintes características são ⁇  pela versão pro do MS Kit:
+E os seguintes recursos são fornecidos pela versão CMS Kit pro:
 
-- Sistema informativo para ⁇  que os usuários assinem boletins informativos.
-- Contate o sistema de formulário para ⁇  que os usuários ⁇ vam mensagens para você.
-- URL sistema de encaminhamento para ⁇  URLs que redirecionam para outras páginas ou sites externos.
-- Sistema Poll para ⁇  urnas ⁇ idas para usuários
+- Sistema de newsletter para permitir que os usuários assinem newsletters.
+- Sistema de formulário de contato para permitir que os usuários escrevam mensagens para você.
+- Sistema de encaminhamento de URL para criar URLs que redirecionam para outras páginas ou sites externos.
+- Sistema de enquetes para criar enquetes rápidas para usuários
 
-Clique em um recurso para ⁇  e aprender como ⁇ -lo. Ver[a página da ⁇  do ⁇](https://commercial.abp.io/modules/Volo.CmsKit.Pro "")para uma visão geral dos recursos do ⁇ .
-## ⁇  ⁇
-Se você ⁇  ⁇  o kit MS à sua ⁇  existente, você pode usar o comando BP LI add-module:
+Clique em um recurso para entender e aprender como usá-lo. Consulte [a página de descrição do módulo](https://commercial.abp.io/modules/Volo.CmsKit.Pro "") para obter uma visão geral dos recursos do módulo.
+## Soluções Existentes
+Se quiser adicionar o kit CMS à sua solução existente, você pode usar o comando add-module da CLI do ABP:
 
      abp add-module Volo.CmsKit.Pro
 
@@ -37,4 +37,4 @@ Abra a classe GlobalFeatureConfigurator no Domain.Shared projeto e ⁇  o seguin
 
 Alternativamente, você pode habilitar recursos individualmente, como cmsKit.Comments.Enable();
 
-Se você estiver usando Entity Framework Core, não se ⁇  de ⁇  uma nova ⁇  e ⁇  seu banco de dados.
+Se você estiver usando o Entity Framework Core, não esqueça de adicionar uma nova migração e atualizar seu banco de dados.
