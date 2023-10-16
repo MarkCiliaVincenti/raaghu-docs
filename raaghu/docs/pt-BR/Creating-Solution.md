@@ -22,10 +22,10 @@ Para criar sua solução, vá até o diretório onde deseja criar e digite o seg
 
 - 
     
-    Para ⁇  outras ⁇  de projeto LI novo tipo:
-    
-    <pre>`  dotnet tool update -g Volo.Abp.Cli
-`    </pre>
+   Para descobrir outras novas opções de projeto da CLI, digite:
+```bash
+   dotnet tool update -g Volo.Abp.Cli
+```
 
 
 ### Especifique a estrutura da IU
