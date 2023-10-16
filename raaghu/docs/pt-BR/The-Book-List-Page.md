@@ -1,34 +1,34 @@
 # parte 2: lista de livros página
 ## github cli
-⁇  um ⁇  local e execute o seguinte comando para baixar e ⁇  código usando um nome de ⁇  local onde o projeto é convertido em zip
+Selecione um diretório local e execute o seguinte comando para baixar e gerar o código usando um nome de diretório local onde o projeto é convertido em zip
 ```json
-     curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
+ curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
 ```
 agora, até o arquivo usando o seguinte comando
 ```json
-        tar -xf (folder name).zip
+ tar -xf (folder name).zip
 ```
 ### instalar pacotes num
 Execute o código abaixo no nível raiz da pasta do seu projeto
 ```bash
-      raaghu install-all
+ raaghu install-all
 ```
 ### instalar amp-react-core
 Execute o código abaixo no nível raiz da pasta do seu projeto
 ```bash
-      raaghu create:core
+  raaghu create:core
 ```
 ### geram proxy
-para ⁇  proxies, executamos o seguinte comando a nível root
+para criar proxies, executamos o seguinte comando no nível raiz
 ```bash
       raaghu create:proxy --url=https://raaghu-react.azurewebsites.net
 ```
-### crie um ⁇  de ⁇ ia
-Execute a linha de comando seguinte para ⁇  um novo Módulo, ⁇  BookStore na pasta raiz e uma página do Livro dentro dele da ⁇  React
+### Crie um módulo de livraria
+Execute a seguinte linha de comando para criar um novo módulo, chamado BookStore na pasta raiz e uma página de livro dentro dele do aplicativo React
 ```bash
-      raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
+    raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
 ```
-**Nota: Criar uma página é caso ⁇ . nome da página deve estar em letras pequenas**
+**Nota: A criação de uma página diferencia maiúsculas de minúsculas. o nome da página deve estar em letras minúsculas**
 ### snippets de código
 **Tabela de dados**
 
@@ -39,9 +39,10 @@ código parece como ⁇  abaixo
         <rdscompdatatable classes="table__userTable" tableheaders="{tableHeaders}" pagination="{true}" tabledata="{Data}" onactionselection="{onActionSelection}" recordsperpage="{5}" recordsperpageselectlistoption="{true}">`
         </rdscompdatatable>`
 ```
-em RdsCompDataTable, podemos ⁇  os dados ⁇  que queremos mostrar em tableData e seguir o conjunto de ações que você precisa, bem como a função ⁇  usando o onActionSelection
-### estrutura de ⁇
-Agora nós integramos cabeçalhos de ⁇  na ⁇  de dados
+em RdsCompDataTable, podemos adicionar os dados necessários que queremos mostrar em tableData e seguir o conjunto de ações que você precisa, bem como a função necessária usando onActionSelection
+
+### Estrutura da Coluna
+Agora integramos cabeçalhos de tabela na tabela de dados
 ```json
     const tableHeaders = [
         {
