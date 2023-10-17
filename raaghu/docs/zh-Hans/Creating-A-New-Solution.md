@@ -1,57 +1,56 @@
-Creating a new solution
-=======================
+# 创建新解决方案
 
-Create a new project
---------------------
+创建新项目
+-----------
 
-There are two ways of creating a new project: ABP Suite and ABP CLI
+有两种创建新项目的方式：ABP Suite 和 ABP CLI
 
-### Using ABP Suite to create a new project.
+### 使用ABP Suite创建新项目
 
-ABP Suite is recommended way to create new solutions for the ABP Commercial
+ABP Suite是为ABP商业版创建新解决方案的推荐方式
 
-Run the ABP Suite with the following command:
+使用以下命令运行ABP Suite：
 
 ```shell
    abp suite
-````
+```
 
-* This command starts the ABP Suite and opens in your default browser:
+* 这个命令启动ABP Suite，并在您的默认浏览器中打开它：
 
-![Create A New Solution](./images/createANewSol.png)
+![创建新解决方案](./images/createANewSol.png)
 
-Click the **Create a new solution** button and fill the modal form:
+点击**创建新解决方案**按钮并填写模态表单：
 
-![Create A New Solution for modal form](./images/createSol.png "createSol")
+![创建新解决方案的模态表单](./images/createSol.png "createSol")
 
-Select the UI framework as raaghu-react, Database Provider, and other options based on your preferences, then click on the OK button
+根据您的喜好选择UI框架，数据库提供程序和其他选项，然后点击确定按钮。
 
-### Using the ABP CLI to create a new project
+### 使用ABP CLI创建新项目
 
-Use the new command of the ABP CLI to create a new project:
+使用ABP CLI的`new`命令来创建新项目：
 
 ```shell
    abp new Acme.Bookstore -t app-pro
 ```
 
-* \-t argument specifies the [startup template](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index) name. app-pro is the startup template that contains the essential [ABP Commercial Modules](https://commercial.abp.io/modules) pre-installed and configured for you.
-* We can also use a different level of namespaces; e.g. Bookstore, Acme.Bookstore or Acme.Retail.BookStore.
+* `-t`参数指定了[启动模板](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index)的名称。`app-pro`是一个包含了预先安装和配置的[ABP商业模块](https://commercial.abp.io/modules)的启动模板。
+* 我们也可以使用不同级别的命名空间，例如`Bookstore`、`Acme.Bookstore`或`Acme.Retail.BookStore`。
 
-Theme
+主题
 -----
 
-### Raaghu-themes
+### Raaghu主题
 
-A new, modern and stylish raaghu theme with different color options, it’s the newest theme. You can choose one out of 3 options Dark, Light and Semi Dark.
+Raaghu主题是一个全新的、时尚的主题，提供不同的颜色选项，是最新的主题。您可以从Dark、Light和Semi Dark中选择一个。
 
-### ABP CLI commands & options
+### ABP CLI命令和选项
 
-[ABP CLI document](https://docs.abp.io/en/abp/latest/CLI) covers all of the available commands and options for the ABP CLI. The main difference for the ABP Commercial is the template names. See the[ABP Commercial Startup Templates](https://docs.abp.io/en/commercial/7.2/startup-templates/index) document for other commercial templates.
+[ABP CLI文档](https://docs.abp.io/en/abp/latest/CLI)涵盖了ABP CLI的所有可用命令和选项。ABP商业版的主要区别在于模板名称。查看[ABP商业版启动模板](https://docs.abp.io/en/commercial/7.2/startup-templates/index)文档以了解其他商业模板。
 
-### The solution structure
+### 解决方案结构
 
-The solution has a layered structure (based on the [Domain Driven Design](https://docs.abp.io/en/abp/Domain-Driven-Design)) and contains unit & integration test projects. See the [solution structure document](https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure) to understand the solution structure in details.
+该解决方案具有分层结构（基于[领域驱动设计](https://docs.abp.io/en/abp/Domain-Driven-Design)）并包含单元测试和集成测试项目。请查看[解决方案结构文档](https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure)以详细了解解决方案结构。
 
-### Next Step
+### 下一步
 
-* [Running the solution](Getting-Started-Running-Solution.md)
+* [运行解决方案](Getting-Started-Running-Solution.md)
