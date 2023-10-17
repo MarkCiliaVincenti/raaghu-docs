@@ -1,11 +1,10 @@
-SAMPLES
-=======
+# 样本
 
-These samples are only for the ABP Commercial customers.
+这些样本仅供 ABP 商业客户使用。
 
-**IMPORTANT:** You need to **login to the** [https://abp.io/](https://abp.io/?_ga=2.164897528.638389710.1682325508-1619359562.1681202968)**first** to be able to download the related source code.
+**重要提示：** 您需要**首先登录**[https://abp.io/](https://abp.io/?_ga=2.164897528.638389710.1682325508-1619359562.1681202968)才能下载相关源代码。
 
-Book Store
+书店示例
 ----------
 
-A simple CRUD application to demonstrate the basics of an application development. The same sample was implemented with different technologies including React.
+一个简单的 CRUD 应用程序，用于演示应用程序开发的基础知识。相同的示例已使用不同技术实现，包括 React。
