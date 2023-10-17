@@ -1,9 +1,8 @@
-STARTUP TEMPLATES
-=================
+# 初始模板
 
-Application startup templates
+应用程序初始模板
 -----------------------------
 
-### Introduction
+### 简介
 
-ABP solution is Visual Studio project which provides a layered structure based on the Domain Driven Design (DDD) best practices. This document explains how to create a new solution, the structure of the solution and the aims of the projects inside the solution.
+ABP解决方案是一个基于领域驱动设计(DDD)最佳实践的Visual Studio项目，本文介绍了如何创建新解决方案、解决方案的结构以及解决方案内部项目的目标。
