@@ -1,49 +1,50 @@
-Account
-=======
+以下是提供的英文Markdown文本的中文版本：
 
-This module implements the Login, Register, Forgot Password, Email Confirmation, Password Reset, sending and confirming Two-Factor Authentication, user lockout, switch between tenants functionalities of an application;
+# 账户
 
-See [the module description page](https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968) for an overview of the module features.
+该模块实现了应用程序的登录、注册、忘记密码、电子邮件确认、密码重置、发送和确认双因素身份验证、用户锁定、在租户之间切换功能；
 
-How to Install
+请参见[模块描述页面](https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968)以获取模块功能的概述。
+
+如何安装
 --------------
 
-Account is pre-installed in [the startup templates.](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index) So, no need to manually install it.
+Account模块已预安装在[启动模板中](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index)。因此，无需手动安装。
 
-### Packages
+### 包
 
-This module follows the [module development best practices guide](https://docs.abp.io/en/abp/latest/Best-Practices/Index) and consists of several NuGet and NPM packages. See the guide if you want to understand the packages and relations between them.
+该模块遵循[模块开发最佳实践指南](https://docs.abp.io/en/abp/latest/Best-Practices/Index)，由多个NuGet和NPM包组成。如果您想了解这些包和它们之间的关系，可以查看该指南。
 
-You can visit [Account module package list page](https://abp.io/packages?moduleName=Volo.Account.Pro) to see list of packages related with this module.
+您可以访问[Account模块包列表页面](https://abp.io/packages?moduleName=Volo.Account.Pro)以查看与该模块相关的包列表。
 
-### User Interface
+### 用户界面
 
-### Menu Items
+### 菜单项
 
-This module doesn't define any menu items.
+该模块不定义任何菜单项。
 
-### Pages
+### 页面
 
-Login Page
+登录页面
 
-Login page is used to log in to the system.
+登录页面用于登录系统。
 
 ![Home page](./images/home.png)
 
-![Login page is used to log in to the system](./images/login-auth.png)
+![登录页面用于登录系统](./images/login-auth.png)
 
-### Register Page
+### 注册页面
 
-Register page allows new users to register to your system.
+注册页面允许新用户注册到您的系统。
 
-### Internals
+### 内部结构
 
-### Settings
+### 设置
 
-See the IAccountSettingNames class members for all settings defined for this module.
+查看IAccountSettingNames类成员，了解为该模块定义的所有设置。
 
-### Application Layer
+### 应用程序层
 
-### Permissions
+### 权限
 
-See the AccountPermissions class members for all permissions defined for this module.
+查看AccountPermissions类成员，了解为该模块定义的所有权限。
