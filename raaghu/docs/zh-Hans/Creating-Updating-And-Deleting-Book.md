@@ -1,20 +1,19 @@
-Part 3: Creating, Updating and Deleting Book
-============================================
+# 第3部分：创建、更新和删除图书
 
-Creating a new Book -
+创建新书 -
 ---------------------
 
-In order to create a new book, we will create a new component called RdsCompBookForm. Run code below in root folder
+为了创建新书，我们将创建一个名为RdsCompBookForm的新组件。在根目录中运行以下代码
 
 ```shell
     raaghu create:component --name=rds-comp-book-form
 ```
 
-Go to following path and perform html operations
+转到以下路径并执行HTML操作
 
-    <project path>\raaghu-components\src\rds-comp-book-form
+    <项目路径>\raaghu-components\src\rds-comp-book-form
 
-Add following code in slice file and add builder case in extra reducer similar to fetchbooks
+在切片文件中添加以下代码，并在额外的reducer中添加构建器案例，与fetchbooks类似
 
 ```javascript
   export const postNewBook = createAsyncThunk(
@@ -24,10 +23,11 @@ Add following code in slice file and add builder case in extra reducer similar t
              } ) } );
 ```
 
-Here, we bring a button of a New Book using RdsButton and on clicking, we get different parameters of a form inside a RdsOffcanvas
+在这里，我们使用RdsButton带来一个新书按钮，点击时获取表单的不同参数，这些参数在RdsOffcanvas中
+
 ```javascript
     <RdsOffcanvas
-    offcanvasbutton={`<div>`
+    offcanvasbutton=`<div>`
     <RdsButton
         type={"button"}
         label={"New Book"}
@@ -61,7 +61,8 @@ Here, we bring a button of a New Book using RdsButton and on clicking, we get di
         >`</RdsCompBook>`
     `</RdsOffcanvas>`
 ```
-Now add this function inside book component
+
+现在在图书组件中添加此功能
 
 ```javascript
    const onNewCreate = (datafromcomponent: any) => {
@@ -74,48 +75,48 @@ Now add this function inside book component
     }
     dispatch(postBooksRequest({requestBody:data}) as any).then((res: any) => {
     if (res.type.includes("rejected")) {
-    setAlert({
+    setAlert={
                 ...Alert,
                 show: true,
                 message: "Something went wrong",
                 color: "danger",
-            });
+            };
         }
         else {
-                setAlert({
+                setAlert={
                     ...Alert,
                     show: true,
                     message: "Added Successfully",
                     color: "success",
-                });
+                };
             }
                 dispatch(getBooksRequest({}) as any);
                 }).catch((error: any) => {
-                setAlert({
+                setAlert={
                             ...Alert,
                             show: true,
                             message: "Something went wrong",
                             color: "danger",
-                        });
+                        };
             console.error(error);
         });
     };
 ```
 
-### Updating a new Book -
+### 更新一本书 -
 
-Define the actions for Edit in the form of an array as shown below
+在表单中为编辑定义操作，如下所示
 
 ```javascript
     const actions = [{ id: "edit", displayName: t("Edit"), offId: "BookEdit"}]
 ```
 
-Update table using actions used in data table. Updated data table will look like
+使用在数据表中使用的操作来更新表格。更新后的数据表如下所示
 
     <RdsCompDatatable classes="table__userTable" tableHeaders={tableHeaders} pagination={true}
         tableData={Data} actions={actions}onActionSelection={onActionSelection} recordsPerPage={5}  recordsPerPageSelectListOption={true}>`</RdsCompDatatable >`
 
-Add following slice code inside Slice file and add builder cases similar to fetchbook
+在切片文件中添加以下代码，并在额外的reducer中添加构建器案例，与fetchbook类似
 
 ```javascript
     export const putBooksRequest = createAsyncThunk(
@@ -136,7 +137,7 @@ Add following slice code inside Slice file and add builder cases similar to fetc
     );
 ```
 
-Add these builder cases inside BookSlice extra reducer
+在BookSlice的额外reducer中添加这些构建器案例
 
 ```javascript
     builder.addCase(putBooksRequest.pending, (state) => {
@@ -148,11 +149,11 @@ Add these builder cases inside BookSlice extra reducer
     });
         builder.addCase(putBooksRequest.rejected,(state, action)=> {
         state.loading = false;
-        state.error = action.error.message || "Something went wrong";
+        state.error = action.error.message || "出了点问题";
     });
 ```
 
-Add the Edit function in Book Page
+在Book Page中添加编辑功能
 
 ```javascript
   const onEdithandler = (datafromcomponent: any) => {
@@ -163,128 +164,4 @@ Add the Edit function in Book Page
         const date = new Date(inputdate);
         const year = date.getFullYear();
         const month = (date.getMonth() + 1).toString().padStart(2, "0");
-        const day = date.getDate().toString().padStart(2, "0");
-        const hours = date.getHours().toString().padStart(2, "0");
-        const minutes = date.getMinutes().toString().padStart(2, "0");
-        const seconds = date.getSeconds().toString().padStart(2, "0");
-        const formattedDate = ${year}-${month}-${day}T${hours}:${minutes}:${seconds};
-        return formattedDate
-    }
-        const data =
-    {
-        concurrencyStamp : dataEmit.concurrencyStamp,
-        name: datafromcomponent.data.Name,
-        type:TypeIndex,
-        publishDate: dateChange(datafromcomponent.data.PublishDate),
-        price: datafromcomponent.data.Price
-    }
-        dispatch(putBooksRequest({ id: id ,requestBody: data }) as any)
-            .then((res: any) => {
-            setdataEmit([{}]);
-            if (res.type.includes("rejected")){
-            setAlert({
-                ...Alert,
-                show: true,
-                message: "Error while updating",
-                color: "danger",
-            });
-                }else{
-                dispatch(getBooksRequest({}) as any);
-                setAlert({
-                ...Alert,
-                show: true,
-                message: "Updated Succesfully",
-                color: "success",
-            });
-        }
-    })
-        .catch((error: any) => {
-            setAlert({
-            ...Alert,
-            show: true,
-            message: "Something went wrong",
-            color: "danger",
-        });
-            console.error(error);
-        });
-    };
-```
-
-Add property of RdsOffcanvas element below RdsCompDatatable
-
-```javascript
-    <RdsOffcanvas
-        placement={"end"}
-        backDrop={true}
-        scrolling={false}
-        preventEscapeKey={false}
-        offId={"BookEdit"}
-        canvasTitle={"Edit"}
-        offcanvaswidth={550}
-    >
-    <>
-        <RdsCompBook
-        NameProp = {dataEmit.name}
-        TypeProp = {dataEmit.type}
-        PublishDateProp = {dataEmit.publishDate}
-        PriceProp = {dataEmit.price}
-        offCanvasType={"update"}
-        TypeEnumItems={TypeEnum}
-        onSaveHandler={onEdithandler}
-        >`</RdsCompBook>`
-    </>
-    `</RdsOffcanvas>`
-```
-
-### Deleting a new Book –
-
-Add Edit function in Book Page
-
-```javascript
-const actions = [{ id: "Delete", displayName: t("Delete"), modalId: "bookDel" }]
-                               ]
-```
-
-We now add a slice file used for Delete functionality
-
-```javascript
-   export const deleteBooksRequest = createAsyncThunk(
-    'book/deleteBooksRequest',
-    async   ({
-                id,
-            }:{
-                id: string,
-            }) => {
-                const response = await BookService.deleteBooks({
-                id,
-            });                return response;
-            }
-    );
-```
-
-Add these builder cases inside BookSlice extra reducer
-
-```javascript
-    builder.addCase(deleteBooksRequest.pending, (state) => {
-        state.loading = true;
-    });
-        builder.addCase(deleteBooksRequest.fulfilled, (state, action) => {
-        state.loading = false;
-        state.error = "";
-    });
-        builder.addCase(deleteBooksRequest.rejected,(state, action)=> {
-        state.loading = false;
-        state.error = action.error.message || "Something went wrong";
-    });
-```
-
-We integrate a component called RdsCompAlertPopup to display alert during deleting a book list
-
-```javascript
-    <RdsCompAlertPopup
-            alertID={"bookDel"}
-            onSuccess={onDeleteHandler}
-            ></RdsCompAlertPopup>
-```
-
-Add delete function in Book Page
+        const day =
