@@ -1,46 +1,48 @@
+以下是您提供的文本的中文翻译：
 
-OpenIddict Module
-=================
+# OpenIddict 模块
 
-This module provides integration and management functionality for the OpenIddict library;
+此模块提供了与 OpenIddict 库的集成和管理功能：
 
-* Built on the [OpenIddict-core](https://github.com/openiddict/openiddict-core) library.
-* Manage **Application** and **API scopes** in the system.
-* Set **permissions** for clients.
+* 基于 [OpenIddict-core](https://github.com/openiddict/openiddict-core) 库。
+* 管理系统中的**应用程序**和**API范围**。
+* 为客户端设置**权限**。
 
-See [the module description page](https://commercial.abp.io/modules/Volo.OpenIddict) for an overview of the module features.
+请参阅模块描述页面，了解该模块功能的概述。
 
-User Interface
+用户界面
 --------------
 
-### Menu Items
+### 菜单项
 
-The OpenIddict module adds the following items to the "Main" menu, under the "Administration" menu item:
+OpenIddict 模块将以下项目添加到 "主" 菜单下的 "管理" 菜单项：
 
-* **Applications**: Application management page.
-* **Scopes**: Scope management page.
+* **应用程序**：应用程序管理页面。
+* **范围**：范围管理页面。
 
-OpenIddictProMenus class has the constants for the menu item names.
+OpenIddictProMenus类包含了菜单项名称的常量。
 
-Pages
+页面
 -----
 
-Application Management
+应用程序管理
 
-Applications page is used to manage OpenIddict applications. An application represent hosted applications that can request tokens from your authentication server.
+应用程序页面用于管理 OpenIddict 应用程序。一个应用程序表示可以从您的身份验证服务器请求令牌的托管应用程序。
 
-![New Application](./images/appliaction.png)
+![新应用程序](./images/appliaction.png)
 
-You can create new application or edit existing applications in this page:
+您可以在此页面创建新应用程序或编辑现有应用程序：
 
-![create new application or edit existing applications](./images/appliaction-new.png) ![Edit Application](./images/appliaction-edit.png)
+![创建新应用程序或编辑现有应用程序](./images/appliaction-new.png) ![编辑应用程序](./images/appliaction-edit.png)
 
-API Scope Management
+API 范围管理
 
-OpenIddict module allows to manage API scope. To allow applications to request access tokens for APIs, you need to define API scopes.
+OpenIddict 模块允许管理 API 范围。要允许应用程序请求用于 API 的访问令牌，您需要定义 API 范围。
 
-![New Scope](./images/scope.png)
+![新范围](./images/scope.png)
 
-You can create a new API resource or edit an existing API resource in this page:
+您可以在此页面创建新的 API 资源或编辑现有的 API 资源：
 
-![New Scope](./images/scope-edit.png)
+![新范围](./images/scope-edit.png)
+
+希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。
