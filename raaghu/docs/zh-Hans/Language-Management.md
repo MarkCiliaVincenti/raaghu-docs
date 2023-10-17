@@ -1,47 +1,48 @@
-Language Management Module
-==========================
+# 语言管理模块
 
-This module implements the Language management system of an application;
+此模块实现了应用程序的语言管理系统：
 
-* Manage **languages** in the system.
-* Translate texts in the UI.
-* Enable/disable **languages.**
-* Select **default language** in the UI.
+* 管理系统中的**语言**。
+* 翻译用户界面中的文本。
+* 启用/禁用**语言**。
+* 在用户界面中选择**默认语言**。
 
-See [the module description page](https://commercial.abp.io/modules/Volo.LanguageManagement) for an overview of the module features.
+请参阅模块描述页面，了解该模块功能的概述。
 
-User Interface
+用户界面
 --------------
 
-### Menu Items
+### 菜单项
 
-Language management module adds the following items to the "Main" menu, under the "Administration" menu item:
+语言管理模块将以下项目添加到 "主" 菜单下的 "管理" 菜单项：
 
-* **Languages**: Language management page.
-* **Language Texts**: Language text management page.
+* **语言**：语言管理页面。
+* **语言文本**：语言文本管理页面。
 
-LanguageManagementMenuNames class has the constants for the menu item names.
+LanguageManagementMenuNames类包含了菜单项名称的常量。
 
-### Pages
+### 页面
 
-Languages
+语言
 
-Languages page is used to manage languages in the system.
+语言页面用于管理系统中的语言。
 
-![New Language](./images/language.png)
+![新语言](./images/language.png)
 
-You can create a new language or edit an existing language in this page:
+您可以在此页面创建新语言或编辑现有语言：
 
-![Create New Language](./images/language-new.png) ![Edit Language](./images/language-edit.png)
+![创建新语言](./images/language-new.png) ![编辑语言](./images/language-edit.png)
 
-* **Enabled** languages can be selected as the system language.
+* **已启用的**语言可以被选择为系统语言。
 
-### Language Texts
+### 语言文本
 
-Language texts page is used to manage texts in different languages.
+语言文本页面用于管理不同语言中的文本。
 
-![Language Texts](./images/langauge-text.png)
+![语言文本](./images/langauge-text.png)
 
-You can translate a text for a language or edit the already existing translation in this page.
+您可以在此页面翻译某种语言的文本或编辑已存在的翻译。
 
-![edit the already existing translation in this page](./images/language-text-edit.png)
+![在此页面编辑已存在的翻译](./images/language-text-edit.png)
+
+希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。
