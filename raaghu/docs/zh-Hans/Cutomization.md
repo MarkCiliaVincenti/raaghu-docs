@@ -1,11 +1,9 @@
+**自定义**
 
-CUSTOMIZATION
--------------
+### 管理个人资料页面选项卡
 
-### Manage Profile Page Tabs
+在单击主机管理员个人资料的下拉菜单后，您将获得4个选项卡，分别是“个人资料图片”、“更改密码”、“个人信息”和“双因素”。
 
-Under the My Account on clicking the dropdown of host admin profile, you get 4 tabs as Profile Picture, Change Password, Personal Info and Two factor
+通过 @volo/abp.ng.account/public/config 包公开的 ManageProfileTabsService 可以管理个人资料页面中的选项卡。您可以使用此服务添加、删除或编辑选项卡。
 
-The tabs in the manage profile page can be managed via ManageProfileTabsService which is exposed by the @volo/abp.ng.account/public/config package. You can add, remove, or edit a tab with using this service.
-
-![Manage Profile Page](./images/my-account.png)
+![管理个人资料页面](./images/my-account.png)
