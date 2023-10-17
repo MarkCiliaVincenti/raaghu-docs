@@ -1,86 +1,88 @@
-Forms Module
+表单模块
 ============
 
-This module allows you to create questionnaires to gather information. The forms module can store responses as they come in and you can export the data to a CSV file. You can share your form with others with your form unique link. You can request authentication or allow anonymous reply. It is similar to the Google Form application. Usage area is quite wide, you can create surveys, manage event registrations, collect email addresses for a newsletter, create a quiz, and even receive an order request.
+该模块允许您创建调查问卷以收集信息。表单模块可以在信息提交时存储响应，并且您可以将数据导出到CSV文件中。您可以通过表单的唯一链接与他人分享您的表单。您可以请求身份验证或允许匿名回复。它类似于Google表单应用程序。使用领域非常广泛，您可以创建调查、管理活动注册、收集电子邮件地址用于新闻通讯、创建测验，甚至接收订单请求。
 
-See [the module description page](https://commercial.abp.io/modules/Volo.Forms) for an overview of the module features.
+请参阅[模块描述页面](https://commercial.abp.io/modules/Volo.Forms)以获取有关模块功能的概述。
 
-UI SCREENSHOTS TO BE ADDED
+UI屏幕截图将会被添加
 
-Internals
+内部结构
 ---------
 
-### Domain layer
+### 领域层
 
-Aggregates
+聚合
 
-This module follows the [Entity Best Practices &amp; Conventions](https://docs.abp.io/en/abp/latest/Best-Practices/Entities) guide.
+该模块遵循[实体最佳实践和约定](https://docs.abp.io/en/abp/latest/Best-Practices/Entities)指南。
 
-* **Form**
+* **表单（Form）**
 
-  * The main aggregate root of the form entities. The form options, title and description is being stored on this entity.
-* **QuestionBase**
+  * 表单实体的主要聚合根。表单的选项、标题和描述存储在此实体上。
+* **问题基础（QuestionBase）**
 
-  * It stores questions of the form. This entity is dependent to form entity by FormId.
-* **FormResponse**
+  * 存储表单的问题。此实体依赖于表单实体的FormId。
+* **表单响应（FormResponse）**
 
-  * Each form submit is a new form response record. The form response has answer records.
+  * 每次表单提交都是一个新的表单响应记录。表单响应包含答案记录。
 
-Repositories
+仓储
 
-This module follows the [Repository Best Practices &amp; Conventions](https://docs.abp.io/en/abp/latest/Best-Practices/Repositories) guide.
+该模块遵循[仓储最佳实践和约定](https://docs.abp.io/en/abp/latest/Best-Practices/Repositories)指南。
 
-Following custom repositories are defined for this module:
+为此模块定义了以下自定义仓储：
 
 * IFormRepository
 * IQuestionRepository
 * IChoiceRepository
 * IResponseRepository
 
-Domain services
+领域服务
 
-This module follows the [Domain Services Best Practices &amp; Conventions](https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services) guide.
+该模块遵循[领域服务最佳实践和约定](https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services)指南。
 
-### QuestionManager
+### 问题管理器
 
-QuestionManager is used to manage the questions of your form.
+QuestionManager用于管理您表单的问题。
 
-### Application layer
+### 应用层
 
-Application services
+应用服务
 
-* FormApplicationService
-* QuestionAppService
-* ResponseAppService
+* 表单申请服务
+* 问题应用服务
+* 响应应用服务
 
-### Database providers
+### 数据库提供程序
 
-Common
+通用
 
-### Table / collection prefix & schema
+表/集合前缀和架构
 
-All tables/collections use the Frm prefix by default. Set static properties on the FormsDbProperties class if you need to change the table prefix or set a schema name (if supported by your database provider).
+默认情况下，所有表/集合都使用Frm前缀。如果需要更改表前缀或设置模式名称（如果您的数据库提供程序支持），请在FormsDbProperties类上设置静态属性。
 
-### Connection string
+连接字符串
 
-This module uses Forms for the connection string name. If you don't define a connection string with this name, it fallbacks to the Default connection string.
+该模块使用Forms作为连接字符串名称。如果您没有定义此名称的连接字符串，它将回退到默认连接字符串。
 
-See the [connection strings](https://docs.abp.io/en/abp/latest/Connection-Strings) documentation for details.
+有关详细信息，请参阅[连接字符串](https://docs.abp.io/en/abp/latest/Connection-Strings)文档。
 
 Entity Framework Core / MongoDB
 
-Tables / Collections
+表/集合
 
-* **FrmForms**: Form list.
-* **FrmQuestions**: Questions of the forms
-* **FrmAnswers**: Answers of the form response.
-* **FrmChoices**: Choices of questions.
-* **FrmFormResponses**: A new form response is being created each time user submits the form.
+* **FrmForms**：表单列表。
+* **FrmQuestions**：表单的问题
+* **FrmAnswers**：表单响应的答案。
+* **FrmChoices**：问题的选项。
+* **FrmFormResponses**：每当用户提交表单时都会创建一个新的表单响应。
 
-**Entity Relationships**
+**实体关系**
 
-![Entity Relationships](./images/entityRelationship.jpg)
+![实体关系](./images/entityRelationship.jpg)
 
-### Permissions
+### 权限
 
-See the FormsPermissions class members for all permissions defined for this module.
+有关为该模块定义的所有权限，请参阅FormsPermissions类的成员。
+
+希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。
