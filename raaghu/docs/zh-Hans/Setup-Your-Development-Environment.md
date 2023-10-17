@@ -1,70 +1,70 @@
-Getting Started
-===============
+Here's the provided English-language Markdown text converted into Chinese:
 
-This tutorial assumes that you’ve already purchased an [ABP Commercial license](https://commercial.abp.io/pricing) and have an active ABP Commercial account.
+# 入门指南
 
-This document assumes that you refer to use raaghu-react Pages as the UI framework and Entity Framework Core as the database provider.
+本教程假设您已经购买了[ABP商业许可证](https://commercial.abp.io/pricing)并拥有活跃的ABP商业账户。
 
-Setup Development Environment
------------------------------
+本文档假定您希望使用raaghu-react Pages作为UI框架，以及Entity Framework Core作为数据库提供程序。
 
-Let’s setup your development environment before creating the first project.
+## 设置开发环境
 
-### Pre-requirements
+在创建第一个项目之前，让我们设置您的开发环境。
 
-The following tools should be installed on your development machine.
+### 先决条件
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (v17.3+) for Windows / [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
+您的开发机器上应安装以下工具：
+
+* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (版本17.3+，仅适用于Windows) / [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 * [.NET 7.0+](https://dotnet.microsoft.com/en-us/download/dotnet)
-* [Node v18.18](https://nodejs.org/en) or above
-* [npm v9.5](https://www.npmjs.com/package/npm) and above or [Yarn v1.20+ (not v2)](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+* [Node v18.18](https://nodejs.org/en)或更高版本
+* [npm v9.5](https://www.npmjs.com/package/npm)及更高版本，或者[Yarn v1.20+ (不是v2)](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 
-### Install the ABP CLI
+### 安装ABP CLI
 
-[ABP CLI](https://docs.abp.io/en/abp/latest/CLI) is a command line interface that is used to automate some common tasks for ABP based solutions.
+[ABP CLI](https://docs.abp.io/en/abp/latest/CLI)是一个命令行界面，用于自动化ABP解决方案的一些常见任务。
 
-[ABP CLI](https://docs.abp.io/en/abp/latest/CLI) is a free & open source tool for the ABP Framework. It is also used for ABP Commercial application development.
+[ABP CLI](https://docs.abp.io/en/abp/latest/CLI)是ABP Framework的免费开源工具，也用于ABP商业应用程序开发。
 
-First, you need to install the ABP CLI using the following command:
+首先，您需要使用以下命令安装ABP CLI：
 
 ```shell
   dotnet tool install -g Volo.Abp.Cli
 ```
 
-If you've already installed, you can update it using the following command:
+如果您已经安装了ABP CLI，可以使用以下命令进行更新：
 
 ```shell
   dotnet tool update -g Volo.Abp.Cli
 ```
 
-### Login to your account
+### 登录到您的账户
 
-In order to use ABP Commercial features, you need to login your account using the ABP CLI:
+为了使用ABP商业功能，您需要使用ABP CLI登录您的账户：
 
 ```shell
 abp login username 
 ```
 
-It will ask a password, so you must enter the password of your account.
+它会要求输入密码，因此您必须输入您的账户密码。
 
-You can freely create a new account from the [ABP Account](https://account.abp.io/Account/Login) website. However, your account should be registered to an organization as a developer to be able to use the ABP Commercial. If your company has an ABP Commercial license, ask your manager to add your account to the developer list of the organization.
+您可以从[ABP Account](https://account.abp.io/Account/Login)网站自由创建一个新账户。然而，您的账户应该作为开发人员注册到组织中，以便能够使用ABP商业功能。如果您的公司拥有ABP商业许可证，请向您的经理申请将您的账户添加到组织的开发人员列表中。
 
-### Install the ABP Suite
+### 安装ABP Suite
 
-[ABP Suite](https://docs.abp.io/en/commercial/7.2/abp-suite/index) is an application aims to assist you on your development.
+[ABP Suite](https://docs.abp.io/en/commercial/7.2/abp-suite/index)是一个旨在帮助您进行开发的应用程序。
 
-First, you need to install the ABP Suite:
+首先，您需要安装ABP Suite：
 
 ```shell
   abp suite install
 ```
 
-If you’ve already installed , you can update it:
+如果您已经安装了ABP Suite，可以使用以下命令进行更新：
 
 ```shell
   abp suite update
 ```
 
-### Next Step
+### 下一步
 
-* [Creating a new solution](Creating-A-New-Solution.md)
+* [创建新解决方案](Creating-A-New-Solution.md)
