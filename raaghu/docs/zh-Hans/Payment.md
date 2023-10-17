@@ -1,53 +1,54 @@
-Payment module
-==============
+# 支付模块
 
-Payment module implements payment gateway integration of an application. It provides one time payment and recurring payment options.
+支付模块实现了应用程序的支付网关集成。它提供一次性付款和定期付款选项。
 
-* Supports [Stripe](https://stripe.com/en-in), [PayPal](https://www.paypal.com/in/home), [2Checkout](https://www.2checkout.com/), [PayU](https://corporate.payu.com/), [Iyzico](https://www.iyzico.com/en) and [Alipay](https://global.alipay.com/platform/site/ihome) payment gateways.
+* 支持 [Stripe](https://stripe.com/en-in)、[PayPal](https://www.paypal.com/in/home)、[2Checkout](https://www.2checkout.com/)、[PayU](https://corporate.payu.com/)、[Iyzico](https://www.iyzico.com/en) 和 [Alipay](https://global.alipay.com/platform/site/ihome) 支付网关。
 
-See [the module description page](https://commercial.abp.io/modules/Volo.Payment) for an overview of the module features.
+请参阅模块描述页面，了解该模块功能的概述。
 
-Supported Gateway Packages
+支持的网关包
 --------------------------
 
-In order to use a Payment Gateway, you need to add related NuGet packages to your related project as explained in Manual Installation section above and add DependsOn to your related module. For example, if you don't want to use PayU, you don't have to use its NuGet packages.
+要使用支付网关，您需要像上面在手动安装部分中所解释的那样，将相关的 NuGet 包添加到相关项目中，并将 `DependsOn` 添加到相关模块。例如，如果您不想使用 PayU，就不必使用它的 NuGet 包。
 
-After adding packages of a payment gateway to your application, you also need to configure global payment module options and options for the payment modules you have added. See the Options section below.
+在将支付网关的包添加到您的应用程序后，您还需要配置全局支付模块选项以及您已添加的支付模块的选项。请参阅下面的选项部分。
 
-### Creating a custom payment gateway
+### 创建自定义支付网关
 
-If you require a different payment gateway than existing ones, you can create a custom payment gateway by your own. 2 steps are required to create a custom payment gateway. First is creating a payment gateway object that implements IPaymentGateway. This interface exposes core payment operations without any UI. Second step is creating UI for the payment gateway. This UI is used to redirect user to payment gateway and validate payment.
+如果您需要与现有网关不同的支付网关，您可以自己创建自定义支付网关。创建自定义支付网关需要两个步骤。第一步是创建实现 `IPaymentGateway` 的支付网关对象。这个接口公开了核心的支付操作，没有任何用户界面。第二步是创建支付网关的用户界面。这个用户界面用于将用户重定向到支付网关并验证支付。
 
-Follow the [instructions here](https://docs.abp.io/en/commercial/7.0/modules/payment-custom-gateway) to create a custom payment gateway.
+请按照[此处的说明](https://docs.abp.io/en/commercial/7.0/modules/payment-custom-gateway)创建自定义支付网关。
 
-### Packages
+### 包
 
-This module follows the [module development best practices guide](https://docs.abp.io/en/abp/latest/Best-Practices/Index) and consists of several NuGet and NPM packages. See the guide if you want to understand the packages and relations between them.
+此模块遵循[模块开发最佳实践指南](https://docs.abp.io/en/abp/latest/Best-Practices/Index)并包含多个 NuGet 和 NPM 包。如果您想了解这些包和它们之间的关系，请参阅指南。
 
-You can visit [Payment module package list page](https://abp.io/packages?moduleName=Volo.Payment) to see list of packages related with this module
+您可以访问[支付模块包列表页面](https://abp.io/packages?moduleName=Volo.Payment)以查看与该模块相关的包的列表。
 
-### User interface
+### 用户界面
 
-#### Public Pages
+#### 公共页面
 
-Payment gateway selection
+支付网关选择
 
-This page allows selecting a payment gateway. If there is one payment gateway configured for final application, this page will be skipped.
+此页面允许选择支付网关。如果为最终应用程序配置了一个支付网关，此页面将被跳过。
 
-#### PayU prepayment pages
+#### PayU 预付款页面
 
-This page is used to send Name, Surname and Email Address of user to PayU.
+此页面用于将用户的姓名、姓氏和电子邮件地址发送到 PayU。
 
-#### Admin Pages
+#### 管理员页面
 
-Payment plans page
+支付计划页面
 
-Payment plans for subscriptions can be managed on this page. You can connect external subscriptions for each gateway to a plan.
+此页面用于管理订阅的支付计划。您可以为每个网关将外部订阅连接到计划中。
 
-![Admin Pages](./images/payment-plan.png)
+![管理员页面](./images/payment-plan.png)
 
-Payment Request Page
+支付请求页面
 
-This page lists all the payment request operations in application.
+此页面列出了应用程序中的所有支付请求操作。
 
-![Admin Pages](images/payment-request.png)
+![管理员页面](images/payment-request.png)
+
+希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。
