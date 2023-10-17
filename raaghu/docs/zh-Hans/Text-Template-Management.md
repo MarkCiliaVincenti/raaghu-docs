@@ -1,31 +1,30 @@
-Text Template Management Module
-===============================
+# 文本模板管理模块
 
-This module is used to store and edit template contents for [the text templating system](https://docs.abp.io/en/abp/latest/Text-Templating) of the ABP framework. So, you may need to understand it to better understand the purpose of this module.
+此模块用于存储和编辑 ABP 框架的[文本模板系统](https://docs.abp.io/en/abp/latest/Text-Templating)的模板内容。因此，您可能需要了解它，以更好地理解此模块的目的。
 
-There are different use cases of the text templating system. For example, [the Account Module](https://docs.abp.io/en/commercial/7.0/modules/Account) is using it to define templates for sending emails when it needs to send emails to users (like sending "password reset link" email). This module provides UI to easily edit these email templates.
+文本模板系统有不同的用途。例如，[账户模块](https://docs.abp.io/en/commercial/7.0/modules/Account)在需要向用户发送电子邮件时（例如发送“重置密码链接”电子邮件）使用它来定义模板。此模块提供了 UI，以便轻松编辑这些电子邮件模板。
 
-See [the module description page](https://commercial.abp.io/modules/Volo.TextTemplateManagement) for an overview of the module features.
+请参阅[模块描述页面](https://commercial.abp.io/modules/Volo.TextTemplateManagement)以了解该模块功能的概述。
 
-User Interface
+用户界面
 --------------
 
-### Menu Items
+### 菜单项
 
-Text Template Management module adds the following items to the "Main" menu, under the "Administration" menu item:
+文本模板管理模块将以下项目添加到“主”菜单，位于“管理”菜单项下：
 
-* **Text Templates**: List, view and filter text templates.
+* **文本模板**：列出、查看和筛选文本模板。
 
-TextTemplateManagementMainMenuNames class has the constants for the menu item names.
+TextTemplateManagementMainMenuNames 类包含菜单项名称的常量。
 
-### Pages
+### 页面
 
-Text Templates
+文本模板
 
-Text Templates page is used to view the list of templates defined in the application.
+文本模板页面用于查看应用程序中定义的模板列表。
 
-![Text Templates page is used to view the list of templates](./images/text-template.png)
+![文本模板页面用于查看模板列表](./images/text-template.png)
 
-Click to the Actions -> Edit Contents to edit content for a template. There are two types of UI to edit a template content:
+单击“操作” -> “编辑内容”以编辑模板的内容。有两种类型的 UI 用于编辑模板内容：
 
-![Edit content for a template](./images/text-template-edit.png)
+![编辑模板内容](./images/text-template-edit.png)
