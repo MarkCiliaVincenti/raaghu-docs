@@ -1,6 +1,5 @@
-Startup Templates
-=================
+# 初始模板
 
-Click the name from the list below to see the documentation of the related startup template:
+单击下面列表中的名称以查看相关初始模板的文档：
 
-* [Application Template](Application-Templates.html)
+* [应用程序模板](Application-Templates.html)
