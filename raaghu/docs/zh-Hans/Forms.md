@@ -32,10 +32,10 @@ UI屏幕截图将会被添加
 
 为此模块定义了以下自定义仓储：
 
-* IFormRepository
-* IQuestionRepository
-* IChoiceRepository
-* IResponseRepository
+* IForm存储库
+* IQuestion存储库
+* IChoice存储库
+* IResponse存储库
 
 领域服务
 
