@@ -1,69 +1,69 @@
-Creating a new ABP Commercial solution
-======================================
+# 创建新的ABP商业解决方案
 
-There are 2 ways of creating a new ABP Commercial solution. You can use the [ABP CLI](https://docs.abp.io/en/abp/latest/CLI) or [ABP Suite.](https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution)
+有两种方法可以创建新的ABP商业解决方案。您可以使用[ABP CLI](https://docs.abp.io/en/abp/latest/CLI)或[ABP Suite](https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution)。
 
-Creating solution via ABP CLI
+通过ABP CLI创建解决方案
 -----------------------------
 
-If you have not yet installed ABP CLI, you need to install it with the following command. To check if you already have it, write abp to the command line.
+如果您尚未安装ABP CLI，请使用以下命令进行安装。要检查是否已经安装了ABP CLI，请在命令行中输入 `abp` 。
 
 ```shell
    dotnet tool install -g Volo.Abp.Cli
 ```
 
-To create your solution, go to the directory where you want to create in and type the following command:
+要创建您的解决方案，请进入要创建的目录，然后键入以下命令：
 
 ```shell
     abp new Acme.BookStore -t app-pro
 ```
 
-* Acme.BookStore is the project name. Your Visual Studio Solution, .sln file will be named as Acme.BookStore.sln. The projects inside the root folder and all the namespaces will have the prefix Acme.BookStore.\*. You can give different project names like onlyBookStore or Acme.Retail.BookStore. You can use single level, two-level or three-level naming.
-* \-t or \--template is the template name. For commercial apps, use app-pro.
-* To discover other CLI new project options type:
+* Acme.BookStore 是项目名称。您的Visual Studio解决方案（.sln文件）将命名为 Acme.BookStore.sln。根文件夹中的项目和所有命名空间将具有前缀 Acme.BookStore.*。您可以指定不同的项目名称，如 onlyBookStore 或 Acme.Retail.BookStore。您可以使用单级、两级或三级命名。
+* -t 或 --template 是模板名称。对于商业应用程序，请使用 app-pro。
+* 要查看其他CLI新项目选项，请键入：
 
-  ```shell
+```shell
     dotnet tool update -g Volo.Abp.Cli
-  ```
+```
 
-### Specify the UI framework
+### 指定UI框架
 
-The template provides multiple UI frameworks:
+模板提供多个UI框架：
 
-* mvc: ASP.NET Core MVC UI with Razor Pages (default)
-* blazor: Blazor UI
-* blazor-server: Blazor Server UI
-* angular: Angular UI
-* react:React UI
-* maui-blazor: MAUI Blazor UI
 
-Use \-u or \--ui option to specify the UI framework:
+*mvc：带有 Razor 页面的 ASP.NET Core MVC UI（默认）
+* Blazor：Blazor UI
+* Blazor-服务器：Blazor 服务器 UI
+* 角度：角度用户界面
+* 反应：反应用户界面
+* maui-blazor：MAUI Blazor UI
+
+使用 -u 或 --ui 选项来指定UI框架：
 
 ```shell
     abp new Acme.BookStore -t app-pro -u react
 ```
 
-Specify the database provider
+指定数据库提供程序
 
-The template supports the following database providers:
+模板支持以下数据库提供程序：
 
-* ef: Entity Framework Core (default)
-* mongodb: MongoDB
+* ef：Entity Framework Core（默认）
+* mongodb：MongoDB
 
-Use \-d or \--database-provider option to specify the database provider:
+使用 -d 或 --database-provider 选项来指定数据库提供程序：
 
 ```shell
  abp new Acme.BookStore -t app-pro -d mongodb
 ```
 
-### Creating solution via ABP Suite
+通过ABP Suite创建解决方案
 
-ABP Suite allows you to create a new ABP solution.
+ABP Suite允许您创建新的ABP解决方案。
 
-If you have not installed ABP Suite, see how to install ABP Suite.
+如果您尚未安装ABP Suite，请查看如何安装ABP Suite。
 
-To create a new solution, see [how to create a new solution.](https://docs.abp.io/en/commercial/7.2/abp-suite/create-solution)
+要创建新解决方案，请参阅[如何创建新解决方案](https://docs.abp.io/en/commercial/7.2/abp-suite/create-solution)。
 
-### What's next?
+### 下一步是什么？
 
-* [Solution structure](Solution-Structure.md)
+* [解决方案结构](Solution-Structure.md)
