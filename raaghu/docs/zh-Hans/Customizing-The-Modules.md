@@ -1,7 +1,6 @@
-GUIDES
-======
+# 指南
 
-Customizing the Modules
+自定义模块
 -----------------------
 
-ABP Commercial [modules](https://docs.abp.io/en/commercial/7.2/modules/index) are designed to be extensible and customizable. They fully implement the extensibility system that is defined by the ABP Framework. See the [Customizing the Application Modules](https://docs.abp.io/en/abp/latest/Customizing-Application-Modules-Guide) guide to learn different ways of extending/customizing a module.
+ABP商业[模块](https://docs.abp.io/en/commercial/7.2/modules/index)旨在具有可扩展性和可定制性。它们完全实现了ABP框架定义的可扩展性系统。请参阅[自定义应用程序模块](https://docs.abp.io/en/abp/latest/Customizing-Application-Modules-Guide)指南，了解扩展/自定义模块的不同方法。
