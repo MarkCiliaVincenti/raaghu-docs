@@ -1,16 +1,16 @@
-Web Application Development Tutorial -
-======================================
+# Web应用程序开发教程 -
+========================
 
-Part 1: Creating Server Side
-----------------------------
+第1部分：创建服务器端
+-----------------------
 
-### About this tutorial
+### 关于本教程
 
-Developed with utilization of following technologies, this tutorial series will guide you in constructing an ABP Commercial application named Acme.BookStore, which functions as a tool for managing a catalogue of books and their corresponding authors.
+使用以下技术开发，本教程系列将指导您构建一个名为Acme.BookStore的ABP商业应用程序，用于管理图书目录及其对应的作者。
 
-* **Entity Framework Core** as database provider
-* **Raaghu** as a React UI Framework
+* 数据库提供程序使用**Entity Framework Core**
+* UI框架使用**Raaghu**作为React UI框架
 
-### The Next Part
+### 下一部分
 
-* See the [next part](The-Book-List-Page.md) of this tutorial.
+* 请参见本教程的[下一部分](The-Book-List-Page.md)。
