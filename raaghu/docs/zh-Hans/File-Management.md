@@ -1,172 +1,175 @@
-File Management Module
+文件管理模块
 ======================
 
-This module is used to upload, download and organize files in a hierarchical folder structure. It is also compatible to multi-tenancy and you can determine total size limit for your tenants.
+该模块用于上传、下载和组织文件，以层次化文件夹结构进行管理。它还支持多租户，并允许您为租户设定总大小限制。
 
-This module is based on the [BLOB Storing](https://docs.abp.io/en/abp/latest/Blob-Storing) system, so it can use different storage providers to store the file contents.
+该模块基于[BLOB存储](https://docs.abp.io/en/abp/latest/Blob-Storing)系统，因此可以使用不同的存储提供程序来存储文件内容。
 
-See [the module description page](https://commercial.abp.io/modules/Volo.FileManagement) for an overview of the module features.
+请参阅[模块描述页面](https://commercial.abp.io/modules/Volo.FileManagement)以获取有关模块功能的概述。
 
 React-UI
 --------
 
-File Management module is based on the [BLOB Storing](https://docs.abp.io/en/abp/latest/Blob-Storing) system as defined before, and it uses FileManagementContainer as a BLOB container.
+文件管理模块基于前述的[BLOB存储](https://docs.abp.io/en/abp/latest/Blob-Storing)系统，它使用FileManagementContainer作为BLOB容器。
 
-Setting BLOB Provider
+设置BLOB提供程序
 ---------------------
 
-File Management module is based on the [BLOB Storing](https://docs.abp.io/en/abp/latest/Blob-Storing) system as defined before, and it uses FileManagementContainer as a BLOB container.
+文件管理模块基于前述的[BLOB存储](https://docs.abp.io/en/abp/latest/Blob-Storing)系统，它使用FileManagementContainer作为BLOB容器。
 
-You must set a BLOB provider for FileManagementContainer.
+您必须为FileManagementContainer设置一个BLOB提供程序。
 
 ```C#
   Configure(options =>
             {
                 options.Containers.Configure(c =>
                     {
-                        c.UseDatabase(); // You can use FileSystem or Azure providers also.
+                        c.UseDatabase(); // 您也可以使用文件系统或Azure提供程序。
                     });
                 });
 ```
 
+请查看[BLOB存储提供程序文档](https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers)以获取有关提供程序以及如何使用它们的更多信息。
 
-Please check the [BLOB Storage Providers documentation](https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers) for more information about providers and how to use them.
+### 包
 
-### Packages
+该模块遵循[模块开发最佳实践指南](https://docs.abp.io/en/abp/latest/Best-Practices/Index)，由多个NuGet和NPM包组成。如果您想了解这些包及它们之间的关系，请参阅该指南。
 
-This module follows the [module development best practices guide](https://docs.abp.io/en/abp/latest/Best-Practices/Index) and consists of several NuGet and NPM packages. See the guide if you want to understand the packages and relations between them.
+您可以访问[文件管理模块包列表](https://abp.io/packages?moduleName=Volo.FileManagement)页面以查看与该模块相关的包的列表。
 
-You can visit [File Management module package list](https://abp.io/packages?moduleName=Volo.FileManagement) page to see list of packages related with this module.
+### 用户界面
 
-### User Interface
+### 菜单项
 
-### Menu Items
+文件管理模块将以下项添加到“主”菜单下的“管理”菜单项中：
 
-File Management module adds the following items to the "Main" menu, under the "Administration" menu item:
+* **文件管理**：列出、查看所有文件夹结构和文件。
 
-* **File Management**: List, view all folder structure and files.
+FileManagementMenuNames类包含了菜单项名称的常量。
 
-FileManagementMenuNames class has the constants for the menu item names.
+### 页面
 
-### Pages
+文件管理
 
-File Management
+文件管理页面用于创建文件夹、上传文件并查看存储在应用程序中的文件和文件夹列表。
 
-File Management page is used to create folders, upload files and view the list of folders and files that stored in the application.
+![文件管理页面用于创建文件夹、上传文件并查看文件夹和文件的列表](./images/file-management.png)
 
-![File Management page is used to create folders, upload files and view the list of folders](./images/file-management.png)
+### 文件夹
 
-### Folders
+您可以通过单击页面右上角的“创建文件夹”按钮来创建新文件夹。文件夹将在活动目录中创建。
 
-You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory.
+![您可以通过单击页面右上角的“创建文件夹”按钮来创建新文件夹。文件夹将在活动目录中创建。](./images/file-management-new.png)
 
-![You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory.](./images/file-management-new.png)
+您可以在左侧树视图上将文件夹移动到另一个目录中。
 
-You can move a folder to another directory on the left tree view.
+![您可以在左侧树视图上将文件夹移动到另一个目录中](./images/file-management-move.png)
 
-![You can move a folder to another directory on the left tree view](./images/file-management-move.png)
+您可以通过单击“操作” -> “重命名”来重命名文件夹。
 
-You can rename a folder by clicking Actions -> Rename on the table.
+![您可以通过单击“操作” -> “重命名”来重命名文件夹](./images/file-management-rename.png)
 
-![You can rename a folder](./images/file-management-rename.png)
+### 文件
 
-### Files
+您可以通过单击页面右上角的“上传文件”按钮来上传文件。这将打开一个新的模态框，以选择要上传的本地文件。文件将上传到活动目录中。
 
-You can upload files by clicking Upload Files button that located at top right on the page. This will open a new modal for selecting your local files to upload. The files will be uploaded at active directory.
+![您可以通过单击页面右上角的“上传文件”按钮来上传文件。](./images/file-management-upload.png)
 
-![You can upload files by clicking Upload Files button that located at top right on the page](./images/file-management-upload.png)
+您可以通过在数据表上单击“操作” -> “移动”来移动文件。
 
-You can move files by clicking Actions -> Move on the data table.
+![您可以通过在数据表上单击“操作” -> “移动”来移动文件。](./images/file-management-move.png)
 
-![You can move files by clicking Actions Move on the data table.](./images/file-management-move.png)
+您可以通过在数据表上单击“操作” -> “重命名”来重命名文件。
 
-You can rename a file by clicking Actions -> Rename on the data table.
+![您可以通过在数据表上单击“操作” -> “重命名”来重命名文件](./images/file-management-rename-edit.png)
 
-![You can rename a file by clicking Actions Rename on the data table](./images/file-management-rename-edit.png)
+### 数据种子
 
-### Data Seed
+该模块不会种子任何数据。
 
-This module doesn't seed any data.
+### 内部结构
 
-### Internals
+#### 领域层
 
-#### Domain Layer
+聚合
 
-Aggregates
-
-This module follows the [Entity Best Practices &amp; Conventions](https://docs.abp.io/en/abp/latest/Best-Practices/Entities) guide.
+该模块遵循[实体最佳实践和约定](https://docs.abp.io/en/abp/latest/Best-Practices/Entities)指南。
 
 #### TextTemplateContent
 
-* DirectoryDescriptor (aggregate root): Represents a folder.
-* FileDescriptor (aggregate root): Represents a file.
+* DirectoryDescriptor（聚合根）：表示一个文件夹。
+* FileDescriptor（聚合根）：表示一个文件。
 
-Repositories
+仓储
 
-This module follows the [Repository Best Practices &amp; Conventions](https://docs.abp.io/en/abp/latest/Best-Practices/Repositories) guide.
+该模块遵循[仓储最佳实践和约定](https://docs.abp.io/en/abp/latest/Best-Practices/Repositories)指南。
 
-Following custom repositories are defined for this module:
+为该模块定义了以下自定义仓储：
 
 * IDirectoryDescriptorRepository
 * IFileDescriptorRepository
 
-Domain Services
+领域服务
 
-This module follows the [Domain Services Best Practices &amp; Conventions](https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services) guide.
+该模块遵循[领域服务最佳实践和约定](https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services)指南。
 
-#### Directory Manager
+#### 目录管理器
 
-DirectoryManager is used to manage your folders like create, rename, move and delete.
+DirectoryManager用于管理文件夹，如创建、重命名、移动和删除。
 
-#### FileManager
+#### 文件管理器
 
-DirectoryManager is used to manage your folders like create, rename, move and delete.
+DirectoryManager用于管理文件夹，如创建、重命名、移动和删除。
 
-#### Settings
+#### 设置
 
-This module doesn't define any setting.
+该模块不定义任何设置。
 
-#### Features
+#### 特性
 
-You can enable or disable this module for each tenant, also you can set maximum storage size for each tenant. See the FileManagementFeatures class members for all features defined for this module.
+您可以为每个租户启用或禁用此模块，还可以为每个租户设置最大存储大小。有关为该模块定义的所有特性，请参阅FileManagementFeatures类的成员。
 
-#### Application Layer
+#### 应用层
 
-Application Services
+应用服务
 
-* DirectoryDescriptorAppService (implements IDirectoryDescriptorAppService): Implements the use cases of the file management UI.
-* FileDescriptorAppServiceFileDescriptorAppService (implements IFileDescriptorAppService): Implements the use cases of the file management UI.
+* DirectoryDescriptorAppService（实现IDirectoryDescriptorAppService）：实现文件管理UI的用例。
+* FileDescriptorAppServiceFileDescriptorAppService（实现IFileDescriptorAppService）：实现文件管理UI的用例。
 
-#### Database Providers
+#### 数据库提供程序
 
-Common
+通用
 
-#### Table/Collection Prefix & Schema
+#### 表/集合前缀和架构
 
-All tables/collections use the Fm prefix by default. Set static properties on the FileManagementDbProperties class if you need to change the table prefix or set a schema name (if supported by your database provider).
+默认情况下，
 
-#### Connection String
+所有表/集合都使用Fm前缀。如果您需要更改表前缀或设置模式名称（如果您的数据库提供程序支持），请在FileManagementDbProperties类上设置静态属性。
 
-This module uses FileManagement for the connection string name. If you don't define a connection string with this name, it fallbacks to the Default connection string.
+#### 连接字符串
 
-See the [connection strings](https://docs.abp.io/en/abp/latest/Connection-Strings) documentation for details.
+该模块使用FileManagement作为连接字符串名称。如果您没有定义此名称的连接字符串，它将回退到默认连接字符串。
+
+有关详细信息，请参阅[连接字符串](https://docs.abp.io/en/abp/latest/Connection-Strings)文档。
 
 Entity Framework Core
 
-#### Tables
+#### 表
 
 * **FmDirectoryDescriptors**
 * **FmFileDescriptors**
 
 MongoDB
 
-#### Collections
+#### 集合
 
-* **FmDirectoryDescriptors**
-* **FmFileDescriptors**
+* **Fm目录描述符**
+* **Fm文件描述符**
 
 MongoDB
 
-#### Permissions
+#### 权限
 
-See the FileManagementPermissions class members for all permissions defined for this module.
+请参阅FileManagementPermissions类的成员，以获取为该模块定义的所有权限。
+
+希望这能帮助您将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。
