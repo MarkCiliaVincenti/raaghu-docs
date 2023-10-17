@@ -1,38 +1,37 @@
-CMS Kit Pro Module
-==================
+# CMS Kit Pro 模块
 
-This module extends the [open-source CMS Kit module](https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index) and adds additional CMS (Content Management System) capabilities to your application.
+该模块扩展了[开源的CMS Kit模块](https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index)，为您的应用程序添加了额外的CMS（内容管理系统）功能。
 
-The following features are provided by the open source CMS Kit module:
+开源CMS Kit模块提供以下功能：
 
-* Blogging system to create publish blog posts with multiple blog support.
-* Tagging system to tag any kind of resource, like a blog post.
-* Comment system to add comments feature to any kind of resource, like blog post or a product review page.
-* Reaction system to add reactions (smileys) feature to any kind of resource, like a blog post or a comment.
-* Rating system to add rating feature to any kind of resource.
-* Menu system to manage public menus dynamically
-* Global resources system to add global styles and scripts dynamically.
-* Dynamic widget system to create dynamic widgets for page and blog posts.
+* 博客系统，用于创建具有多个博客支持的博客帖子。
+* 标记系统，用于对任何资源（如博客帖子）进行标记。
+* 评论系统，用于向任何资源（如博客帖子或产品评论页面）添加评论功能。
+* 反应系统，用于向任何资源（如博客帖子或评论）添加反应（笑脸）功能。
+* 评分系统，用于向任何资源添加评分功能。
+* 菜单系统，用于动态管理公共菜单
+* 全局资源系统，用于动态添加全局样式和脚本。
+* 动态小部件系统，用于创建页面和博客帖子的动态小部件。
 
-And the following features are provided by the CMS Kit pro version:
+CMS Kit Pro版本提供以下功能：
 
-* Newsletter system to allow users to subscribe to newsletters.
-* Contact form system to allow users to write messages to you.
-* URL forwarding system to create URLs that redirect to other pages or external websites.
-* Poll system to create quick polls for users
+* 通讯系统，允许用户订阅通讯。
+* 联系表单系统，允许用户给您写信。
+* URL转发系统，用于创建将重定向到其他页面或外部网站的URL。
+* 调查系统，用于创建用户的快速调查
 
-Click on a feature to understand and learn how to use it. See [the module description page](https://commercial.abp.io/modules/Volo.CmsKit.Pro) for an overview of the module features.
+单击一个功能以了解并学习如何使用它。有关模块功能的概述，请参阅[模块描述页面](https://commercial.abp.io/modules/Volo.CmsKit.Pro)。
 
-Existing Solutions
+现有解决方案
 ------------------
 
-If you want to add the CMS kit to your existing solution, you can use the ABP CLI add-module command:
+如果您想将CMS Kit添加到现有的解决方案中，可以使用ABP CLI的`add-module`命令：
 
 ```shell
  abp add-module Volo.CmsKit.Pro
 ```
 
-Open the GlobalFeatureConfigurator class in the Domain.Shared project and place the following code to the Configure method to enable all open-source and commercial features in the CMS Kit module.
+打开Domain.Shared项目中的GlobalFeatureConfigurator类，并在Configure方法中放置以下代码，以启用CMS Kit模块中的所有开源和商业功能。
 
 ```c#
   GlobalFeatureManager.Instance.Modules.CmsKit(cmsKit =>
@@ -45,6 +44,6 @@ Open the GlobalFeatureConfigurator class in the Domain.Shared project and place 
 ```
 
 
-Alternatively, you can enable features individually, like cmsKit.Comments.Enable();.
+或者，您可以单独启用功能，比如`cmsKit.Comments.Enable();`。
 
-If you are using Entity Framework Core, do not forget to add a new migration and update your database.
+如果您使用Entity Framework Core，请不要忘记添加新迁移并更新您的数据库。
