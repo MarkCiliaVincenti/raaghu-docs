@@ -1,62 +1,62 @@
-Part 2: Book List Page
-======================
+# 第2部分：图书列表页面
 
 Github CLI
 ----------
 
-Select a local Directory and run following command to download and output code using a local directory name where project is converted into zip
+选择一个本地目录，运行以下命令以下载并输出代码，使用一个本地目录名称，其中项目已经转换为zip
 
 ```json
- curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
+ curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (文件夹名称).zip
 ```
 
-now, unzip file using following command
+现在，使用以下命令解压文件
 
 ```json
-    tar -xf (folder name).zip
+    tar -xf (文件夹名称).zip
 ```
 
-### Install NPM packages
+### 安装NPM包
 
-Run below code at root level of your project folder
+在项目根目录下运行以下代码
 
 ```shell
   raaghu install-all
 ```
 
-### Install Abp-React-Core
+### 安装Abp-React-Core
 
-Run below code at root level of your project folder
+在项目根目录下运行以下代码
 
 ```shell
   raaghu create:core
 ```
 
-### Generate Proxy
+### 生成代理
 
-to create proxies, we run following command at root level
+为了创建代理，我们在根目录下运行以下命令
 
 ```shell
   raaghu create:proxy --url=https://raaghu-react.azurewebsites.net
 ```
 
-### Create a BookStore Module
+### 创建一个图书商店模块
 
-Run following command line to create a new Module, named BookStore on root folder and a Book page within it of React application
+运行以下命令在根目录下创建一个新的模块，命名为BookStore，并在其中创建一个React应用的Book页面
 
 ```shell
   raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
 ```
 
-**Note:Creating a page is case sensitive. name of page should be in small letters**
+**注意：创建页面区分大小写。页面名称应该使用小写字母**
 
-### Code Snippets
+### 代码片段
 
-**Data Table**
+**数据表格**
 
-Here we integrate a Data Table using a component RdsCompDataDable component having table headers and data corresponding to it.
+在这里，我们使用一个包含表头和相应数据的RdsCompDataDable组件来集成数据表格。
 
-code looks like as shown below
+代码如下所示：
+
 ```javascript
     <RdsCompDatatable
         classes="table__userTable"
@@ -69,16 +69,17 @@ code looks like as shown below
     >`
     </RdsCompDatatable>`
 ```
-in RdsCompDataTable, we can add the neccessary data we want to show in tableData and following array of actions that you require as well as neccessary function using onActionSelection
 
-### Column Structure
+在RdsCompDataTable中，我们可以添加要在tableData中显示的必要数据以及您所需的操作数组以及使用onActionSelection的必要函数
 
-Now we integrate table headers in data table
+### 列结构
+
+现在我们将表头集成到数据表中
 
 ```shell
 const tableHeaders = [
     {
-        "displayName": "NAME",
+        "displayName": "名称",
         "name": "Name",
         "key": "name",
         "datatype": "text",
@@ -86,7 +87,7 @@ const tableHeaders = [
         "element": "RdsInput"
     },
     {
-        "displayName": "TYPE",
+        "displayName": "类型",
         "name": "Type",
         "key": "type",
         "datatype": "text",
@@ -94,7 +95,7 @@ const tableHeaders = [
         "element": "RdsSelectList"
     },
     {
-        "displayName": "PUBLISHDATE",
+        "displayName": "发布日期",
         "name": "PublishDate",
         "key": "publishDate",
         "datatype": "text",
@@ -102,14 +103,14 @@ const tableHeaders = [
         "element": "RdsDatePicker"
     },
     {
-        "displayName": "PRICE",
+        "displayName": "价格",
         "name": "Price",
         "key": "price",
         "datatype": "text",
         "sortable": true,
         "element": "RdsInput"
     }
-    ]Adding a Slice FileWe now add a slice file that defines a piece of state and its corresponding reducer functions    export const getBooksRequest = createAsyncThunk(
+    ]添加切片文件我们现在添加一个切片文件，它定义了一个状态片段及其相应的reducer函数    export const getBooksRequest = createAsyncThunk(
     'book/getBooksRequest',
     async ({
         filterText,
@@ -149,8 +150,7 @@ const tableHeaders = [
     );
 ```
 
-
-Add these builder cases inside BookSlice extra reducer
+在BookSlice的额外reducer中添加这些构建器案例
 
 ```shell
     builder.addCase(getBooksRequest.pending, (state) => {
@@ -162,11 +162,11 @@ Add these builder cases inside BookSlice extra reducer
         state.getBooks = action.payload
     });        builder.addCase(getBooksRequest.rejected,(state, action)=> {
         state.loading = false;
-        state.error = action.error.message || "Something went wrong";
+        state.error = action.error.message || "出现了一些问题";
     });
 ```
 
-We now perform fetching data in Books Page and displaying it inside data table
+现在我们在Books页面中执行获取数据并在数据表中显示它
 
 ```shell
     useEffect(() => {
@@ -174,6 +174,6 @@ We now perform fetching data in Books Page and displaying it inside data table
     }, []);
 ```
 
-### The Next Part
+### 下一部分
 
-* See the [next part](Creating-Updating-And-Deleting-Book.md) of this tutorial.
+* 请参见本教程的[下一部分](Creating-Updating-And-Deleting-Book.md)。
