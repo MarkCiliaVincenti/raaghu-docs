@@ -1,53 +1,53 @@
-# Raaghu React Theme
+# Raaghu React 主题
 
-**Raaghu React Theme** is pre-installed in the Source code. So, no need to manually install it.
-npm package is directly installed in project level as you seen in root level **package.json** file and inside raaghumfe folder.
+**Raaghu React 主题**已经预先安装在源代码中。因此，无需手动安装。
 
-````bash
+npm包已直接安装在项目级别，如您在根级别的**package.json**文件和raaghumfe文件夹中所见。
+
+```bash
 npm i raaghu-react-themes
-````
-![package](images/raaghu-react-theme-package.png)
+```
 
+![包](images/raaghu-react-theme-package.png)
 
-# Customize Raaghu React Theme
+# 自定义 Raaghu React 主题
 
-### How to use raaghu-react-themes 
+### 如何使用 raaghu-react-themes
 
-get source code from repository, put on root level directory of project.
+从存储库中获取源代码，将其放在项目的根级目录中。
 
-In the following folder, you will find all the **Raaghu React Theme**.
+在以下文件夹中，您将找到所有的 **Raaghu React 主题**。
 
-![folder structure](images/raaghu-theme-folder.png)
+![文件夹结构](images/raaghu-theme-folder.png)
 
-### Project Level
+### 项目级别
 
-Steps to follow if you want to customize css , color-variables , adding new classes according to your customize theme.
+如果要自定义CSS、颜色变量和根据自定义主题添加新类，请按照以下步骤操作。
 
-On root level you will see **raaghu-mfe** folder inside that go to
+在根级别，你将看到 **raaghu-mfe** 文件夹，其中包含以下内容：
 
 ```json
 rds-pages > host > src > App.scss
 ```
 
-you will get to see below line
+你会看到以下行：
 
 ```json
 @import "../../../../raaghu-react-themes/src/styles/default.scss";
 ```
-![app file](images/raaghu-react-theme-app.png)
 
-using above line you can access the raaghu-react-themes folder as you are applying all themes related things through 
-**default.scss** file in theme that's why we are pointing to default.scss file.
+![app 文件](images/raaghu-react-theme-app.png)
 
-Inside raaghu-react-themes you will get to see two folders like Public and src
-![folder structure](images/raaghu-theme-folder.png)
+使用上述行，你可以访问 **raaghu-react-themes** 文件夹，因为你是通过 **default.scss** 文件来应用所有与主题相关的内容，所以我们指向 **default.scss** 文件。
 
-If you want to make changes for fonts you can go to fonts folder inside **public** folder -
+在 **raaghu-react-themes** 中，你将看到两个文件夹：Public 和 src。
 
-![fonts changes](images/raaghu-react-public.png)
+![文件夹结构](images/raaghu-theme-folder.png)
 
-If you want to customize element css for application you can go to **styles** folder inside src folder - 
+如果你想对字体进行更改，可以进入 **public** 文件夹内的 **fonts** 文件夹。
 
-![project css](images/raaghu-theme-style.png)
+![字体更改](images/raaghu-react-public.png)
 
+如果要自定义应用程序的元素CSS，可以进入 src 文件夹内的 **styles** 文件夹。
 
+![项目 CSS](images/raaghu-theme-style.png)
