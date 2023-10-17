@@ -1,73 +1,71 @@
-# Create the Database
+# 创建数据库
 
-### Connection String
+### 连接字符串
 
-Check the connection string in the **appsettings.json** file under the .Web project.
+请检查.Web项目下**appsettings.json**文件中的连接字符串。
 
-````json
+```json
 "ConnectionStrings": {"Default": "Server=localhost;Database=BookStore;Trusted_Connection=True"}
-````
+```
 
-**About the Connection Strings and Database Management Systems**
+**关于连接字符串和数据库管理系统**
 
-The solution is configured to use Entity Framework Core with MS SQL Server by default. However, if you've selected another DBMS using the **-dbms** parameter on the ABP CLI **new** command (like **-dbms MySQL**), the connection string might be different for you.
+该解决方案默认配置为使用Entity Framework Core与MS SQL Server。但是，如果您在ABP CLI的**new**命令中使用**-dbms**参数选择了另一个DBMS（例如**-dbms MySQL**），那么您的连接字符串可能会不同。
 
-EF Core supports [various ](https://learn.microsoft.com/en-us/ef/core/providers/)database providers and you can use any supported DBMS. See [the Entity Framework integration document](https://docs.abp.io/en/abp/latest/Entity-Framework-Core) to learn how to [switch to another DBMS](https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS) if you need later.
+EF Core支持[各种](https://learn.microsoft.com/en-us/ef/core/providers/)数据库提供程序，您可以使用任何支持的DBMS。如果以后需要的话，请参考[Entity Framework集成文档](https://docs.abp.io/en/abp/latest/Entity-Framework-Core)以了解如何[切换到其他DBMS](https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS)。
 
-### Cors Origins
+### 跨域来源
 
-Check the CorsOrigins in the **appsettings.json** file under the .Web project.
+请检查.Web项目下**appsettings.json**文件中的CorsOrigins。
 
-````json
- "CorsOrigins": "https://*.abp_react_7_3.com,http://localhost:4200,http://localhost:8080",
-````
-The CorsOrigins setting defines the allowed origins for Cross-Origin Resource Sharing (CORS). This setting allows requests from the specified origins. 
-In this configuration, 'http://localhost:8080' is included to allow requests from a local development server, typically used for development and testing purposes.
+```json
+ "CorsOrigins": "https://*.abp_react_7_3.com,http://localhost:4200,http://localhost:8080"
+```
 
-### Database Migrations
+CorsOrigins设置定义了跨域资源共享（CORS）的允许来源。该设置允许来自指定来源的请求。在这个配置中，'http://localhost:8080' 被包括在内，以允许来自本地开发服务器的请求，通常用于开发和测试目的。
 
-The solution uses the [Entity Framework Core Code First Migrations.](https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli) It comes with a **.DbMigrator** console application which **applies the migrations** and also **seeds the initial data.** It is useful on **development** as well as on **production** environment.
+### 数据库迁移
 
-**.DbMigrator** project has its own **appsettings.json.** So, if you have changed the connection string above, you should also change this one.
+该解决方案使用[Entity Framework Core Code First Migrations](https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)。它附带一个**.DbMigrator**控制台应用程序，用于**应用迁移**并**提供初始数据**。它在**开发环境**和**生产环境**都非常有用。
 
-### The Initial Migration
+**.DbMigrator**项目有它自己的**appsettings.json**。因此，如果您已经更改了上面的连接字符串，也应该更改这个。
 
-.DbMigrator application automatically **creates the Initial migration** on first run.
+### 初始迁移
 
-**If you are using Visual Studio, you can skip to the *Running the DbMigrator* section.** However, other IDEs (e.g. Rider) may have problems for the first run since it adds the initial migration and compiles the project. In this case, open a command line terminal in the folder of the `.DbMigrator` project and run the following command:
+.DbMigrator应用程序会在首次运行时自动**创建初始迁移**。
 
-````bash
+**如果您使用的是Visual Studio，可以跳过*运行DbMigrator*部分。**然而，其他IDE（例如Rider）可能在首次运行时遇到问题，因为它添加了初始迁移并编译了项目。在这种情况下，打开.DbMigrator项目文件夹中的命令行终端，并运行以下命令：
+
+```bash
 dotnet run
-````
+```
 
-For the next time, you can just run it in your IDE as you normally do.
+下一次，您可以像平常一样在IDE中运行它。
 
-### Running the DbMigrator
+### 运行DbMigrator
 
-Right click to the `.DbMigrator` project and select **Set as StartUp Project**
+右键单击.DbMigrator项目，选择**设置为启动项目**。
 
-![set-as-startup-project](images/set-as-startup-project.png)
+![设置为启动项目](images/set-as-startup-project.png)
 
- Hit F5 (or Ctrl+F5) to run the application. It will have an output like shown below:
+按下F5（或Ctrl+F5）运行应用程序。它将显示如下的输出：
 
- ![db-migrator-output](images/db-migrator-output.png)
+![db-migrator输出](images/db-migrator-output.png)
 
-Initial [seed data](Data-Seeding.md) creates the `admin` user in the database (with the password is `1q2w3E*`) which is then used to login to the application. So, you need to use `.DbMigrator` at least once for a new database.
+初始[种子数据](Data-Seeding.md)在数据库中创建了`admin`用户（密码是`1q2w3E*`），该用户用于登录应用程序。因此，您需要至少运行一次`.DbMigrator`以创建新数据库。
 
-The solution is configured to use **MongoDB** in your local computer, so you need to have a MongoDB server instance up and running or change the connection string to another MongoDB server.
+该解决方案已配置为在本地计算机上使用**MongoDB**，因此您需要启动并运行MongoDB服务器实例，或将连接字符串更改为另一个MongoDB服务器。
 
-## Run the Application
+## 运行应用程序
 
-Warning: When you create an ABP solution, the client-side packages are being restored by ABP CLI and Suite. But if you fetch the source-code that's commited by another team member, your **libs** folder will be empty. Before starting the application, run **abp install-libs** command in your Web directory to restore the client-side libraries. This will populate the **libs** folder. Ensure that the **.Web** project is the startup project. Run the application which will open the **login** page in your browser:
+警告：当创建ABP解决方案时，客户端包是由ABP CLI和Suite恢复的。但是，如果您从另一个团队成员提交的源代码中获取源代码，您的**libs**文件夹将为空。在启动应用程序之前，请在Web目录中运行**abp install-libs**命令以还原客户端库。这将填充**libs**文件夹。确保**.Web**项目是启动项目。运行应用程序，它将在您的浏览器中打开**登录**页面：
 
-
-Use Ctrl+F5 in Visual Studio (instead of F5) to run the application without debugging. If you don't have a debug purpose, this will be faster.
+在Visual Studio中使用Ctrl+F5（而不是F5）运行应用程序，以在没有调试目的的情况下运行应用程序，这将更快。
 
 ![swagger-ui](images/swagger-ui.png)
 
-The application is up and running. You can start developing your application based on this startup template.
+应用程序已启动并运行。您可以基于此启动模板开始开发您的应用程序。
 
+## 参见
 
-## See Also
-
-* [Web Application Development Tutorial](Tutorials/Creating-The-Server-Side.md)
+* [Web应用程序开发教程](Tutorials/Creating-The-Server-Side.md)
