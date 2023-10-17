@@ -1,145 +1,92 @@
-Solution structure
-==================
+# 解决方案结构
 
-You will get a slightly different solution structure, based on the options you have specified.
+根据您指定的选项，您将获得稍微不同的解决方案结构。
 
-Default structure
+默认结构
 -----------------
 
-If you don't specify any additional option, you will have a solution in the **aspnet-core** folder like the below:
+如果您没有指定任何附加选项，您将在**aspnet-core**文件夹中获得一个解决方案，如下所示：
 
-![Default Structure](./images/defaultStructure.png)
+![默认结构](./images/defaultStructure.png)
 
-Projects are located in aspnet-core/src and aspnet-core/test folders. While the aspnet-core/src folder contains the actual application, aspnet-core/test folder contains unit tests and test base projects. The below diagram shows the layers & project dependencies of the application:
+项目位于aspnet-core/src和aspnet-core/test文件夹中。aspnet-core/src文件夹包含实际应用程序，aspnet-core/test文件夹包含单元测试和测试基础项目。下面的图表显示了应用程序的层次结构和项目依赖关系：
 
-![flow-chart Structure](./images/flow-chart.png)
+![流程图结构](./images/flow-chart.png)
 
-Each section below describes the related project and its dependencies.
+下面的每个部分描述了相关的项目及其依赖关系。
 
-### \*.Domain.Shared project
+### \*.Domain.Shared 项目
 
-This project contains constants, enums and the other objects which are part of the domain layer, but shared across by all projects in the solution.
+该项目包含常量、枚举和其他属于领域层的对象，但在解决方案中的所有项目之间共享。
 
-For example BookType or BookConsts (contains validation constants like MaxNameLength) are good candidates to be in the \*.Domain.Shared project.
+例如，BookType或BookConsts（包含MaxNameLength等验证常量）是放在\*.Domain.Shared项目中的好选择。
 
-### Dependencies:
+### 依赖项:
 
-* Domain.Shared project has no dependency to other projects in the solution. All other projects depend on this directly or indirectly.
+* \*.Domain.Shared 项目不依赖于解决方案中的其他项目。所有其他项目都直接或间接地依赖于它。
 
-### \*.Domain project
+### \*.Domain 项目
 
-This is the domain layer of the solution. It contains [entities,](https://docs.abp.io/en/abp/latest/Entities) [aggregate roots,](https://docs.abp.io/en/abp/latest/Entities) [domain services,](https://docs.abp.io/en/abp/latest/Domain-Services) [value types,](https://docs.abp.io/en/abp/latest/Value-Types) [repository interfaces](https://docs.abp.io/en/abp/latest/Repositories) and other domain objects.
+这是解决方案的领域层。它包含[实体](https://docs.abp.io/en/abp/latest/Entities)、[聚合根](https://docs.abp.io/en/abp/latest/Entities)、[领域服务](https://docs.abp.io/en/abp/latest/Domain-Services)、[值类型](https://docs.abp.io/en/abp/latest/Value-Types)、[存储库接口](https://docs.abp.io/en/abp/latest/Repositories)和其他领域对象。
 
-A Book entity, a BookManager domain service and an IBookRepository interface are good examples to be inside the \*.Domain project.
+一个Book实体、一个BookManager领域服务和一个IBookRepository接口是放在\*.Domain项目中的好例子。
 
-### Dependencies:
+### 依赖项:
 
-* Depends on the \*.Domain.Shared because it uses constants, enums and other objects defined in that project.
+* 依赖于\*.Domain.Shared，因为它使用该项目中定义的常量、枚举和其他对象。
 
-### \*.Application.Contracts project
+### \*.Application.Contracts 项目
 
-This project contains application service interfaces and Data Transfer Objects (DTO) of the application layer. It separates the interface & implementation of the application layer. In this way, the interface project can be shared to the clients as a contract package.
+该项目包含应用程序服务接口和应用程序层的数据传输对象（DTO）。它分离了应用程序层的接口和实现。这样，接口项目可以共享给客户端作为一个契约包。
 
-IBookAppService interface and BookCreationDto class are good examples to be inside the \*.Application.Contracts project.
+IBookAppService接口和BookCreationDto类是放在\*.Application.Contracts项目中的好例子。
 
-### Dependencies:
+### 依赖项:
 
-* Depends on the \*.Domain.Shared because it may use constants, enums and other shared objects of this project in the application service interfaces and DTOs.
+* 依赖于\*.Domain.Shared，因为它可能在应用程序服务接口和DTO中使用该项目的常量、枚举和其他共享对象。
 
-### \*.Application project
+### \*.Application 项目
 
-This project contains the [application service](https://docs.abp.io/en/abp/latest/Application-Services) **implementations** of the interfaces defined in the .Application.Contracts project.
+该项目包含[应用程序服务](https://docs.abp.io/en/abp/latest/Application-Services)的**实现**，这些服务在.Application.Contracts项目中定义了接口。
 
-BookAppService is the implementation of IBookAppService interface and good examples to be inside the \*.Application project.
+BookAppService是IBookAppService接口的实现，是放在\*.Application项目中的好例子。
 
-### Dependencies:
+### 依赖项:
 
-* Depends on the \*.Application.Contracts project to be able to implement the interfaces and use the DTOs.
-* Depends on the \*.Domain project to be able to use domain objects like entities, repository interfaces, etc... to perform the application logic.
+* 依赖于\*.Application.Contracts 项目，以能够实现接口并使用DTO。
+* 依赖于\*.Domain 项目，以能够使用领域对象，如实体、存储库接口等，来执行应用程序逻辑。
 
-### \*.EntityFrameworkCore project
+### \*.EntityFrameworkCore 项目
 
-This is the integration project for the EF Core. It defines the DbContext and implements repository interfaces defined in the \*.Domain project.
+这是EF Core的集成项目。它定义了DbContext并实现了\*.Domain项目中定义的存储库接口。
 
-### Dependencies:
+### 依赖项:
 
-* Depends on the \*.Domain project to be able to reference to entities and repository interfaces.
+* 依赖于\*.Domain 项目，以能够引用实体和存储库接口。
 
-This project is available only if you are using EF Core as the database provider. If you select another database provider, its name will be different.
+该项目仅在您选择EF Core作为数据库提供程序时可用。如果选择其他数据库提供程序，其名称将不同。
 
-### \*.DbMigrator project
+### \*.DbMigrator 项目
 
-This is a console application which simplifies to execute database migrations on development and production environments. When you run this application, it;
+这是一个控制台应用程序，简化了在开发和生产环境中执行数据库迁移的操作。运行此应用程序时，它会执行以下操作：
 
-* Creates the database if necessary.
-* Applies the pending database migrations.
-* Seeds initial data if needed.
+* 如果需要，创建数据库。
+* 应用未决数据库迁移。
+* 如有需要，初始化数据。
 
-Notice that, this project has its own appsettings.json file. If you need to change the default database connection string, you must set it in its own appsettings.json .
+请注意，该项目有自己的appsettings.json文件。如果需要更改默认的数据库连接字符串，必须在其自己的appsettings.json中设置它。
 
-Seeding initial data is important at this point. ABP has a modular data seed infrastructure. Further information see [data seeding documentation.](https://docs.abp.io/en/abp/latest/Data-Seeding)
+在这一点上，初始化数据非常重要。ABP具有模块化的数据种子基础架构。有关更多信息，请参阅[数据种子文档](https://docs.abp.io/en/abp/latest/Data-Seeding)。
 
-While creating database and applying migrations seem only necessary for relational databases, this project is included even if you choose a NoSQL database provider (like MongoDB). In that case, it still seeds initial data which is necessary for the application startup.
+尽管创建数据库和应用迁移似乎仅对关系数据库是必需的，但即使选择NoSQL数据库提供程序（如MongoDB），该项目也包括在内。在这种情况下，它仍然会初始化应用程序启动所必需的初始数据。
 
-### Dependencies:
+### 依赖项:
 
-* Depends on the \*.EntityFrameworkCore project (for EF Core) since it needs to access to the migrations.
-* Depends on the \*.Application.Contracts project to be able to access permission definitions, because initial data seeder grants all permissions for the admin role by default.
+* 依赖于\*.EntityFrameworkCore 项目（对于EF Core），因为它需要访问迁移。
+* 依赖于\*.Application.Contracts 项目，以能够访问权限定义，因为初始数据种子会默认授予管理员角色的所有权限。
 
-### \*.HttpApi project
+### \*.HttpApi 项目
 
-This project is used to define your API Controllers.
+该项目用于定义API控制器。
 
-Most of the time you don't need to manually define API Controllers since ABP's [Auto API Controllers](https://docs.abp.io/en/abp/latest/API/Auto-API-Controllers) feature creates them automagically based on your application layer. However, in case, you need to write API controllers, this is the best place to do it.
-
-### Dependencies:
-
-* Depends on the \*.Application.Contracts project to be able to inject the application service interfaces.
-
-### \*.HttpApi.Client project
-
-This is project defines C# client proxies to use the HTTP APIs of the solution. You can share this library to 3rd-party clients, so they can easily consume your HTTP APIs in their .NET applications. For other type of applications, they can still use the APIs, either manually or using a tool in their own platform.
-
-Most of the time you don't need to manually create C# client proxies, thanks to ABP's [Dynamic C# API Clients feature.](https://docs.abp.io/en/abp/latest/API/Dynamic-CSharp-API-Clients)
-
-\*.HttpApi.Client.ConsoleTestApp project is a console application created to demonstrate the usage of the client proxies.
-
-* Depends on the \*.Application.Contracts project to be able to share the same application service interfaces and DTOs with the remote service.
-
-Notice that, you can delete this project & dependencies if you don't need to create C# client proxies for your APIs
-
-### \*.Web project
-
-This project contains the user interface (UI) of the application if you are using ASP.NET Core MVC UI. It contains Razor pages, JavaScript files, CSS files, images and so on...
-
-This project has a appsettings.json file which contains the connection string and other configuration of the application.
-
-### Dependencies:
-
-* Depends on the \*.HttpApi since the UI layer needs to use APIs and application service interfaces of the solution.
-
-If you check the source code of the \*.Web.csproj file, you will see the references to the \*.Application and the \*.EntityFrameworkCore projects. These references are actually not needed while coding your UI layer, because UI layer doesn't depend on the EF Core or the Application layer's implementation. This startup template is pre-configured for the tiered deployment, where API layer is hosted in a separate server apart from the UI layer.
-
-However, if you don't choose the \--tiered option when you create a solution, these references will be in the \*.Web project to be able to host the Web, API and application layers in a single application endpoint. This gives you the ability to use the domain entities & repositories in your presentation layer. However, this is considered as a bad practice according to the DDD rules.
-
-### REACT Architecture
-
-Following are the architecture on how raaghu-react is being used as a part of UI application
-
-![Following are the architecture on how raaghu-react is being used as a part of UI application](./images/raaghu-architecture.png)
-
-### Raaghu - Authentication flow(login page)
-
-![raaghu-Authentication Flow](./images/raaghuAuthenticationFlow.png)
-
-### Raaghu - Localization
-
-![raaghu Localization](./images/raaghuLocalization.png)
-
-### Raaghu - Page flow
-
-![Raaghu - Page flow](./images/raaghuPageFlow.png)
-
-### What's next?
-
-* See the [Getting Started](Getting-Started.html) document to create a new solution and run it for this template.
+大多数情况下，您无需手动定义API控制器，因为ABP的[自动
