@@ -15,7 +15,7 @@
 
 下面的每个部分描述了相关的项目及其依赖关系。
 
-### \*.Domain.Shared 项目
+### \*.域.共享项目
 
 该项目包含常量、枚举和其他属于领域层的对象，但在解决方案中的所有项目之间共享。
 
@@ -35,7 +35,7 @@
 
 * 依赖于\*.Domain.Shared，因为它使用该项目中定义的常量、枚举和其他对象。
 
-### \*.Application.Contracts 项目
+### \*.申请.合同项目
 
 该项目包含应用程序服务接口和应用程序层的数据传输对象（DTO）。它分离了应用程序层的接口和实现。这样，接口项目可以共享给客户端作为一个契约包。
 
@@ -45,7 +45,7 @@ IBookAppService接口和BookCreationDto类是放在\*.Application.Contracts项�
 
 * 依赖于\*.Domain.Shared，因为它可能在应用程序服务接口和DTO中使用该项目的常量、枚举和其他共享对象。
 
-### \*.Application 项目
+### \*.应用项目
 
 该项目包含[应用程序服务](https://docs.abp.io/en/abp/latest/Application-Services)的**实现**，这些服务在.Application.Contracts项目中定义了接口。
 
