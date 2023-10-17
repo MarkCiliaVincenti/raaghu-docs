@@ -1,129 +1,131 @@
+# 身份管理模块
 
-Identity Management module
-==========================
+此模块实现了应用程序的用户和角色系统：
 
-This module implements the User and Role system of an application;
+* 管理系统中的**角色**和**用户**。一个用户可以拥有**多个角色**。
+* 在角色和用户级别设置**权限**。
+* 启用/禁用**双因素身份验证**和用户**锁定**。
+* 管理基本的**用户个人资料**和**密码**。
+* 在系统中管理**声明类型**，为角色和用户设置声明。
+* 设置页面以管理**密码复杂性**、用户登录、帐户和锁定。
+* 支持**LDAP**身份验证。
+* 提供**电子邮件和电话号码**验证。
+* 支持社交登录集成（Microsoft、Google、Twitter）。
+* 管理系统中的**组织单位**。
+* 查看系统中的安全日志（登录、注销、更改密码等）。
 
-* Manage **roles** and **users** in the system. A user is allowed to have **multiple roles.**
-* Set **permissions** in role and user levels.
-* Enable/disable **two factor authentication** and user **lockout** per user.
-* Manage basic **user profile** and **password.**
-* Manage **claim types** in the system, set claims to roles and users.
-* Setting page to manage **password complexity,** user sign-in, account and lockout.
-* Supports **LDAP** authentication.
-* Provides **email & phone number** verification.
-* Supports social login integrations ( Microsoft, Google, Twitter.)
-* Manage **organization units** in the system.
-* View security logs (login, logout, change password...) in the system.
+请参阅模块描述页面，了解该模块功能的概述。
 
-See the module description page for an overview of the module features.
-
-Packages
+包
 --------
 
-This module follows the [module development best practices guide](https://docs.abp.io/en/abp/latest/Best-Practices/Index) and consists of several NuGet and NPM packages. See the guide if you want to understand the packages and relations between them.
+此模块遵循[模块开发最佳实践指南](https://docs.abp.io/en/abp/latest/Best-Practices/Index)，由多个NuGet和NPM包组成。如果您想了解这些包以及它们之间的关系，请参阅指南。
 
-You can visit [Identity module package list page](https://abp.io/packages?moduleName=Volo.Identity.Pro) to see list of packages related with this module.
+您可以访问[身份模块包列表页面](https://abp.io/packages?moduleName=Volo.Identity.Pro)以查看与该模块相关的包的列表。
 
-### Menu items
+### 菜单项
 
-Identity module adds the following items to the "Main" menu, under the "Administration" menu item:
+身份模块将以下项目添加到 "主" 菜单下的 "管理" 菜单项：
 
-* **Roles**: Role management page.
-* **Users**: User management page.
-* **Claim Types**: Claim type management page.
-* **Organization Units**: Organization unit management page.
-* **Security Logs**: Security log search page.
+* **角色**：角色管理页面。
+* **用户**：用户管理页面。
+* **声明类型**：声明类型管理页面。
+* **组织单位**：组织单位管理页面。
+* **安全日志**：安全日志搜索页面。
 
-IdentityMenuNames class has the constants for the menu item names.
+IdentityMenuNames类包含了菜单项名称的常量。
 
-### Pages
+### 页面
 
-Role management
+角色管理
 
-Roles page is used to manage roles in the system. A role is a set of permissions assigned to the users.
+角色页面用于管理系统中的角色。角色是分配给用户的权限集合。
 
-![New Role](./images/users-role.png)
+![新角色](./images/users-role.png)
 
-You can create a new role or edit a role in this page:
+您可以在此页面创建新角色或编辑角色：
 
-![You can create a new role or edit a role in this page](./images/role-new.png)
+![您可以在此页面创建新角色或编辑角色](./images/role-new.png)
 
-* **Default** roles are assigned to new users by default.
-* **Public** roles are visible to other users.
+* 默认角色默认分配给新用户。
+* 公共角色可见给其他用户。
 
-### Role permissions
+### 角色权限
 
-You can manage permissions of a role:
+您可以管理角色的权限：
 
-### UI to be added
+### 待添加的用户界面
 
-* A permission is an **action of the application** granted to roles and users.
-* A user with a role will **inherit** all the permissions granted for the role.
-* Any module can [define permissions](https://docs.abp.io/en/abp/latest/Authorization#permission-system). Once you define a new permission, it will be available in this page.
-* Left side is the **list of modules.** Once you click to a module name, you can check/uncheck permissions related to that module.
+* 权限是授予角色和用户的应用程序**操作**。
+* 拥有角色的用户将**继承**授予该角色的所有权限。
+* 任何模块都可以[定义权限](https://docs.abp.io/en/abp/latest/Authorization#permission-system)。一旦您定义了新权限，它将在此页面可用。
+* 左侧是**模块列表**。单击模块名称后，可以选中/取消选中与该模块相关的权限。
 
-### Role claims
+### 角色声明
 
-You can set custom claim values for a role:
+您可以为角色设置自定义声明值：
 
-![Edit Role](./images/role-claims.png)
+![编辑角色](./images/role-claims.png)
 
-Claim types are retrieved from the claim list defined in the Claim Types Management page (see below).
+声明类型是从声明类型管理页面中定义的声明列表中检索的（见下文）。
 
-### User management
+### 用户管理
 
-Users page is used to manage the users in your system.
+用户页面用于管理系统中的用户。
 
-![User Management ](./images/users.png)
+![用户管理](./images/users.png)
 
-You can create a new user or edit an existing user in this page:
+您可以在此页面创建新用户或编辑现有用户：
 
-![You can create a new user or edit an existing user in this page ](./images/users-new.png)
+![您可以在此页面创建新用户或编辑现有用户](./images/users-new.png)
 
-* A user can have **zero or more roles** in the system.
-* You can set **two factor** verification and user **lockout** settings per user.
-  ![New User ](./images/users-role.png)
+* 用户可以在系统中拥有**零个或多个角色**。
+* 您可以为每个用户设置**双因素**验证和用户**锁定**设置。
+  ![新用户](./images/users-role.png)
 
-### User permissions
+### 用户权限
 
-A user has union of the permissions of the assigned roles. Identity module also allows to grant extra permissions to a specific user.
+用户具有被分配的角色的权限的并集。身份模块还允许向特定用户授予额外的权限。
 
-![Edit User ](./images/user-permision.png)
+![编辑用户](./images/user-permision.png)
 
-* A permission is an **action of the application** granted to roles and users.
-* A user with a role will **inherit** all the permissions granted for the role.
-* Any module can [define permissions](https://docs.abp.io/en/abp/latest/Authorization#permission-system). Once you define a new permission, it will be available in this page.
-* Left side is the **list of modules.** Once you click to a module name, you can check/uncheck permissions related to that module.
+* 权限是授予角色和用户的应用程序**操作**。
+* 拥有角色的用户将**继承**授予该角色的所有权限。
+* 任何模块都可以[定义权限](https://docs.abp.io/en/abp/latest/Authorization#permission-system)。一旦您定义了新权限，它将在此页面可用。
+* 左侧是**模块列表**。单击模块名称后，可以选中/取消选中与该模块相关的权限。
 
-### Claim type management
+### 声明类型管理
 
-Identity module allows to define custom claim types.
+身份模块允许定义自定义声明类型。
 
-![New Claim Type ](./images/claim.png)
+![新声明类型](./images/claim.png)
 
-* Custom claims can be used to store additional information to a user or role.
-* Custom claim values then can be accessed in the application code for an authenticated user.
-* Claim Types are also used by the OpenIddict module if you're using it.
+* 自定义声明可用于存储用户或角色的附加信息。
+* 然后可以在应用程序代码中为已验证的用户访问自定义声明值。
+* 如果使用OpenIddict模块，声明类型也会被使用。
 
-### Organization Units
+### 组织单位
 
-Organization units page is used to manage organization units, members of organization units and roles of organization units.
+组织单位页面用于管理组织单位、组织单位成员和组织单位角色。
 
-![Organization units page is used to manage organization units, members of organization units and roles of organization units](./images/organization-Unit.png)
+![组织单位页面用于管理组织单位、组织单位成员和组织单位角色](./images/organization-Unit.png)
 
-You can add a new organization unit or edit an existing organization unit on this page. In order to add a new root organization unit, click "New root unit" button and fill the opening form.
+您可以在此页面添加新的组织单位或编辑现有的组织单位。要添加新的根组织单位，请单击 "新根单位" 按钮并填写打开的表单。
 
-![New Organization Unit](./images/organization-Unit-new.png)
+![新组织单位](./images/organization-Unit-new.png)
 
-In order to add a sub-unit to an existing organization unit, right click on an existing organization unit and click "Add sub-unit" context menu item. Similarly, in order to edit an organization unit, right click on an existing organization unit and click "Edit" context menu item.
+要向现有组织单位添加子单位，请右键单击现有组织单位，然后单击 "添加子单位" 上下文菜单项。类似地，要编辑组织单位，请右键单击现有组织单位，然后单击 "编辑" 上下文菜单项。
 
-![Edit Organization Unit](./images/organization-Unit-edit.png)
+![编辑组织单位](./images/organization-Unit-edit.png)
 
-You can manage members of an organization unit using the members tab by selection an organization unit
+您可以使用成员选项卡管理组织单位的成员，通过选择组织单位
 
-### Security Logs
+### 安全
 
-Security logs page is used to search and view authentication related operations (login, logout, change password...) in the system.
+日志
 
-![Security Logs](./images/security-logs.png)
+安全日志页面用于搜索和查看系统中与身份验证相关的操作（登录、注销、更改密码等）。
+
+![安全日志](./images/security-logs.png)
+
+希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。
