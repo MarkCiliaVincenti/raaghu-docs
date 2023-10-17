@@ -1,20 +1,21 @@
-# 入门教程
+# Getting Started
 
-````json
-//[doc-params]
-{
-    "UI": ["MVC", "Blazor", "BlazorServer", "NG"],
-    "DB": ["EF", "Mongo"],
-    "Tiered": ["Yes", "No"]
-}
-````
+This tutorial assumes that you've already purchased an [ABP Commercial license](https://commercial.abp.io/pricing)and have an active ABP Commercial account.
 
-> 本文档假设你更喜欢使用 **{{ UI_Value }}** 作为 UI 框架, 使用 **{{ DB_Value }}** 作为数据库提供程序. 对于其他选项, 请更改本文档顶部的首选项.
+This document assumes that you refer to use raaghu-react Pages as the UI framework and Entity Framework Core as the database provider.
 
-## 内容
+---
 
-本教程介绍如何使用 ABP 框架 **创建和运行** 新的 Web 应用程序. 请按照以下步骤操作;
+## Contents
 
-1. [设置你的开发环境](Getting-Started-Setup-Environment.md)
-2. [创建新的解决方案](Getting-Started-Create-Solution.md)
-3. [运行解决方案](Getting-Started-Running-Solution.md)
+This tutorial explains how to **create and run** a new web application using the [application startup template](Application-Templates.html).
+
+1. [Setup your development environment](Setup-Your-Development-Environment.md)
+2. [Creating a new solution](Creating-A-New-Solution.md)
+3. [Running the solution](Running-The-Solution.md)
+
+---
+
+### See Also
+
+- [Startup Templates](Startup-Template.md)

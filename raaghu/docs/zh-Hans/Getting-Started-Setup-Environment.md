@@ -1,4 +1,4 @@
-# 入门教程
+# Getting Started
 
 ````json
 //[doc-params]
@@ -9,45 +9,45 @@
 }
 ````
 
-> 本文档假设你更喜欢使用 **{{ UI_Value }}** 作为 UI 框架, 使用 **{{ DB_Value }}** 作为数据库提供程序. 对于其他选项, 请更改本文档顶部的首选项.
+> This document assumes that you prefer to use **{{ UI_Value }}** as the UI framework and **{{ DB_Value }}** as the database provider. For other options, please change the preference on top of this document.
 
-## 设置你的开发环境
+## Setup Your Development Environment
 
-第一件事! 在创建项目之前, 让我们先设置你的开发环境.
+First things first! Let's setup your development environment before creating the project.
 
-### 先决条件
+### Pre-Requirements
 
-开发计算机上应安装以下工具:
+The following tools should be installed on your development machine:
 
-* 一个集成开发环境 (比如: [Visual Studio](https://visualstudio.microsoft.com/vs/)) 它需要支持 [.NET 7.0+](https://dotnet.microsoft.com/download/dotnet) 的开发.
+* An IDE (e.g. [Visual Studio](https://visualstudio.microsoft.com/vs/)) that supports [.NET 7.0+](https://dotnet.microsoft.com/download/dotnet) development.
 {{ if UI != "Blazor" }}
-* [Node v16 或 v18](https://nodejs.org/)
-* [Yarn v1.20+ (不是v2)](https://classic.yarnpkg.com/en/docs/install) <sup id="a-yarn">[1](#f-yarn)</sup> 或 npm v6+ (已跟随Node一起安装)
+* [Node v16 or v18](https://nodejs.org/)
+* [Yarn v1.20+ (not v2)](https://classic.yarnpkg.com/en/docs/install) <sup id="a-yarn">[1](#f-yarn)</sup> or npm v6+ (already installed with Node)
 {{ end }}
 {{ if Tiered == "Yes" }}
-* [Redis](https://redis.io/) (启动解决方案使用 Redis 作为 [分布式缓存](Caching.md)).
+* [Redis](https://redis.io/) (the startup solution uses the Redis as the [distributed cache](Caching.md)).
 {{ end }}
 
 {{ if UI != "Blazor" }}
 
-<sup id="f-yarn"><b>1</b></sup> _Yarn v2 工作方式不同, 不被支持._ <sup>[↩](#a-yarn)</sup>
+<sup id="f-yarn"><b>1</b></sup> _Yarn v2 works differently and is not supported._ <sup>[↩](#a-yarn)</sup>
 
 {{ end }}
 
-### 安装 ABP CLI
+### Install the ABP CLI
 
-[ABP CLI](./CLI.md) 是一个命令行界面, 用于自动执行基于 ABP 的解决方案的一些常见任务. 首先, 你需要使用以下命令安装 ABP CLI：
+[ABP CLI](./CLI.md) is a command line interface that is used to automate some common tasks for ABP based solutions. First, you need to install the ABP CLI using the following command:
 
 ````shell
 dotnet tool install -g Volo.Abp.Cli
 ````
 
-如果已安装, 则可以使用以下命令对其进行更新:
+If you've already installed, you can update it using the following command:
 
 ````shell
 dotnet tool update -g Volo.Abp.Cli
 ````
 
-## 下一步
+## Next Step
 
-* [创建新的解决方案](Getting-Started-Create-Solution.md)
+* [Creating a new solution](Getting-Started-Create-Solution.md)
