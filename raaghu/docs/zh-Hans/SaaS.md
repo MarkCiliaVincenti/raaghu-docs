@@ -1,35 +1,39 @@
-This module is used to manage your tenants and editions in multi-tenant applications;
+以下是您提供的文本的中文翻译：
 
-* Manage **tenants** and **editions** in the system. A tenant is allowed to have one edition.
-* Set **features** of tenants.
-* Set **connection string** of tenants.
-* Set **features** of editions and tenants.
+# Saas 模块
 
-See [the module description page](https://commercial.abp.io/modules/Volo.Saas) for an overview of the module features.
+此模块用于在多租户应用程序中管理租户和版本；
 
-Packages
+* 管理系统中的**租户**和**版本**。一个租户可以有一个版本。
+* 设置租户的**功能**。
+* 设置租户的**连接字符串**。
+* 设置版本和租户的**功能**。
+
+请参阅模块描述页面，了解该模块功能的概述。
+
+包
 --------
 
-This module follows the [module development best practices guide](https://docs.abp.io/en/abp/latest/Best-Practices/Index) and consists of several NuGet and NPM packages. See the guide if you want to understand the packages and relations between them.
+此模块遵循[模块开发最佳实践指南](https://docs.abp.io/en/abp/latest/Best-Practices/Index)，包含多个 NuGet 和 NPM 包。如果您想了解这些包和它们之间的关系，请参阅指南。
 
-You can visit [SaaS module package list page](https://abp.io/packages?moduleName=Volo.Saas) to see list of packages related with this module.
+您可以访问[SaaS 模块包列表页面](https://abp.io/packages?moduleName=Volo.Saas)以查看与此模块相关的包的列表。
 
-### Tenant-Edition Subscription
+### 租户-版本订阅
 
-SaaS module implements subscribing to Editions for Tenants using Payment module. To enable it, project must contain Volo.Saas and Volo.Payment modules and these modules must be configured as shown below.
+SaaS 模块实现了使用 Payment 模块订阅租户的版本。要启用它，项目必须包含 Volo.Saas 和 Volo.Payment 模块，并且必须按照下面所示配置这些模块。
 
-### Configuration
+### 配置
 
-Firstly, Payment module must be configured properly:
+首先，必须正确配置 Payment 模块：
 
-* Install Volo.Payment module.
+* 安装 Volo.Payment 模块。
 ```
   abp add-module Volo.Payment
 ```
 
-Or you can install via using ABP Suite.
+或者您可以使用 ABP Suite 安装。
 
-* Configure Saas module to use Payment.
+* 配置 Saas 模块以使用 Payment。
 ```
   Configure(options =>
   {
@@ -37,15 +41,15 @@ Or you can install via using ABP Suite.
   });
 ```
 
-* Follow the [subscriptions](https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions) section of [Payment Module Documentation](https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions). Complete [enabling webhooks](https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks) and [configuring plans](https://docs.abp.io/en/commercial/7.0/modules/payment#configuring-plans) sections.
-* Run the application and go to Saas > Editions page at your Web Application menu.
-* Create or Edit an existing Edition. **Plan** dropdown must be visible if you've done earlier steps correctly. Pick a Plan for Edition.
+* 遵循 [Payment 模块文档](https://docs.abp.io/en/commercial/7.0/modules/payment) 中的 [订阅](https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions) 部分。完成 [启用 Web 钩子](https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks) 和 [配置计划](https://docs.abp.io/en/commercial/7.0/modules/payment#configuring-plans) 部分。
+* 运行应用程序，然后转到 Web 应用程序菜单中的 Saas > 版本页面。
+* 创建或编辑一个版本。如果您之前正确执行了这些步骤，**计划**下拉菜单必须可见。为版本选择一个计划。
 
-### Usage
+### 使用
 
-SaaS module doesn't contain a public facing list page for listing editions for new customers/tenants to subscribe. First, you need to create such a page in your application. Then, when a new customer/tenant selects one of those Editions, you can create a subscription and redirect user to payment module as shown below.
+SaaS 模块不包含用于列出供新客户/租户订阅的版本的面向公众的列表页面。首先，您需要在您的应用程序中创建这样一个页面。然后，当新客户/租户选择其中一个版本时，您可以创建一个订阅，并将用户重定向到支付模块，如下所示。
 
-* Inject ISubscriptionAppService to create a subscription for a edition:
+* 注入 `ISubscriptionAppService` 以为版本创建订阅：
 ```
   public class IndexModel : PageModel
   {
@@ -69,57 +73,42 @@ SaaS module doesn't contain a public facing list page for listing editions for n
   }
   }
 ```
-When the payment is completed successfully, the tenant and edition relation will be updated according to subscription status. Make sure Payment Gateway Web Hooks are configured properly.
+支付成功后，租户和版本关系将根据订阅状态进行更新。确保配置了支付网关 Web 钩子。
 
-After all, payment module will redirect user to the callbackUrl if configured in [payment configuration](https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions) with a paymentRequestId parameter. In this page, you can check the status of the payment request and show a success message to the user when the payment status is confirmed. Since the payment confirmation is asynchronous, you need to check the payment status repeatedly until it is confirmed.
+最后，如果在 [支付配置](https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions) 中配置了 callbackUrl，支付模块将重定向用户到 callbackUrl，并带有 paymentRequestId 参数。在此页面，您可以检查支付请求的状态，并在支付状态确认时向用户显示成功消息。由于支付确认是异步的，您需要重复检查支付状态，直到确认为止。
 
-### User interface
+### 用户界面
 
-#### Menu items
+#### 菜单项
 
-SaaS module adds the following items to the "Main" menu, under the "Administration" menu item:
+SaaS 模块向“主”菜单添加以下项，位于“管理”菜单项下：
 
-* **Tenants**: Tenant management page.
-* **Editions**: Edition management page.
+* **租户**：租户管理页面。
+* **版本**：版本管理页面。
 
-SaasHostMenuNames and SaasTenantMenuNames classes have the constants for the menu item names.
+SaasHostMenuNames 和 SaasTenantMenuNames 类包含菜单项名称的常量。
 
-### Pages
+#### 页面
 
-Tenant management
+租户管理
 
-Tenant page is used to manage tenants in the system.
+租户页面用于管理系统中的租户。
 
-![New Tenant](./images/tenant.png)
+![新租户](./images/tenant.png)
 
-You can create a new tenant or edit a tenant in this page:
+您可以在此页面上创建新租户或编辑租户：
 
-![You can create a new tenant or edit a tenant in this page](./images/tenant-new.png)
+![您可以在此页面上创建新租户或编辑租户](./images/tenant-new.png)
 
-### Connection String
+### 连接字符串
 
-You can manage connection string of a tenant in case you want to use a separate database for a specific tenant. If you want to use Host database for a tenant, select "Use the Shared Database" option.
+您可以管理租户的连接字符串，以便为特定租户使用单独的数据库。如果要为租户使用 Host 数据库，选择“使用共享数据库”选项。
 
-You can also use the module-specific database connection string feature. In this case, you should select the "Use module specific database connection string" option, then you can determine your modules and their connection strings. Before adding you can check your connection by clicking "Check"
+您还可以使用模块特定的数据库连接字符串功能。在这种情况下，您应选择“使用模块特定的数据库连接字符串”选项，然后可以确定您的模块及其连接字符串。在添加之前，您可以单击“检查”来检查连接。
 
-### Tenant Features
+### 租户功能
 
-You can set features of tenants.
+您可以设置租户的功能。
 
-![You can set features of tenants](./images/tenant-features.png)
+![您可以设置租户的功能](./images/tenant-features.png)
 
-Edition management
-
-Editions page is used to manage the editions in your system.
-
-![Editions page is used to manage the editions in your system](./images/editions.png)
-
-You can create a new edition or edit an existing edition in this page:
-
-![Create a new edition or edit an existing edition](./images/edition-new.png)
-
-### Edition Features
-
-You can set features of an edition in this page:
-
-![Set features of an edition in this page](./images/editions-edit.png)
