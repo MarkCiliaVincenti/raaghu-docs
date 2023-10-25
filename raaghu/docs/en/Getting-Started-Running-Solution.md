@@ -70,4 +70,4 @@ The application is up and running. You can start developing your application bas
 
 ## See Also
 
-* [Web Application Development Tutorial](Tutorials/Creating-The-Server-Side.md)
+* [Web Application Development Tutorial](Getting-Started-Running-Solution.md)
