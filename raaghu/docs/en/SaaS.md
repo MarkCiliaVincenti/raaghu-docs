@@ -23,14 +23,14 @@ SaaS module implements subscribing to Editions for Tenants using Payment module.
 Firstly, Payment module must be configured properly:
 
 * Install Volo.Payment module.
-```
+```bash
   abp add-module Volo.Payment
 ```
 
 Or you can install via using ABP Suite.
 
 * Configure Saas module to use Payment.
-```
+```json
   Configure(options =>
   {
   options.IsPaymentSupported = true;
@@ -46,7 +46,7 @@ Or you can install via using ABP Suite.
 SaaS module doesn't contain a public facing list page for listing editions for new customers/tenants to subscribe. First, you need to create such a page in your application. Then, when a new customer/tenant selects one of those Editions, you can create a subscription and redirect user to payment module as shown below.
 
 * Inject ISubscriptionAppService to create a subscription for a edition:
-```
+```json
   public class IndexModel : PageModel
   {
   protected ISubscriptionAppService SubscriptionAppService { get; }
