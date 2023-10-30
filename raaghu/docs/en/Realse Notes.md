@@ -36,18 +36,18 @@ Release Notes
 
 ### MODULES
 
-#### Account
+### Account
 
 * Provides a login page with username and password.
 * Provides a register page to create a new account.
 * Implements Identity server authentication server UI and functionality.
 
-#### Audit Logging
+### Audit Logging
 
 * Provides the audit log reporting UI for the auditing infrastructure and allows to search, filter, and show audit log entities and entity change logs.
 * Consist critical data about each client request such as HTTP method, HTTP return status , request execution duration and the success failure respectively.
 
-#### SaaS
+### SaaS
 
 * Includes Pages like Tenant and Edition
 * Allows to manage tenants where a tenant is a customer of your application.
@@ -58,23 +58,23 @@ Release Notes
 
 * Create multiple blogs in a single application.
 
-#### CMS Kit
+### CMS Kit
 
 * Provides a page management system to manage dynamic pages.
 * A blog system to create blogs and publish posts.
 * Tag system to tag any kind of resources, like blog posts.
 * Comment system to add comments feature to any kind of resource, like blog posts.
 
-#### File Management
+### File Management
 
 * It is used to upload and organize files in a hierarchical folder structure.
 * This module is based on BLOB Storing system, where it can use different storage providers for storing file contents.
 
-#### Forms
+### Forms
 
 * Create surveys, manage event registrations, collect email addresses for a newsletter , create a pop quiz or even get an order request.
 
-#### Identity
+### Identity
 
 * Manages role and users in the system wherein user is allowed to have multiple roles.
 * Allows permissions in role and user levels.
@@ -84,7 +84,7 @@ Release Notes
 * Setting page to manage password complexity, user sign-in, account and lockout.
 * Supports social login interactions (Microsoft, Google, Twitter.)
 
-#### Language Management
+### Language Management
 
 * Manages application languages and localization texts.
 * Dynamically add or remove languages.
@@ -92,13 +92,13 @@ Release Notes
 * Features like add, remove, update the language
 * Includes a language text that translates the application’s UI to a new language or update texts for an existing language.
 
-#### OpenId
+### OpenId
 
 * Includes pages like Application and Scopes
 * Application Page providing features like add or edit applications
 * A set of range of permissions available on applications list page
 
-#### Payment
+### Payment
 
 * Features includes integration for payment gateways
 * Supports one-time or recurring payments
