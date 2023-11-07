@@ -45,7 +45,7 @@ to create proxies, we run following command at root level
 Run following command line to create a new Module, named BookStore on root folder and a Book page within it of React application
 
 ```shell
-  raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
+  raaghu create:page --moduleName=BookStore --pageName=book --projectName=Acme.BookStore
 ```
 
 **Note:Creating a page is case sensitive. name of page should be in small letters**
