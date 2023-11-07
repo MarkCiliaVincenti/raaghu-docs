@@ -4,7 +4,7 @@ Part 2: Book List Page
 Github CLI
 ----------
 
-Select a local Directory and run following command to download and output code using a local directory name where project is converted into zip
+Select a local Directory and run following command inside command prompt to download and output code using a local directory name where project is converted into zip
 
 ```json
  curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
