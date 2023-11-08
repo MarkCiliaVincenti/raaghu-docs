@@ -8,7 +8,7 @@ Github CLI
 
 Select a local Directory and run following command inside command prompt to download and output code using a local directory name where project is converted into zip
 
-```bash
+```shell
  curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
 ```
 
@@ -77,7 +77,7 @@ in RdsCompDataTable, we can add the neccessary data we want to show in tableData
 
 Now we integrate table headers in data table 
 
-```shell 
+```bash 
 const tableHeaders = [
     {
         "displayName": "NAME",
