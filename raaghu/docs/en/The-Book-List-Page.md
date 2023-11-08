@@ -71,11 +71,11 @@ code looks like as shown below
 ```
 in RdsCompDataTable, we can add the neccessary data we want to show in tableData and following array of actions that you require as well as neccessary function using onActionSelection
 
-### Column Structure
+### Column Structure {#customPre}
 
 Now we integrate table headers in data table 
 
-```shell {#customPre}
+```shell 
 const tableHeaders = [
     {
         "displayName": "NAME",
