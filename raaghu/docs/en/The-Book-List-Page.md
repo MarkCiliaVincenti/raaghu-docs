@@ -73,9 +73,9 @@ in RdsCompDataTable, we can add the neccessary data we want to show in tableData
 
 ### Column Structure
 
-Now we integrate table headers in data table {#customPre}
+Now we integrate table headers in data table 
 
-```shell
+```shell {#customPre}
 const tableHeaders = [
     {
         "displayName": "NAME",
