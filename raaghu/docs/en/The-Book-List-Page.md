@@ -8,7 +8,7 @@ Github CLI
 
 Select a local Directory and run following command inside command prompt to download and output code using a local directory name where project is converted into zip
 
-```json
+```bash
  curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
 ```
 
