@@ -73,7 +73,7 @@ in RdsCompDataTable, we can add the neccessary data we want to show in tableData
 
 ### Column Structure
 
-Now we integrate table headers in data table
+Now we integrate table headers in data table {#customPre}
 
 ```shell
 const tableHeaders = [
