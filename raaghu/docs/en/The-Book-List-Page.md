@@ -1,8 +1,6 @@
 Part 2: Book List Page
 ======================
 
-div
-
 Github CLI
 ----------
 
@@ -73,7 +71,7 @@ code looks like as shown below
 ```
 in RdsCompDataTable, we can add the neccessary data we want to show in tableData and following array of actions that you require as well as neccessary function using onActionSelection
 
-### Column Structure [Heading IDs](#heading-ids)
+### Column Structure
 
 Now we integrate table headers in data table 
 
