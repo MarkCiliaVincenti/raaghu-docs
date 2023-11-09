@@ -38,7 +38,9 @@ You can mention the url of the locally backend created from abp suite.
 
 Run the following command to create a slice file 
 
+```shell
  raaghu create:slice Book
+```
 
 ### Create a BookStore Module
 
