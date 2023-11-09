@@ -42,7 +42,7 @@ That's it! You now have a Storybook set up with React and TypeScript, and you ca
 
 Those are the control and action passing thoeugh the argTypes, here is example for button element.
 
-```json
+```bash
 export default {
     title: "Elements/Button",
     component: RdsButton,
