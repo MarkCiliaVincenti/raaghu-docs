@@ -23,14 +23,7 @@ Run below code at root level of your project folder
 ```shell
   raaghu install-all
 ```
-
-### Install Abp-React-Core
-
-Run below code at root level of your project folder
-
-```shell
-  raaghu create:core
-```
+This will help install dependency on different locations inside the project like elements, components, mfe and core
 
 ### Generate Proxy
 
@@ -39,6 +32,13 @@ to create proxies, we run following command at root level
 ```shell
   raaghu create:proxy --url=https://raaghu-react.azurewebsites.net
 ```
+You can mention the url of the locally backend created from abp suite.
+
+### Adding a Slice file
+
+Run the following command to create a slice file 
+
+ raaghu create:slice Book
 
 ### Create a BookStore Module
 
@@ -47,7 +47,7 @@ Run following command line to create a new Module, named BookStore on root folde
 ```shell
   raaghu create:page --moduleName=BookStore --pageName=book --projectName=Acme.BookStore
 ```
-
+You can mention projectName as your local project name.
 **Note:Creating a page is case sensitive. name of page should be in small letters**
 
 ### Code Snippets
@@ -58,16 +58,17 @@ Here we integrate a Data Table using a component RdsCompDataDable component havi
 
 code looks like as shown below
 ```javascript
-    <RdsCompDatatable
-        classes="table__userTable"
-        tableHeaders={tableHeaders}
-        pagination={true}
-        tableData={Data}
-        onActionSelection={onActionSelection}
-        recordsPerPage={5}
-        recordsPerPageSelectListOption={true}
-    >`
-    </RdsCompDatatable>`
+   <RdsCompDatatable
+     classes="table__userTable"
+     tableHeaders={tableHeaders}
+     pagination={true}
+     tableData={Data} // data
+     actions={actions} // add action={[ add array of actions you require]} here to have action dropdown
+     onActionSelection={onActionSelection}
+     // add onActionSelction here for what function you want to call
+     recordsPerPage={10}
+     recordsPerPageSelectListOption={true}
+    ></RdsCompDatatable>`
 ```
 in RdsCompDataTable, we can add the neccessary data we want to show in tableData and following array of actions that you require as well as neccessary function using onActionSelection
 
@@ -77,100 +78,31 @@ Now we integrate table headers in data table
 
 ```bash 
 const tableHeaders = [
-    {
-        "displayName": "NAME",
-        "name": "Name",
-        "key": "name",
-        "datatype": "text",
-        "sortable": true,
-        "element": "RdsInput"
-    },
-    {
-        "displayName": "TYPE",
-        "name": "Type",
-        "key": "type",
-        "datatype": "text",
-        "sortable": true,
-        "element": "RdsSelectList"
-    },
-    {
-        "displayName": "PUBLISHDATE",
-        "name": "PublishDate",
-        "key": "publishDate",
-        "datatype": "text",
-        "sortable": true,
-        "element": "RdsDatePicker"
-    },
-    {
-        "displayName": "PRICE",
-        "name": "Price",
-        "key": "price",
-        "datatype": "text",
-        "sortable": true,
-        "element": "RdsInput"
-    }
-    ]
-```
-
-### Adding a Slice File
-We now add a slice file that defines a piece of state and its corresponding reducer functions    
-
-```shell
-export const getBooksRequest = createAsyncThunk(
-    'book/getBooksRequest',
-    async ({
-        filterText,
-        name,
-        type,
-        publishDateMin,
-        publishDateMax,
-        priceMin,
-        priceMax,
-        sorting,
-        skipCount,
-        maxResultCount,
-    }:{
-        filterText?: string,
-        name?: string,
-        type?: DemoSuite2_Books_BookType,
-        publishDateMin?: string,
-        publishDateMax?: string,
-        priceMin?: number,
-        priceMax?: number,
-        sorting?: string,
-        skipCount?: number,
-        maxResultCount?: number,
-    }) => {
-        const response = await BookService.getBooks({
-        filterText,
-        name,
-        type,
-        publishDateMin,
-        publishDateMax,
-        priceMin,
-        priceMax,
-        sorting,
-        skipCount,
-        maxResultCount,
-    });        return response;    }
-    );
-
-```
-
-Add these builder cases inside BookSlice extra reducer
-
-```shell
-    builder.addCase(getBooksRequest.pending, (state) => {
-        state.loading = true;
-    });
-        builder.addCase(getBooksRequest.fulfilled, (state, action) => {
-        state.loading = false;
-        state.error = "";
-        state.getBooks = action.payload
-    });        builder.addCase(getBooksRequest.rejected,(state, action)=> {
-        state.loading = false;
-        state.error = action.error.message || "Something went wrong";
-    });
+  { 
+    "displayName": "Name",
+    "key": "name",
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Price", 
+    "key": "price", 
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Publish Date", 
+    "key": "publishDate", 
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Type", 
+    "key": "type", 
+    "datatype": "text", 
+    "sortable": true 
+  }
+]
 ```
 
 We now perform fetching data in Books Page and displaying it inside data table
