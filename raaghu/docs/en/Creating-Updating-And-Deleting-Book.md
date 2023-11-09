@@ -4,7 +4,7 @@ Part 3: Creating, Updating and Deleting Book
 Creating a new Book -
 ---------------------
 
-In order to create a new book, we will create a new component called RdsCompBookForm. Run code below in root folder
+In order to create a new book, we will create a new component called RdsCompBookForm. If you want to make some other components, run code below in root folder
 
 ```shell
     raaghu create:component --name=rds-comp-book-form
