@@ -103,3 +103,33 @@
 .docs-page .docs-page-index #scroll-index{
   height: 24vh !important;
 }
+
+
+.language-bash {
+    overflow-y: scroll;
+    min-height: 400px;
+    height: 310px;
+}
+
+
+
+    .language-bash::-webkit-scrollbar {
+        width: 4px;
+        background-color: transparent;
+        height: 3px;
+    }
+
+    .language-bash::-webkit-scrollbar-thumb {
+        background-color: #aaaaaa9e;
+        border-radius: 8px;
+    }
+
+    .language-bash::-webkit-scrollbar-track {
+        -webkit-box-shadow: none;
+        background-color: transparent;
+    }
+
+body pre[class*=language-] {
+
+     border-radius:5px !important;
+}
