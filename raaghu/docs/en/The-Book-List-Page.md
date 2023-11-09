@@ -109,7 +109,14 @@ const tableHeaders = [
         "sortable": true,
         "element": "RdsInput"
     }
-    ]Adding a Slice FileWe now add a slice file that defines a piece of state and its corresponding reducer functions    export const getBooksRequest = createAsyncThunk(
+    ]
+```
+
+### Adding a Slice File
+We now add a slice file that defines a piece of state and its corresponding reducer functions    
+
+```shell
+export const getBooksRequest = createAsyncThunk(
     'book/getBooksRequest',
     async ({
         filterText,
@@ -147,8 +154,8 @@ const tableHeaders = [
         maxResultCount,
     });        return response;    }
     );
-```
 
+```
 
 Add these builder cases inside BookSlice extra reducer
 
