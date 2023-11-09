@@ -25,7 +25,7 @@ Add following code in slice file and add builder case in extra reducer similar t
 ```
 
 Here, we bring a button of a New Book using RdsButton and on clicking, we get different parameters of a form inside a RdsOffcanvas
-```javascript
+```bash
     <RdsOffcanvas
     offcanvasbutton={`<div>`
     <RdsButton
@@ -63,7 +63,7 @@ Here, we bring a button of a New Book using RdsButton and on clicking, we get di
 ```
 Now add this function inside book component
 
-```javascript
+```bash
    const onNewCreate = (datafromcomponent: any) => {
         let TypeIndex = datafromcomponent.data.Type
         const data = {
@@ -154,7 +154,7 @@ Add these builder cases inside BookSlice extra reducer
 
 Add the Edit function in Book Page
 
-```javascript
+```bash
   const onEdithandler = (datafromcomponent: any) => {
     const id = dataEmit.id;
     let TypeIndex = datafromcomponent.data.Type
@@ -212,7 +212,7 @@ Add the Edit function in Book Page
 
 Add property of RdsOffcanvas element below RdsCompDatatable
 
-```javascript
+```bash
     <RdsOffcanvas
         placement={"end"}
         backDrop={true}
