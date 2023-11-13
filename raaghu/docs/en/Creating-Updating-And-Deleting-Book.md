@@ -256,4 +256,4 @@ Add delete function in Book Page
     setdataEmit([{}]);
   };
 
-```bash
+
