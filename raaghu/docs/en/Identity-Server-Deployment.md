@@ -8,7 +8,7 @@ IdentityServer configuration may be different based on deployment configurations
 Cors origins configuration for **gateways, microservices** swagger authorization and **React** must be updated for deployment. This can be found under **App** configuration in appsettings.json
 
 ```json
-   "CorsOrigins": "https://*.MyProjectName.com,http://localhost:4200,https://localhost:44307,https://localhost:44325,https://localhost:44353,https://localhost:44367,https://localhost:44388,https://localhost:44381,https://localhost:44361",
+   "CorsOrigins": "https://*.MyProjectName.com,http://localhost:4200,https://localhost:8080",
 ```
 
 ### Update Redirect Allowed Urls
@@ -16,5 +16,5 @@ Cors origins configuration for **gateways, microservices** swagger authorization
 This configuration must be done if React used as back-office web application. It is found under App configuration in appsettings.json
 
 ```json
-"RedirectAllowedUrls": "http://localhost:4200,https://localhost:44307"
+"RedirectAllowedUrls": "http://localhost:4200,https://localhost:8080"
 ```
