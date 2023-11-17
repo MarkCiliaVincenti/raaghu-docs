@@ -30,7 +30,7 @@ Login page is used to log in to the system.
 
 ![Home page](./images/home.png)
 
-![Login page is used to log in to the system](./images/home-page.png)
+![Login page is used to log in to the system](./images/home.png)
 
 ### Register Page
 
