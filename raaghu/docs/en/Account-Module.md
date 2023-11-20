@@ -36,6 +36,8 @@ Login page is used to log in to the system.
 
 Register page allows new users to register to your system.
 
+![Register page allows new users to register to your system](./images/register_page.png)
+
 ### Internals
 
 ### Settings
