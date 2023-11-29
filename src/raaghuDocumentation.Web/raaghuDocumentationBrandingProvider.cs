@@ -8,5 +8,5 @@ namespace raaghuDocumentation.Web;
 [Dependency(ReplaceServices = true)]
 public class raaghuDocumentationBrandingProvider : DefaultBrandingProvider
 {
-    public override string AppName => "Documention Center | Raaghu.io";
+    public override string AppName => "Documentation Center | Raaghu.io";
 }
