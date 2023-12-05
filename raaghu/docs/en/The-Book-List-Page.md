@@ -3,7 +3,7 @@ Part 2: Book List Page
 
 ### GitHub User Name and Personal Access Token (PAT) 
 
-**GitbHub** User Name can be found in your profile section or on right hand side sidebar of GitHub, example: **"john.james"**.
+**GitHub** User Name can be found in your profile section or on right hand side sidebar of GitHub, example: **"john.james"**.
 
 If you don't have a PAT, you can generate one in your GitHub account settings:
 
