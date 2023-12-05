@@ -1,13 +1,24 @@
 Part 2: Book List Page
 ======================
 
-Github CLI
+### GitHub User Name and Personal Access Token (PAT) 
+
+**GitbHub** User Name can be found in your profile section or on right hand side sidebar of GitHub, example: **"john.james"**.
+
+If you don't have a PAT, you can generate one in your GitHub account settings:
+
+1. Go to your GitHub Settings.
+2. Click on "Developer settings" in the left sidebar.
+3. Click on "Personal access tokens (Classic)".
+4. Generate a new token with the required permissions (at least repo for private repositories).
+
+GitHub CLI
 ----------
 
 Select a local Directory and run following command inside command prompt to download and output code using a local directory name where project is converted into zip
 
 ```shell
- curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
+ curl -L -u (GitHub User Name):(GitHub Personal Access Token) https://github.com/(Organization)/(Repository)/archive/(Branch).zip --output (Folder Name).zip
 ```
 
 now, unzip file using following command
