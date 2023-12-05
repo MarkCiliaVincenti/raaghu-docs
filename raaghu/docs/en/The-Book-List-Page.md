@@ -12,8 +12,7 @@ If you don't have a PAT, you can generate one in your GitHub account settings:
 3. Click on "Personal access tokens (Classic)".
 4. Generate a new token with the required permissions (at least repo for private repositories).
 
-GitHub CLI
-----------
+### GitHub CLI
 
 Select a local Directory and run following command inside command prompt to download and output code using a local directory name where project is converted into zip
 
