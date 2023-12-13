@@ -28,7 +28,7 @@ Login Page
 
 Login page is used to log in to the system.
 
-![Home page](./images/home.png)
+![Home page](./images/home-page.png)
 
 ![Login page is used to log in to the system](./images/login_page.png)
 
