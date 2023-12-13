@@ -35,6 +35,20 @@ Run below code at root level of your project folder
 ```
 This will help install dependency on different locations inside the project like elements, components, mfe and core
 
+### Change the Enviorment File for localhost
+
+```shell
+NODE_ENV=production
+# REACT_APP_URL=https://abpstagereact12.raaghu.io
+REACT_APP_URL=http://localhost:8080
+REACT_APP_API_URL=https://abpstagereact12api.raaghu.io
+REACT_APP_GRANT_TYPE=authorization_code
+REACT_APP_CLIENT_ID=abp_react_7_2_2_App
+REACT_APP_SCOPE=address openid email phone profile roles offline_access abp_react_7_2_2
+REACT_APP_REPLACE_URL=true
+
+```
+
 ### Generate Proxy
 
 to create proxies, we run following command at root level
