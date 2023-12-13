@@ -16,7 +16,7 @@ else if (location.pathname == "/employee") {
     }
 ```
 
-pagekey = "abp_react_7_2_2."; can be found in the file 
+pagekey = "abp_react_7_2_2."; can be found in the below file location 
 
 ```shell
 lib / main-menu / page-name.ts
