@@ -35,7 +35,7 @@ Run below code at root level of your project folder
 ```
 This will help install dependency on different locations inside the project like elements, components, mfe and core
 
-### Change the Enviorment File for localhost
+### Enviorment File (.env) Changes to run application locally
 
 ```shell
 NODE_ENV=production
@@ -48,6 +48,7 @@ REACT_APP_SCOPE=address openid email phone profile roles offline_access abp_reac
 REACT_APP_REPLACE_URL=true
 
 ```
+There sholude be changes made on .env file with respeact to backend client id and Scope.
 
 ### Generate Proxy
 
