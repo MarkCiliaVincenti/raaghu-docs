@@ -4,13 +4,13 @@ After page creation we need to add below path into main.tsx file.
 
 For example : -
 
-```
+```shell
 <Route path="/employees" element={<EmployeesCompo />} />
 ```
 
 Then we need to add below condition into PrivateRoute_Auth.tsx file.
 
-```
+```shell
 else if (location.pathname == "/employee") {
       pagekey = "abp_react_7_2_2.Employees";
     }
@@ -18,11 +18,11 @@ else if (location.pathname == "/employee") {
 
 pagekey = "abp_react_7_2_2."; can be found in the file 
 
-```
+```shell
 lib / main-menu / page-name.ts
 ```
 
-```
+```shell
 const PageNotFound = [{
   "key": "PageNotFound",
   "label": "PageNotFound",
@@ -39,7 +39,7 @@ Add the permission value as pagekey into the PrivateRoute_Auth.tsx
 
 Use the same permission value on the page created.
 
-```
+```shell
 useEffect(() => {
     setPagePermission({ ...pagePermission, create: isgrantedpolicies('abp_react_7_2_2.Employees.Create', configData), })
     const IsEdit = isgrantedpolicies('abp_react_7_2_2.Employees.Edit', configData);
