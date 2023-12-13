@@ -37,6 +37,10 @@
             {
               "text": "Creating, Updating and Deleting Book",
               "path": "Creating-Updating-And-Deleting-Book.md"
+            },
+            {
+              "text": "Application Configurations",
+              "path": "Application-Configurations.md"
             }
           ]
         }
