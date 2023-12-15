@@ -1,67 +1,95 @@
 /* Your Global Styles */
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-  body{
-    font-family: 'Poppins', sans-serif !important;
-  }
+* {
+  font-family: "Poppins" !important;
+}
 
-  h1, h2, h3{
-    font-weight: 600 !important;
-  }
+body {
+  font-family: "Poppins" !important;
+}
 
-  h1{
-    font-size: 40px !important;
-  }
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free' !important;
+}
 
-  h2{
-    font-size: 32px !important;
-  }
+.anchorjs-link {
+  font-family: anchorjs-icons !important;
+}
 
-  h3{
-    font-size: 28px !important;
-  }
-  
-  .docs-content-field a{
-    color: #721DEB !important;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lexend" !important;
+}
 
-  p{
-    font-size: 16px !important;
-  }
+/* h1,
+h2,
+h3 {
+  font-weight: 600 !important;
+}
 
-  .docs-body ul li{
-    font-size: 16px !important;
-  }
+h1 {
+  font-size: 40px !important;
+}
 
-  .docs-body ol li{
-    font-size: 16px !important;
-  }
+h2 {
+  font-size: 32px !important;
+}
 
-:root .lpx-theme-dim, :root .lpx-theme-dark {
-    --lpx-logo: url('/images/logo/leptonx/logo-light.svg');
-    --lpx-logo-icon: url('/images/logo/leptonx/icon.svg');
+h3 {
+  font-size: 28px !important;
+} */
+
+.docs-content-field a {
+  color: #721DEB !important;
+}
+
+p {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+.docs-body ul li {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+.docs-body ol li {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+:root .lpx-theme-dim,
+:root .lpx-theme-dark {
+  --lpx-logo: url('/images/logo/leptonx/logo-light.svg');
+  --lpx-logo-icon: url('/images/logo/leptonx/icon.svg');
 }
 
 :root .lpx-theme-light {
-    --lpx-logo: url('/images/logo/leptonx/logo-dark.svg');
-    --lpx-logo-icon: url('/images/logo/leptonx/icon.svg');
+  --lpx-logo: url('/images/logo/leptonx/logo-dark.svg');
+  --lpx-logo-icon: url('/images/logo/leptonx/icon.svg');
 }
 
-.abp-empty-layout .card{
-    margin: 0rem !important;
+.abp-empty-layout .card {
+  margin: 0rem !important;
 }
 
-.abp-empty-layout .docs-page{
-    padding: 0rem !important;
+.abp-empty-layout .docs-page {
+  padding: 0rem !important;
 }
 
-#document-node-wrapper{
-    border: 0 !important;
+#document-node-wrapper {
+  border: 0 !important;
 }
 
 #GoToMainWebSite {
-    display: none !important;
+  display: none !important;
 }
 
 /* .docs-version {
@@ -73,63 +101,87 @@
 } */
 
 
-.docs-second{
+.docs-second {
   top: 17rem !important;
 }
 
 
-.resize-class{
+.resize-class {
   height: 231px;
-    max-height: 100%
+  max-height: 100%
 }
 
-.bg-sec{
+.bg-sec {
   background-image: url(/images/logo/bg-new.png) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
 }
 
-.bg-advertise{
+.bg-advertise {
   background: linear-gradient(357deg, rgb(205 60 255 / 38%), rgb(150 75 255 / 30%), rgb(60 189 255 / 26%), rgb(255 255 255 / 50%));
 }
 
 .card-body .btn-primary {
   color: #fff !important;
-    background-color: #721DEB !important;
-    border-color: #721DEB !important;
-    font-style: 15px !important;
+  background-color: #721DEB !important;
+  border-color: #721DEB !important;
+  font-style: 15px !important;
 }
-.docs-page .docs-page-index #scroll-index{
+
+.docs-page .docs-page-index #scroll-index {
   height: 24vh !important;
 }
 
 
 .language-bash {
-    overflow-y: scroll;
-    min-height: 400px;
-    height: 310px;
+  overflow-y: scroll;
+  min-height: 400px;
+  height: 310px;
 }
 
 
 
-    .language-bash::-webkit-scrollbar {
-        width: 4px;
-        background-color: transparent;
-        height: 3px;
-    }
+.language-bash::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+  height: 3px;
+}
 
-    .language-bash::-webkit-scrollbar-thumb {
-        background-color: #aaaaaa9e;
-        border-radius: 8px;
-    }
+.language-bash::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa9e;
+  border-radius: 8px;
+}
 
-    .language-bash::-webkit-scrollbar-track {
-        -webkit-box-shadow: none;
-        background-color: transparent;
-    }
+.language-bash::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background-color: transparent;
+}
 
 body pre[class*=language-] {
 
-     border-radius:5px !important;
+  border-radius: 5px !important;
+}
+
+.docs-page .docs-sidebar .docs-top .navbar-logo .navbar-brand strong {
+  font-weight: 200 !important;
+  text-transform: capitalize !important;
+  font-size: 0.8em !important;
+  letter-spacing: 1px !important;
+}
+
+@media (max-width: 1200px) {
+  .card-body .docs-page .docs-page-index {
+    padding: 0 1rem 30px !important;
+  }
+
+  .card-body .docs-second {
+    top: 0rem !important;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .docs-page .docs-sidebar .docs-tree-list {
+    display: block !important;
+  }
 }
