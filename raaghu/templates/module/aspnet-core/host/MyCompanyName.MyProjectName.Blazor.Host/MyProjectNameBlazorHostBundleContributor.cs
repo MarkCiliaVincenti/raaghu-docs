@@ -12,5 +12,6 @@ public class MyProjectNameBlazorHostBundleContributor : IBundleContributor
     public void AddStyles(BundleContext context)
     {
         context.Add("main.css", true);
+        context.Add("global.css", true);           
     }
 }
