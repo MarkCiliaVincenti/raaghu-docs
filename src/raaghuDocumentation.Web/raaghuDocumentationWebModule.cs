@@ -199,7 +199,8 @@ namespace raaghuDocumentation.Web;
                 LeptonXThemeBundles.Styles.Global,
                 bundle =>
                 {
-                    bundle.AddFiles("/global-styles.css");
+                   bundle.AddFiles("/styles/custom.css");
+                   bundle.AddFiles("/global-styles.css"); 
                 }
             );
         });
