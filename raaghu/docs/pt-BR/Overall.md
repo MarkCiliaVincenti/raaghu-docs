@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Módulos de Aplicação
 
 ABP Commercial fornece módulos de aplicativos de nível empresarial [prontos](https://commercial.abp.io/modules "") para produção. Consulte a página de módulos para obter uma lista e descrições dos módulos como uma visão geral. Esta documentação é para desenvolvedores e explica detalhes técnicos dos módulos.
