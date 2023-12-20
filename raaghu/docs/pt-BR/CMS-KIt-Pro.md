@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Módulo cms kit pro
 Este módulo estende [o módulo CMS Kit](https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index "") de código aberto e adiciona recursos adicionais de CMS (Content Management System) ao seu aplicativo.
 
