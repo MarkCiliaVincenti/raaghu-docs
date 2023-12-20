@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Módulo de gerenciamento de arquivos
 Este módulo é usado para fazer upload, download e organizar arquivos em uma estrutura hierárquica de pastas. Também é compatível com multilocação e você pode determinar o limite de tamanho total para seus inquilinos.
 
