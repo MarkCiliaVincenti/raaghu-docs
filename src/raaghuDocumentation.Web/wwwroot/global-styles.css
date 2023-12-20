@@ -1,13 +1,102 @@
 /* Your Global Styles */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+
+/* @font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../../raaghuDocumentation.Web/Fonts/Lexend-ExtraBold.ttf") format("truetype")
+} */
+
+/* @font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/src/raaghuDocumentation.Web/wwwroot/styles/Fonts/Lexend/Lexend-Bold.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/src/raaghuDocumentation.Web/wwwroot/styles/Fonts/Lexend/Lexend-SemiBold.ttf") format("truetype")
+}
+
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/src/raaghuDocumentation.Web/wwwroot/styles/Fonts/Lexend/Lexend-Medium.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/src/raaghuDocumentation.Web/wwwroot/styles/Fonts/Poppins/Poppins-Bold.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/src/raaghuDocumentation.Web/wwwroot/styles/Fonts/Poppins/Poppins-Medium.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/src/raaghuDocumentation.Web/wwwroot/styles/Fonts/Poppins/Poppins-Light.ttf") format("truetype")
+} */
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 14px;
+  font-weight: 300
+}
+
+.btn,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lexend", sans-serif !important;
+}
+
+header a {
+  font-family: "Lexend", sans-serif !important;
+  font-weight: 400 !important
+}
+
+header .header-bottom .header-menu-1 li a {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif !important
+}
+
+header .header-bottom .header-menu-1 li.active a {
+  font-weight: 400
+}
+
 
 * {
-  font-family: "Poppins" !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 body {
-  font-family: "Poppins" !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .fa,
@@ -25,7 +114,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lexend" !important;
+  font-family: "Lexend", sans-serif !important;
 }
 
 /* h1,
