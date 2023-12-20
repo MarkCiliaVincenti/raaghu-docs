@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Implantação do Servidor de Identidade
 A configuração do IdentityServer pode ser diferente com base nas configurações de implantação. Basicamente, você precisa atualizar os dados relacionados ao cliente do servidor de identidade e atualizar suas preferências de hospedagem com base em seu ambiente de implantação.
 
