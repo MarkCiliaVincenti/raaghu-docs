@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 ### Livro de histórias
 Através do livro de histórias você pode visualizar e navegar pelas características do raaghu. Os snippets dos elementos permitem testar e projetar sua IU de maneira mais rápida e eficiente.
 
