@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Criando uma nova solução comercial ABP
 Existem 2 maneiras de criar novas soluções comerciais da ABP. Você pode usar o WP [CLI](https://docs.abp.io/en/abp/latest/CLI "") ou [o ABP Suite](https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution "").
 
