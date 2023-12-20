@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Conta
 Este módulo implementa as funcionalidades de Login, Cadastro, Esqueci a Senha, Confirmação de Email, Redefinição de Senha, envio e confirmação de Autenticação de Dois Fatores, bloqueio de usuário, alternância entre locatários de uma aplicação;
 
