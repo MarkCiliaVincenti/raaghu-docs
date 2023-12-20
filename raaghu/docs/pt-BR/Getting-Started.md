@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Começando
 Ce tutoriel suppose que vous avez déjà acheté un[BP Licence commerciale](https://commercial.abp.io/pricing "")et avoir un compte commercial actif BP.
 
