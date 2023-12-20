@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Tema de reação Raaghu
 O tema **Raaghu React** está pré-instalado no código-fonte. Portanto, não há necessidade de instalá-lo manualmente. O pacote npm é instalado diretamente no nível do projeto, como você pode ver no arquivo **package.json** de nível raiz e dentro da pasta raaghumfe.
 ```bash
