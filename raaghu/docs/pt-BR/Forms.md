@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Módulo Formulários
 Este módulo permite criar questionários para coletar informações. O módulo de formulários pode armazenar respostas à medida que chegam e você pode exportar os dados para um arquivo CSV. Você pode compartilhar seu formulário com outras pessoas com o link exclusivo do formulário. Você pode solicitar autenticação ou permitir resposta anônima. É semelhante ao aplicativo Formulário Google. A área de utilização é bastante ampla, você pode criar pesquisas, gerenciar inscrições em eventos, coletar endereços de e-mail para newsletter, criar um quiz e até receber uma solicitação de pedido.
 
