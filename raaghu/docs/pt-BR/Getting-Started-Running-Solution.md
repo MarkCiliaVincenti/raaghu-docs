@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Crie o banco de dados
 ### Cadeia de conexão
 Verifique a cadeia de conexão no arquivo appsettings.json no projeto .Web.
