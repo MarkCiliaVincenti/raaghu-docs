@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 ## personalização
 ### gerenciar abas da página do perfil
 Em Minha conta, ao clicar no menu suspenso do perfil de administrador do host, você obtém 4 guias como Imagem do perfil, Alterar senha, Informações pessoais e Dois fatores
