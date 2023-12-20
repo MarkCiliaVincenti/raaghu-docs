@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Módulo de gerenciamento de modelos de texto
 
 Este módulo é usado para armazenar e editar o conteúdo do modelo para [o sistema de modelos de texto](https://docs.abp.io/en/abp/latest/Text-Templating "") da estrutura ABP. Portanto, talvez você precise entendê-lo para entender melhor o propósito deste módulo.
