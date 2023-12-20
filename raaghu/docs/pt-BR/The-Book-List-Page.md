@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # parte 2: lista de livros página
 ## github cli
 Selecione um diretório local e execute o seguinte comando para baixar e gerar o código usando um nome de diretório local onde o projeto é convertido em zip
