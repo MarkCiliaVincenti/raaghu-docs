@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 ### Storybook 
 
 Through the **storybook** you can visualize and navigate around the features of the raaghu. Snippets for the elements allow you to test and design your UI faster and efficiently.
